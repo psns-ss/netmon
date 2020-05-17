@@ -1,6 +1,6 @@
-.idea/
-.vscode/
-docker-stack.yml
+.mypy_cache
+.coverage
+htmlcov
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -30,6 +30,10 @@ services:
       - db
     env_file:
       - .env
+    command:
+      - "/start-reload.sh"
+    volumes:
+      - ./backend/app:/app
     environment:
       - SERVER_NAME=${DOMAIN}
       - SERVER_HOST=https://${DOMAIN}

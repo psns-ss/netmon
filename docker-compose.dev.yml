@@ -9,12 +9,13 @@ services:
       - "--providers.docker.exposedByDefault=false"
       - "--api.insecure=true"
       - "--entryPoints.web.address=:80"
+      - "--accessLog"
     networks:
       - traefik-proxy
       - default
     ports:
       - "80:80"
-      - "8080:8080"
+      - "8090:8080"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
     deploy:
@@ -36,7 +37,7 @@ services:
       - ./backend/app:/app
     environment:
       - SERVER_NAME=${DOMAIN}
-      - SERVER_HOST=https://${DOMAIN}
+      - SERVER_HOST=http://${DOMAIN}
       # Allow explicit env var override for tests
       - SMTP_HOST=${SMTP_HOST}
     build:

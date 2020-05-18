@@ -9,12 +9,13 @@ services:
       - "--providers.docker.exposedByDefault=false"
       - "--api.insecure=true"
       - "--entryPoints.web.address=:80"
+      - "--accessLog"
     networks:
       - traefik-proxy
       - default
     ports:
       - "80:80"
-      - "8080:8080"
+      - "8090:8080"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
     deploy:
@@ -39,7 +40,7 @@ services:
       context: ./backend
       dockerfile: backend.dockerfile
       args:
-        INSTALL_DEV: ${INSTALL_DEV-true}
+        INSTALL_DEV: ${INSTALL_DEV-false}
         INSTALL_JUPYTER: ${INSTALL_JUPYTER-false}
     labels:
       - "traefik.http.routers.backend.rule=Host(`${DOMAIN}`) &&

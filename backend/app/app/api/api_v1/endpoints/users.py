@@ -1,14 +1,13 @@
 from typing import Any, List
 
-from fastapi import APIRouter, Body, Depends, HTTPException
-from fastapi.encoders import jsonable_encoder
-from pydantic.networks import EmailStr
-from sqlalchemy.orm import Session
-
 from app import crud, models, schemas
 from app.api import deps
 from app.core.config import settings
 from app.utils import send_new_account_email
+from fastapi import APIRouter, Body, Depends, HTTPException
+from fastapi.encoders import jsonable_encoder
+from pydantic.networks import EmailStr
+from sqlalchemy.orm import Session
 
 router = APIRouter()
 
@@ -99,8 +98,7 @@ def create_user_open(
     """
     if not settings.USERS_OPEN_REGISTRATION:
         raise HTTPException(
-            status_code=403,
-            detail="Open user registration is forbidden on this server",
+            status_code=403, detail="Open user registration is forbidden on this server"
         )
     user = crud.user.get_by_email(db, email=email)
     if user:

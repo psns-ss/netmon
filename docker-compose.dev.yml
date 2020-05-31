@@ -25,6 +25,33 @@ services:
     labels:
       - traefik.domain=${DOMAIN}
 
+  queue:
+    image: rabbitmq:3
+    # Using the below image instead is required to enable the "Broker" tab in the flower UI:
+    # image: rabbitmq:3-management
+    #
+    # You also have to change the flower command
+
+  flower:
+    image: mher/flower
+    networks:
+      - traefik-proxy
+      - default
+    env_file:
+      - .env
+    command:
+      - "--broker=amqp://guest@queue:5672//"
+      # For the "Broker" tab to work in the flower UI, uncomment the following command argument,
+      # and change the queue service's image as well
+      # - "--broker_api=http://guest:guest@queue:15672/api//"
+    labels:
+      - traefik.http.routers.flower.rule=Host(`flower.${DOMAIN}`)
+      - traefik.http.routers.flower.entrypoints=web
+      - traefik.enable=true
+      - traefik.port=5555
+      - traefik.tags=${TRAEFIK_PUBLIC_TAG}
+      - traefik.docker.network=traefik-proxy
+
   backend:
     image: '${DOCKER_IMAGE_BACKEND}:${TAG-latest}'
     depends_on:
@@ -50,6 +77,37 @@ services:
       - "traefik.http.routers.backend.rule=Host(`${DOMAIN}`) &&
       (PathPrefix(`/api/`) || PathPrefix(`/docs`) || PathPrefix(`/redoc`))"
       - traefik.http.routers.backend.entrypoints=web
+      - traefik.enable=true
+      - traefik.port=80
+      - traefik.tags=${TRAEFIK_TAG}
+
+  celeryworker:
+    image: '${DOCKER_IMAGE_CELERYWORKER}:${TAG-latest}'
+    depends_on:
+      - db
+      - queue
+    env_file:
+      - .env
+    environment:
+      - SERVER_NAME=${DOMAIN}
+      - SERVER_HOST=https://${DOMAIN}
+      # Allow explicit env var override for tests
+      - SMTP_HOST=${SMTP_HOST}
+    build:
+      context: ./backend
+      dockerfile: celeryworker.dockerfile
+      args:
+        INSTALL_DEV: ${INSTALL_DEV-false}
+
+  frontend:
+    image: '${DOCKER_IMAGE_FRONTEND}:${TAG-latest}'
+    build:
+      context: ./frontend
+      args:
+        FRONTEND_ENV: ${FRONTEND_ENV-dev}
+    labels:
+      - traefik.http.routers.frontend.rule=PathPrefix(`/`)
+      - traefik.http.routers.frontend.entrypoints=web
       - traefik.enable=true
       - traefik.port=80
       - traefik.tags=${TRAEFIK_TAG}

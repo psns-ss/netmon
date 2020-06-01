@@ -76,17 +76,42 @@ export default new Router({
                   path: 'users/edit/:id',
                   name: 'main-admin-users-edit',
                   component: () => import(
-                    /* webpackChunkName: "main-admin-users-edit" */ './views/main/admin/EditUser.vue'),
+                      /* webpackChunkName: "main-admin-users-edit" */ './views/main/admin/EditUser.vue'),
                 },
                 {
                   path: 'users/create',
                   name: 'main-admin-users-create',
                   component: () => import(
-                    /* webpackChunkName: "main-admin-users-create" */ './views/main/admin/CreateUser.vue'),
+                      /* webpackChunkName: "main-admin-users-create" */ './views/main/admin/CreateUser.vue'),
+                },
+              ],
+            },
+            {
+              path: 'machines',
+              redirect: 'machines/all',
+              component: RouterComponent,
+              children: [
+                {
+                  path: 'all',
+                  component: () => import(
+                      /* webpackChunkName: "main-machines" */ './views/main/machines/Machines.vue'),
+                },
+                {
+                  path: 'edit/:id',
+                  name: 'main-machines-edit',
+                  component: () => import(
+                      /* webpackChunkName: "main-machines-edit" */ './views/main/machines/EditMachine.vue'),
+                },
+                {
+                  path: 'create',
+                  name: 'main-machines-create',
+                  component: () => import(
+                      /* webpackChunkName: "main-machines-create" */ './views/main/machines/CreateMachine.vue'),
                 },
               ],
             },
           ],
+
         },
       ],
     },

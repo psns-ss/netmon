@@ -38,6 +38,18 @@
           </v-list-tile>
         </v-list>
         <v-divider></v-divider>
+        <v-list>
+          <v-subheader>Machines</v-subheader>
+          <v-list-tile to="/main/machines">
+            <v-list-tile-action>
+              <v-icon>web</v-icon>
+            </v-list-tile-action>
+            <v-list-tile-content>
+              <v-list-tile-title>Machines Dashboard</v-list-tile-title>
+            </v-list-tile-content>
+          </v-list-tile>
+        </v-list>
+        <v-divider></v-divider>
         <v-list subheader v-show="hasAdminAccess">
           <v-subheader>Admin</v-subheader>
           <v-list-tile to="/main/admin/users/all">
@@ -118,22 +130,22 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component } from 'vue-property-decorator';
+  import {Component, Vue} from 'vue-property-decorator';
 
-import { appName } from '@/env';
-import { readDashboardMiniDrawer, readDashboardShowDrawer, readHasAdminAccess } from '@/store/main/getters';
-import { commitSetDashboardShowDrawer, commitSetDashboardMiniDrawer } from '@/store/main/mutations';
-import { dispatchUserLogOut } from '@/store/main/actions';
+  import {appName} from '@/env';
+  import {readDashboardMiniDrawer, readDashboardShowDrawer, readHasAdminAccess} from '@/store/main/getters';
+  import {commitSetDashboardMiniDrawer, commitSetDashboardShowDrawer} from '@/store/main/mutations';
+  import {dispatchUserLogOut} from '@/store/main/actions';
 
-const routeGuardMain = async (to, from, next) => {
-  if (to.path === '/main') {
-    next('/main/dashboard');
-  } else {
-    next();
-  }
-};
+  const routeGuardMain = async (to, from, next) => {
+    if (to.path === '/main') {
+      next('/main/dashboard');
+    } else {
+      next();
+    }
+  };
 
-@Component
+  @Component
 export default class Main extends Vue {
   public appName = appName;
 

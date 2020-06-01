@@ -37,3 +37,12 @@ class Machine(MachineInDBBase):
 # Properties properties stored in DB
 class MachineInDB(MachineInDBBase):
     pass
+
+
+class ActiveProcess(BaseModel):
+    hash: str
+    name: str
+
+
+class Interface(BaseModel):
+    name: str

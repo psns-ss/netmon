@@ -1,6 +1,13 @@
 import axios from 'axios';
-import { apiUrl } from '@/env';
-import { IUserProfile, IUserProfileUpdate, IUserProfileCreate } from './interfaces';
+import {apiUrl} from '@/env';
+import {
+  IMachine,
+  IMachineCreate,
+  IMachineUpdate,
+  IUserProfile,
+  IUserProfileCreate,
+  IUserProfileUpdate,
+} from './interfaces';
 
 function authHeaders(token: string) {
   return {
@@ -41,5 +48,14 @@ export const api = {
       new_password: password,
       token,
     });
+  },
+  async getMachines(token: string) {
+    return axios.get<IMachine[]>(`${apiUrl}/api/v1/machines/`, authHeaders(token));
+  },
+  async updateMachine(token: string, userId: number, data: IMachineUpdate) {
+    return axios.put(`${apiUrl}/api/v1/machines/${userId}`, data, authHeaders(token));
+  },
+  async createMachine(token: string, data: IMachineCreate) {
+    return axios.post(`${apiUrl}/api/v1/machines/`, data, authHeaders(token));
   },
 };

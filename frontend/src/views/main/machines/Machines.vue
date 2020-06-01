@@ -8,17 +8,21 @@
       <v-btn color="primary" to="/main/machines/create">Create Machine</v-btn>
     </v-toolbar>
     <v-data-table :headers="headers" :items="machines">
-      <template slot="items" slot-scope="props">
-        <td>{{ props.item.name }}</td>
-        <td>{{ props.item.host }}</td>
-        <td class="justify-center layout px-0">
-          <v-tooltip top>
-            <span>Edit</span>
-            <v-btn slot="activator" flat :to="{name: 'main-machines-edit', params: {id: props.item.id}}">
-              <v-icon>edit</v-icon>
-            </v-btn>
-          </v-tooltip>
-        </td>
+      <template slot="item" slot-scope="props">
+        <tr>
+          <td>{{ props.item.name }}</td>
+          <td>{{ props.item.host }}</td>
+          <td class="justify-center layout px-0 ">
+            <v-tooltip top>
+              <span>Edit</span>
+              <template v-slot:activator="{ on }">
+                <v-btn v-on="on" text :to="{name: 'main-machines-edit', params: {id: props.item.id}}">
+                  <v-icon>mdi-square-edit-outline</v-icon>
+                </v-btn>
+              </template>
+            </v-tooltip>
+          </td>
+        </tr>
       </template>
     </v-data-table>
   </div>

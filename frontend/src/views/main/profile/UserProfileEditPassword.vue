@@ -12,7 +12,7 @@
             <div class="title primary--text text--darken-2" v-else>{{userProfile.email}}</div>
           </div>
           <v-form ref="form">
-            <v-text-field 
+            <v-text-field
               type="password"
               ref="password"
               label="Password"
@@ -79,7 +79,7 @@ export default class UserProfileEdit extends Vue {
       const updatedProfile: IUserProfileUpdate = {};
       updatedProfile.password = this.password1;
       await dispatchUpdateUserProfile(this.$store, updatedProfile);
-      this.$router.push('/main/profile');
+      await this.$router.push('/main/profile');
     }
   }
 }

@@ -21,11 +21,13 @@
             <v-text-field
                 label="New Name"
                 data-vv-name="name"
+                v-model="name"
                 required
             ></v-text-field>
             <v-text-field
                 label="Host"
                 data-vv-name="host"
+                v-model="host"
                 required
             ></v-text-field>
           </v-form>

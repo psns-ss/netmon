@@ -55,7 +55,7 @@ def update_machine(
     machine = crud.machine.get(db=db, id=id)
     if not machine:
         raise HTTPException(status_code=404, detail="machine not found")
-    logger.info("updating machine")
+    logger.info("updating machine", machine_in=machine_in)
     machine = crud.machine.update(db=db, db_obj=machine, obj_in=machine_in)
     return machine
 

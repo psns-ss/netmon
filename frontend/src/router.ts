@@ -108,6 +108,20 @@ export default new Router({
                   component: () => import(
                       /* webpackChunkName: "main-machines-create" */ './views/main/machines/CreateMachine.vue'),
                 },
+                {
+                  path: 'active-processes/:id',
+                  name: 'main-machines-active-processes',
+                  component: () => import(
+                    /* webpackChunkName: "main-machines-active-processes" */ './views/' +
+                  'main/machines/ActiveProcesses.vue'),
+                },
+                {
+                  path: 'interfaces/:id',
+                  name: 'main-machines-interfaces',
+                  component: () => import(
+                    /* webpackChunkName: "main-machines-interfaces" */ './views/' +
+                  'main/machines/Interfaces.vue'),
+                },
               ],
             },
           ],

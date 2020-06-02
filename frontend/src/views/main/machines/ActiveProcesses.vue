@@ -2,15 +2,29 @@
   <div>
     <v-toolbar light>
       <v-toolbar-title>
-        Active Processes of machine {{this.machine.name}}
+        Active Processes of machine "{{machineName || "Unnamed"}}"
       </v-toolbar-title>
+
       <v-spacer></v-spacer>
+
+      <v-btn icon large color="secondary" @click="$router.back()">
+        <v-icon>
+          mdi-chevron-left
+        </v-icon>
+      </v-btn>
+
+      <v-btn icon large color="secondary" @click="refreshActiveProcesses">
+        <v-icon>
+          mdi-refresh
+        </v-icon>
+      </v-btn>
     </v-toolbar>
-    <v-data-table :headers="headers" :items="processes">
+
+    <v-data-table :headers="headers" :items="activeProcesses">
       <template slot="item" slot-scope="props">
         <tr>
           <td>{{ props.item.name }}</td>
-          <td>{{ props.item.host }}</td>
+          <td>{{ props.item.hash }}</td>
         </tr>
       </template>
     </v-data-table>
@@ -19,8 +33,8 @@
 
 <script lang="ts">
   import {Component, Vue} from 'vue-property-decorator';
-  import {readOneMachine} from '@/store/machines/getters';
-  import {dispatchGetMachine} from '@/store/machines/actions';
+  import {readMachineActiveProcesses, readOneMachine} from '@/store/machines/getters';
+  import {dispatchGetMachine, dispatchGetMachineActiveProcesses} from '@/store/machines/actions';
 
   @Component
   export default class MachinesActiveProcesses extends Vue {
@@ -37,11 +51,23 @@
         align: 'left',
       },
     ];
-    get machine() {
-      return readOneMachine(this.$store)(+this.$router.currentRoute.params.id);
+    get machineName() {
+
+      let machine = readOneMachine(this.$store)(+this.$router.currentRoute.params.id);
+      return machine?.name
     }
+
+    get activeProcesses() {
+      return readMachineActiveProcesses(this.$store);
+    }
+
+    public async refreshActiveProcesses() {
+      await dispatchGetMachineActiveProcesses(this.$store, {id: +this.$router.currentRoute.params.id});
+    }
+
     public async mounted() {
       await dispatchGetMachine(this.$store, {id: +this.$router.currentRoute.params.id});
+      await dispatchGetMachineActiveProcesses(this.$store, {id: +this.$router.currentRoute.params.id});
     }
   }
 </script>

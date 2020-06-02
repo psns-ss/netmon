@@ -2,15 +2,28 @@
   <div>
     <v-toolbar light>
       <v-toolbar-title>
-        Active Processes of machine {{this.machine.name}}
+        Interfaces of machine "{{machineName || "Unnamed"}}"
       </v-toolbar-title>
+
       <v-spacer></v-spacer>
+
+      <v-btn icon large color="secondary" @click="$router.back()">
+        <v-icon>
+          mdi-chevron-left
+        </v-icon>
+      </v-btn>
+
+      <v-btn icon large color="secondary" @click="refreshActiveProcesses">
+        <v-icon>
+          mdi-refresh
+        </v-icon>
+      </v-btn>
     </v-toolbar>
-    <v-data-table :headers="headers" :items="processes">
+
+    <v-data-table :headers="headers" :items="interfaces">
       <template slot="item" slot-scope="props">
         <tr>
           <td>{{ props.item.name }}</td>
-          <td>{{ props.item.host }}</td>
         </tr>
       </template>
     </v-data-table>
@@ -19,7 +32,8 @@
 
 <script lang="ts">
   import {Component, Vue} from 'vue-property-decorator';
-  import {dispatchGetMachine} from '@/store/machines/actions';
+  import {readMachineInterfaces, readOneMachine} from '@/store/machines/getters';
+  import {dispatchGetMachine, dispatchGetMachineInterfaces} from '@/store/machines/actions';
 
   @Component
   export default class MachinesInterfaces extends Vue {
@@ -30,15 +44,24 @@
         value: 'name',
         align: 'left',
       },
-      {
-        text: 'Hash',
-        value: 'hash',
-        align: 'left',
-      },
     ];
+    get machineName() {
+
+      let machine = readOneMachine(this.$store)(+this.$router.currentRoute.params.id);
+      return machine?.name
+    }
+
+    get interfaces() {
+      return readMachineInterfaces(this.$store);
+    }
+
+    public async refreshActiveProcesses() {
+      await dispatchGetMachineInterfaces(this.$store, {id: +this.$router.currentRoute.params.id});
+    }
 
     public async mounted() {
       await dispatchGetMachine(this.$store, {id: +this.$router.currentRoute.params.id});
+      await dispatchGetMachineInterfaces(this.$store, {id: +this.$router.currentRoute.params.id});
     }
   }
 </script>

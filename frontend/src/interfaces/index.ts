@@ -39,11 +39,11 @@ export interface IMachineUpdate {
   host?: string;
 }
 
-export interface IActiveProcess {
+export interface IMachineActiveProcess {
   name: string;
   hash: string;
 }
 
-export interface IInterface {
+export interface IMachineInterface {
   name: string;
 }

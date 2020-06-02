@@ -23,19 +23,38 @@
             <v-icon v-if="props.item.was_recently_online">mdi-checkbox-marked-circle-outline</v-icon>
             <v-icon v-else>mdi-checkbox-blank-circle-outline</v-icon>
           </td>
-          <td class="justify-center layout px-0 ">
+          <td class=" layout px-0 ">
+            <v-tooltip top>
+              <span>Interfaces</span>
+              <template v-slot:activator="{ on }">
+                <v-btn large icon v-on="on" text :to="{name: 'main-machines-interfaces', params: {id: props.item.id}}">
+                  <v-icon>mdi-lan</v-icon>
+                </v-btn>
+              </template>
+            </v-tooltip>
+
+            <v-tooltip top>
+              <span>Active Processes</span>
+              <template v-slot:activator="{ on }">
+                <v-btn large icon v-on="on" text :to="{name: 'main-machines-active-processes', params: {id: props.item.id}}">
+                  <v-icon>mdi-rocket-launch</v-icon>
+                </v-btn>
+              </template>
+            </v-tooltip>
+
             <v-tooltip top>
               <span>Edit</span>
               <template v-slot:activator="{ on }">
-                <v-btn icon v-on="on" text :to="{name: 'main-machines-edit', params: {id: props.item.id}}">
+                <v-btn large icon v-on="on" text :to="{name: 'main-machines-edit', params: {id: props.item.id}}">
                   <v-icon>mdi-square-edit-outline</v-icon>
                 </v-btn>
               </template>
             </v-tooltip>
+
             <v-tooltip top>
               <span>Delete</span>
               <template v-slot:activator="{ on }">
-                <v-btn v-on="on" icon top @click="deleteMachine(props.item.id)">
+                <v-btn large v-on="on" icon top @click="deleteMachine(props.item.id)">
                   <v-icon>mdi-delete</v-icon>
                 </v-btn>
               </template>
@@ -76,7 +95,7 @@
     ];
 
     public async deleteMachine(machineId: number) {
-       await dispatchDeleteMachine(this.$store, {id: machineId})
+       await dispatchDeleteMachine(this.$store, {id: machineId});
     }
     get machines() {
       return readMachines(this.$store);

@@ -10,9 +10,13 @@ export const getters = {
             return { ...filteredMachines[0] };
         }
     },
+    activeProcesses: (state: MachinesState) => state.activeProcesses,
+    interfaces: (state: MachinesState) => state.interfaces,
 };
 
 const {read} = getStoreAccessors<MachinesState, State>('');
 
 export const readMachines = read(getters.machines);
 export const readOneMachine = read(getters.machine);
+export const readMachineActiveProcesses = read(getters.activeProcesses);
+export const readMachineInterfaces = read(getters.interfaces);

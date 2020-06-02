@@ -5,6 +5,8 @@ import { MachinesState } from './state';
 
 const defaultState: MachinesState = {
   machines: [],
+  activeProcesses: [],
+  interfaces: [],
 };
 
 export const machinesModule = {

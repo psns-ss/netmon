@@ -1,7 +1,7 @@
 import axios from 'axios';
 import {apiUrl} from '@/env';
 import {
-  IActiveProcess, IInterface,
+  IMachineActiveProcess, IMachineInterface,
   IMachine,
   IMachineCreate,
   IMachineUpdate,
@@ -66,10 +66,11 @@ export const api = {
     return axios.post(`${apiUrl}/api/v1/machines/`, data, authHeaders(token));
   },
   async getMachinesActiveProcesses(token: string, machineId: number) {
-    return axios.get<IActiveProcess[]>(`${apiUrl}/api/v1/machines/${machineId}/active-processes/`, authHeaders(token));
+    return axios.get<IMachineActiveProcess[]>(`${apiUrl}/api/v1/machines/${machineId}/active-processes/`,
+      authHeaders(token));
   },
   async getMachinesInterfaces(token: string, machineId: number) {
-    return axios.get<IInterface[]>(`${apiUrl}/api/v1/machines/${machineId}/interfaces/`, authHeaders(token));
+    return axios.get<IMachineInterface[]>(`${apiUrl}/api/v1/machines/${machineId}/interfaces/`, authHeaders(token));
   },
   async pingMachine(token: string, machineId: number) {
     return axios.get(`${apiUrl}/api/v1/machines/${machineId}/ping/`, authHeaders(token));

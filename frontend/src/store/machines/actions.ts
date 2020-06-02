@@ -2,7 +2,13 @@ import {api} from '@/api';
 import {getStoreAccessors} from 'typesafe-vuex';
 import {ActionContext} from 'vuex';
 import {State} from '../state';
-import {commitDeleteMachine, commitSetMachine, commitSetMachines} from './mutations';
+import {
+    commitDeleteMachine,
+    commitSetMachine,
+    commitSetMachineActiveProcesses,
+    commitSetMachineInterfaces,
+    commitSetMachines,
+} from './mutations';
 import {MachinesState} from './state';
 import {IMachineCreate, IMachineUpdate} from '@/interfaces';
 import {commitAddNotification, commitRemoveNotification} from '@/store/main/mutations';
@@ -76,6 +82,26 @@ export const actions = {
             await dispatchCheckApiError(context, error);
         }
     },
+    async actionGetMachineActiveProcesses(context: MainContext, payload: { id: number}) {
+        try {
+            const response = await api.getMachinesActiveProcesses(context.rootState.main.token, payload.id);
+            if (response.data) {
+                commitSetMachineActiveProcesses(context, response.data);
+            }
+        } catch (error) {
+            await dispatchCheckApiError(context, error);
+        }
+    },
+    async actionGetMachineInterfaces(context: MainContext, payload: { id: number}) {
+        try {
+            const response = await api.getMachinesActiveProcesses(context.rootState.main.token, payload.id);
+            if (response.data) {
+                commitSetMachineInterfaces(context, response.data);
+            }
+        } catch (error) {
+            await dispatchCheckApiError(context, error);
+        }
+    },
 };
 
 const {dispatch} = getStoreAccessors<MachinesState | any, State>('');
@@ -85,3 +111,5 @@ export const dispatchGetMachine = dispatch(actions.actionGetMachine);
 export const dispatchUpdateMachine = dispatch(actions.actionUpdateMachine);
 export const dispatchCreateMachine = dispatch(actions.actionCreateMachine);
 export const dispatchDeleteMachine = dispatch(actions.actionDeleteMachine);
+export const dispatchGetMachineActiveProcesses = dispatch(actions.actionGetMachineActiveProcesses);
+export const dispatchGetMachineInterfaces = dispatch(actions.actionGetMachineInterfaces);

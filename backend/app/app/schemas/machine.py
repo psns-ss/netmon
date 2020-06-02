@@ -1,4 +1,4 @@
-from typing import List, Optional
+from typing import Optional
 
 from pydantic import BaseModel, Field
 
@@ -56,3 +56,7 @@ class MachineInterface(BaseModel):
     ipv4_address: str = Field(alias="IPv4Address")
     ipv4_default_gateway: str = Field(alias="IPv4DefaultGateway")
     dns_server: str = Field(alias="DNSServer")
+
+
+class NewAdapter(BaseModel):
+    new_adapter: str = Field(alias="NewAdapter")

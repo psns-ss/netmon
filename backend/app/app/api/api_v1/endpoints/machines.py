@@ -1,4 +1,5 @@
 import time
+from pathlib import Path
 from typing import Any, List
 
 import aiohttp
@@ -6,7 +7,8 @@ import structlog
 from app import crud, models, schemas
 from app.api import deps
 from app.core.config import settings
-from fastapi import APIRouter, Depends, HTTPException
+from app.utils import send_email
+from fastapi import APIRouter, Depends, HTTPException, requests
 from sqlalchemy.orm import Session
 
 logger = structlog.get_logger()
@@ -196,7 +198,9 @@ async def get_machine_interfaces(*, id: int, db: Session = Depends(deps.get_db))
             raise HTTPException(status_code=400, detail="host is not available")
 
 
-@router.get("/{id}/ping")
+@router.get(
+    "/{id}/ping", dependencies=[Depends(deps.get_current_active_user)],
+)
 async def ping_machine(*, id: int, db: Session = Depends(deps.get_db)):
     machine = crud.machine.get(db=db, id=id)
     if not machine:
@@ -210,3 +214,26 @@ async def ping_machine(*, id: int, db: Session = Depends(deps.get_db)):
                 resp.raise_for_status()
     except Exception as e:
         raise HTTPException(status_code=400, detail=f"{e}")
+
+
+@router.post("/new-adapter")
+async def detected_new_adapter(
+    new_adapter: schemas.NewAdapter, request: requests.Request
+):
+    client_host = request.client.host
+
+    project_name = settings.PROJECT_NAME
+    subject = f"{project_name} - New Adapter"
+    with open(Path(settings.EMAIL_TEMPLATES_DIR) / "new_adapter.html") as f:
+        template_str = f.read()
+    email_to = settings.FIRST_SUPERUSER
+    send_email(
+        email_to=email_to,
+        subject_template=subject,
+        html_template=template_str,
+        environment={
+            "project_name": project_name,
+            "new_adapter": new_adapter.new_adapter,
+            "client_host": client_host,
+        },
+    )

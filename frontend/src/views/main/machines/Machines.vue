@@ -5,7 +5,7 @@
         Machines
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn icon large color="secondary" @click="getMachines">
+      <v-btn icon large color="secondary" @click="this.getMachines">
         <v-icon>
           mdi-refresh
         </v-icon>
@@ -36,7 +36,8 @@
             <v-tooltip top>
               <span>Active Processes</span>
               <template v-slot:activator="{ on }">
-                <v-btn large icon v-on="on" text :to="{name: 'main-machines-active-processes', params: {id: props.item.id}}">
+                <v-btn large icon v-on="on" text
+                       :to="{name: 'main-machines-active-processes', params: {id: props.item.id}}">
                   <v-icon>mdi-rocket-launch</v-icon>
                 </v-btn>
               </template>
@@ -93,18 +94,27 @@
         align: 'left',
       },
     ];
+    public timerId = 0;
 
     public async deleteMachine(machineId: number) {
-       await dispatchDeleteMachine(this.$store, {id: machineId});
+      await dispatchDeleteMachine(this.$store, {id: machineId});
     }
+
     get machines() {
       return readMachines(this.$store);
     }
+
     public async getMachines() {
       await dispatchGetMachines(this.$store);
     }
+
     public async mounted() {
       await this.getMachines();
+      this.timerId = setInterval(this.getMachines, 3000);
+    }
+
+    public beforeDestroy() {
+      clearInterval(this.timerId);
     }
   }
 </script>

@@ -13,7 +13,7 @@
         </v-icon>
       </v-btn>
 
-      <v-btn icon large color="secondary" @click="refreshActiveProcesses">
+      <v-btn icon large color="secondary" @click="this.refreshActiveProcesses">
         <v-icon>
           mdi-refresh
         </v-icon>
@@ -51,10 +51,11 @@
         align: 'left',
       },
     ];
-    get machineName() {
+    public timerId = 0;
 
-      let machine = readOneMachine(this.$store)(+this.$router.currentRoute.params.id);
-      return machine?.name
+    get machineName() {
+      const machine = readOneMachine(this.$store)(+this.$router.currentRoute.params.id);
+      return machine?.name;
     }
 
     get activeProcesses() {
@@ -67,7 +68,13 @@
 
     public async mounted() {
       await dispatchGetMachine(this.$store, {id: +this.$router.currentRoute.params.id});
-      await dispatchGetMachineActiveProcesses(this.$store, {id: +this.$router.currentRoute.params.id});
+      await this.refreshActiveProcesses();
+      this.timerId = setInterval(this.refreshActiveProcesses, 3000);
+    }
+
+
+    public beforeDestroy() {
+      clearInterval(this.timerId);
     }
   }
 </script>

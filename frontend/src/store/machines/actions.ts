@@ -2,7 +2,7 @@ import {api} from '@/api';
 import {getStoreAccessors} from 'typesafe-vuex';
 import {ActionContext} from 'vuex';
 import {State} from '../state';
-import {commitSetMachine, commitSetMachines} from './mutations';
+import {commitDeleteMachine, commitSetMachine, commitSetMachines} from './mutations';
 import {MachinesState} from './state';
 import {IMachineCreate, IMachineUpdate} from '@/interfaces';
 import {commitAddNotification, commitRemoveNotification} from '@/store/main/mutations';
@@ -61,6 +61,21 @@ export const actions = {
             await dispatchCheckApiError(context, error);
         }
     },
+    async actionDeleteMachine(context: MainContext, payload: { id: number}) {
+        try {
+            const loadingNotification = {content: 'deleting', showProgress: true};
+            commitAddNotification(context, loadingNotification);
+            const response = (await Promise.all([
+                api.deleteMachine(context.rootState.main.token, payload.id),
+                await new Promise((resolve, _) => setTimeout(() => resolve(), 500)),
+            ]))[0];
+            commitDeleteMachine(context, response.data);
+            commitRemoveNotification(context, loadingNotification);
+            commitAddNotification(context, {content: 'Machine successfully deleted', color: 'red'});
+        } catch (error) {
+            await dispatchCheckApiError(context, error);
+        }
+    },
 };
 
 const {dispatch} = getStoreAccessors<MachinesState | any, State>('');
@@ -69,3 +84,4 @@ export const dispatchGetMachines = dispatch(actions.actionGetMachines);
 export const dispatchGetMachine = dispatch(actions.actionGetMachine);
 export const dispatchUpdateMachine = dispatch(actions.actionUpdateMachine);
 export const dispatchCreateMachine = dispatch(actions.actionCreateMachine);
+export const dispatchDeleteMachine = dispatch(actions.actionDeleteMachine);

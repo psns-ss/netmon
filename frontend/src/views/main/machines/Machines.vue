@@ -1,4 +1,4 @@
-<template>
+<template xmlns:>
   <div>
     <v-toolbar light>
       <v-toolbar-title>
@@ -20,8 +20,16 @@
             <v-tooltip top>
               <span>Edit</span>
               <template v-slot:activator="{ on }">
-                <v-btn v-on="on" text :to="{name: 'main-machines-edit', params: {id: props.item.id}}">
+                <v-btn icon v-on="on" text :to="{name: 'main-machines-edit', params: {id: props.item.id}}">
                   <v-icon>mdi-square-edit-outline</v-icon>
+                </v-btn>
+              </template>
+            </v-tooltip>
+            <v-tooltip top>
+              <span>Delete</span>
+              <template v-slot:activator="{ on }">
+                <v-btn v-on="on" icon top @click="deleteMachine(props.item.id)">
+                  <v-icon>mdi-delete</v-icon>
                 </v-btn>
               </template>
             </v-tooltip>
@@ -35,7 +43,7 @@
 <script lang="ts">
   import {Component, Vue} from 'vue-property-decorator';
   import {readMachines} from '@/store/machines/getters';
-  import {dispatchGetMachines} from '@/store/machines/actions';
+  import {dispatchGetMachines, dispatchDeleteMachine} from '@/store/machines/actions';
 
   @Component
   export default class Machines extends Vue {
@@ -60,6 +68,9 @@
       },
     ];
 
+    public async deleteMachine(machineId: number) {
+       await dispatchDeleteMachine(this.$store, {id: machineId})
+    }
     get machines() {
       return readMachines(this.$store);
     }

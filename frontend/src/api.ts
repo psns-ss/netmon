@@ -56,6 +56,9 @@ export const api = {
   async getMachine(token: string, machineId: number) {
     return axios.get<IMachine>(`${apiUrl}/api/v1/machines/${machineId}/`, authHeaders(token));
   },
+  async deleteMachine(token: string, machineId: number) {
+    return axios.delete<IMachine>(`${apiUrl}/api/v1/machines/${machineId}/`, authHeaders(token));
+  },
   async updateMachine(token: string, userId: number, data: IMachineUpdate) {
     return axios.put(`${apiUrl}/api/v1/machines/${userId}`, data, authHeaders(token));
   },

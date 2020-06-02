@@ -30,17 +30,27 @@ class CRUDMachine(CRUDBase[Machine, MachineCreate, MachineUpdate]):
         timeout = aiohttp.ClientTimeout(total=2)
         try:
             async with aiohttp.ClientSession(timeout=timeout) as session:
-                async with session.get(f"{db_obj.host}/ping") as resp:
+                ping_url = f"{db_obj.host}/ping"
+                async with session.get(ping_url) as resp:
                     if resp.status == 200:
                         db_obj.last_online_timestamp = int(time.time())
                         db.add(db_obj)
                         db.commit()
                         db.refresh(db_obj)
+                        logger.debug(
+                            f"ping success",
+                            status=resp.status,
+                            machine_id=db_obj.id,
+                            machine_host=db_obj.host,
+                            ping_url=ping_url,
+                        )
                     else:
                         logger.debug(
-                            f"{db_obj.host} ping failed",
+                            f"ping failed",
                             status=resp.status,
-                            machine=db_obj,
+                            machine_id=db_obj.id,
+                            machine_host=db_obj.host,
+                            ping_url=ping_url,
                         )
         except Exception as e:
             logger.debug(f"{e}: {db_obj.host} ping failed", machine=db_obj)

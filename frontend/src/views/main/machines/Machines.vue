@@ -5,7 +5,14 @@
         Machines
       </v-toolbar-title>
       <v-spacer></v-spacer>
+      <v-btn icon large color="secondary" @click="getMachines">
+        <v-icon>
+          mdi-refresh
+        </v-icon>
+      </v-btn>
+
       <v-btn color="primary" to="/main/machines/create">Create Machine</v-btn>
+
     </v-toolbar>
     <v-data-table :headers="headers" :items="machines">
       <template slot="item" slot-scope="props">
@@ -74,9 +81,11 @@
     get machines() {
       return readMachines(this.$store);
     }
-
-    public async mounted() {
+    public async getMachines() {
       await dispatchGetMachines(this.$store);
+    }
+    public async mounted() {
+      await this.getMachines();
     }
   }
 </script>

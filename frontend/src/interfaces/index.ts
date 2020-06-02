@@ -1,39 +1,49 @@
 export interface IUserProfile {
-    email: string;
-    is_active: boolean;
-    is_superuser: boolean;
-    full_name: string;
-    id: number;
+  email: string;
+  is_active: boolean;
+  is_superuser: boolean;
+  full_name: string;
+  id: number;
 }
 
 export interface IUserProfileUpdate {
-    email?: string;
-    full_name?: string;
-    password?: string;
-    is_active?: boolean;
-    is_superuser?: boolean;
+  email?: string;
+  full_name?: string;
+  password?: string;
+  is_active?: boolean;
+  is_superuser?: boolean;
 }
 
 export interface IUserProfileCreate {
-    email: string;
-    full_name?: string;
-    password?: string;
-    is_active?: boolean;
-    is_superuser?: boolean;
+  email: string;
+  full_name?: string;
+  password?: string;
+  is_active?: boolean;
+  is_superuser?: boolean;
 }
 
 export interface IMachine {
-    name: string;
-    host: string;
-    id: number;
+  name: string;
+  host: string;
+  id: number;
+  was_recently_online?: boolean;
 }
 
 export interface IMachineCreate {
-    name: string;
-    host: string;
+  name: string;
+  host: string;
 }
 
 export interface IMachineUpdate {
-    name?: string;
-    host?: string;
+  name?: string;
+  host?: string;
+}
+
+export interface IActiveProcess {
+  name: string;
+  hash: string;
+}
+
+export interface IInterface {
+  name: string;
 }

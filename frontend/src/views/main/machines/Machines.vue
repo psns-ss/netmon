@@ -12,6 +12,10 @@
         <tr>
           <td>{{ props.item.name }}</td>
           <td>{{ props.item.host }}</td>
+          <td>
+            <v-icon v-if="props.item.was_recently_online">mdi-checkbox-marked-circle-outline</v-icon>
+            <v-icon v-else>mdi-checkbox-blank-circle-outline</v-icon>
+          </td>
           <td class="justify-center layout px-0 ">
             <v-tooltip top>
               <span>Edit</span>
@@ -46,6 +50,12 @@
         text: 'Host',
         sortable: true,
         value: 'host',
+        align: 'left',
+      },
+      {
+        text: 'Was recently online',
+        sortable: true,
+        value: 'was_recently_online',
         align: 'left',
       },
     ];

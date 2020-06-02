@@ -14,7 +14,7 @@ logger = structlog.get_logger()
 router = APIRouter()
 
 
-@router.get("/", response_model=List[schemas.Machine])
+@router.get("/", response_model=List[schemas.MachineWithOnlineStatus])
 async def read_machines(
     db: Session = Depends(deps.get_db),
     skip: int = 0,
@@ -28,7 +28,7 @@ async def read_machines(
         db, skip=skip, limit=limit
     )
     return [
-        schemas.Machine(
+        schemas.MachineWithOnlineStatus(
             **schemas.MachineInDB.from_orm(machine).dict(),
             was_recently_online=was_recently_online(machine),
         )
@@ -50,7 +50,7 @@ def create_machine(
     return machine
 
 
-@router.get("/{id}", response_model=schemas.Machine)
+@router.get("/{id}", response_model=schemas.MachineWithOnlineStatus)
 async def read_machine(
     *,
     db: Session = Depends(deps.get_db),
@@ -64,7 +64,7 @@ async def read_machine(
     if not machine:
         raise HTTPException(status_code=404, detail="machine not found")
 
-    return schemas.Machine(
+    return schemas.MachineWithOnlineStatus(
         **schemas.MachineInDB.from_orm(machine).dict(),
         was_recently_online=was_recently_online(machine),
     )

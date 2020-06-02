@@ -25,6 +25,71 @@ services:
     labels:
       - traefik.domain=${DOMAIN}
 
+  backend:
+    image: '${DOCKER_IMAGE_BACKEND}:${TAG-latest}'
+    depends_on:
+      - db
+    env_file:
+      - .env
+    command:
+      - "/start-reload.sh"
+    volumes:
+      - ./backend/app:/app
+    environment:
+      - SERVER_NAME=${DOMAIN}
+      - SERVER_HOST=http://${DOMAIN}
+      # Allow explicit env var override for tests
+      - SMTP_HOST=${SMTP_HOST}
+    build:
+      context: ./backend
+      dockerfile: backend.dockerfile
+      args:
+        INSTALL_DEV: ${INSTALL_DEV-true}
+        INSTALL_JUPYTER: ${INSTALL_JUPYTER-false}
+    labels:
+      - traefik.http.routers.backend.rule=Host(`${DOMAIN}`) && ((PathPrefix(`/api/`) || PathPrefix(`/docs`) || PathPrefix(`/redoc`)))
+      - traefik.http.routers.backend.entrypoints=web
+      - traefik.enable=true
+      - traefik.port=80
+      - traefik.tags=${TRAEFIK_TAG}
+
+  testclient:
+    image: 'netmontestclient:${TAG-latest}'
+    env_file:
+      - .env
+    command:
+      - "/start-reload.sh"
+    volumes:
+      - ./backend/client:/app
+    build:
+      context: ./backend
+      dockerfile: testclient.dockerfile
+    labels:
+      - traefik.http.routers.testclient.rule=PathPrefix(`/client-api/`)
+      - traefik.http.routers.testclient.entrypoints=web
+      - traefik.enable=true
+      - traefik.port=80
+      - traefik.tags=${TRAEFIK_TAG}
+
+  celeryworker:
+    image: '${DOCKER_IMAGE_CELERYWORKER}:${TAG-latest}'
+    depends_on:
+      - db
+      - queue
+    env_file:
+      - .env
+    environment:
+      - SERVER_NAME=${DOMAIN}
+      - SERVER_HOST=https://${DOMAIN}
+      # Allow explicit env var override for tests
+      - SMTP_HOST=${SMTP_HOST}
+    build:
+      context: ./backend
+      dockerfile: celeryworker.dockerfile
+      args:
+        INSTALL_DEV: ${INSTALL_DEV-true}
+        INSTALL_JUPYTER: ${INSTALL_JUPYTER-false}
+
   queue:
     image: rabbitmq:3
     # Using the below image instead is required to enable the "Broker" tab in the flower UI:
@@ -51,54 +116,6 @@ services:
       - traefik.port=5555
       - traefik.tags=${TRAEFIK_PUBLIC_TAG}
       - traefik.docker.network=traefik-proxy
-
-  backend:
-    image: '${DOCKER_IMAGE_BACKEND}:${TAG-latest}'
-    depends_on:
-      - db
-    env_file:
-      - .env
-    command:
-      - "/start-reload.sh"
-    volumes:
-      - ./backend/app:/app
-    environment:
-      - SERVER_NAME=${DOMAIN}
-      - SERVER_HOST=http://${DOMAIN}
-      # Allow explicit env var override for tests
-      - SMTP_HOST=${SMTP_HOST}
-    build:
-      context: ./backend
-      dockerfile: backend.dockerfile
-      args:
-        INSTALL_DEV: ${INSTALL_DEV-true}
-        INSTALL_JUPYTER: ${INSTALL_JUPYTER-false}
-    labels:
-      - "traefik.http.routers.backend.rule=Host(`${DOMAIN}`) &&
-      (PathPrefix(`/api/`) || PathPrefix(`/docs`) || PathPrefix(`/redoc`))"
-      - traefik.http.routers.backend.entrypoints=web
-      - traefik.enable=true
-      - traefik.port=80
-      - traefik.tags=${TRAEFIK_TAG}
-
-  celeryworker:
-    image: '${DOCKER_IMAGE_CELERYWORKER}:${TAG-latest}'
-    depends_on:
-      - db
-      - queue
-    env_file:
-      - .env
-    environment:
-      - SERVER_NAME=${DOMAIN}
-      - SERVER_HOST=https://${DOMAIN}
-      # Allow explicit env var override for tests
-      - SMTP_HOST=${SMTP_HOST}
-    build:
-      context: ./backend
-      dockerfile: celeryworker.dockerfile
-      args:
-        INSTALL_DEV: ${INSTALL_DEV-true}
-        INSTALL_JUPYTER: ${INSTALL_JUPYTER-false}
 
   frontend:
     image: '${DOCKER_IMAGE_FRONTEND}:${TAG-latest}'

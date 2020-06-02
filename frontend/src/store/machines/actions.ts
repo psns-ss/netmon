@@ -21,13 +21,23 @@ export const actions = {
             await dispatchCheckApiError(context, error);
         }
     },
+    async actionGetMachine(context: MainContext, payload: { id: number}) {
+        try {
+            const response = await api.getMachine(context.rootState.main.token, payload.id);
+            if (response.data) {
+                commitSetMachine(context, response.data);
+            }
+        } catch (error) {
+            await dispatchCheckApiError(context, error);
+        }
+    },
     async actionUpdateMachine(context: MainContext, payload: { id: number, machine: IMachineUpdate }) {
         try {
             const loadingNotification = {content: 'saving', showProgress: true};
             commitAddNotification(context, loadingNotification);
             const response = (await Promise.all([
                 api.updateMachine(context.rootState.main.token, payload.id, payload.machine),
-                await new Promise((resolve, reject) => setTimeout(() => resolve(), 500)),
+                await new Promise((resolve, _) => setTimeout(() => resolve(), 500)),
             ]))[0];
             commitSetMachine(context, response.data);
             commitRemoveNotification(context, loadingNotification);
@@ -42,7 +52,7 @@ export const actions = {
             commitAddNotification(context, loadingNotification);
             const response = (await Promise.all([
                 api.createMachine(context.rootState.main.token, payload),
-                await new Promise((resolve, reject) => setTimeout(() => resolve(), 500)),
+                await new Promise((resolve, _) => setTimeout(() => resolve(), 500)),
             ]))[0];
             commitSetMachine(context, response.data);
             commitRemoveNotification(context, loadingNotification);
@@ -56,5 +66,6 @@ export const actions = {
 const {dispatch} = getStoreAccessors<MachinesState | any, State>('');
 
 export const dispatchGetMachines = dispatch(actions.actionGetMachines);
+export const dispatchGetMachine = dispatch(actions.actionGetMachine);
 export const dispatchUpdateMachine = dispatch(actions.actionUpdateMachine);
 export const dispatchCreateMachine = dispatch(actions.actionCreateMachine);

@@ -32,6 +32,10 @@ class MachineInDBBase(MachineBase):
 
 # Properties to return to client
 class Machine(MachineInDBBase):
+    pass
+
+
+class MachineWithOnlineStatus(MachineInDBBase):
     was_recently_online: bool
 
 

@@ -83,6 +83,8 @@ class Settings(BaseSettings):
     FIRST_SUPERUSER_PASSWORD: str
     USERS_OPEN_REGISTRATION: bool = False
 
+    WAS_RECENTLY_ONLINE_TIMEDELTA: int = 60 * 5
+
     class Config:
         case_sensitive = True
 

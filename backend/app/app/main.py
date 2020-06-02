@@ -1,6 +1,10 @@
+import sentry_sdk
 from app.api.api_v1.api import api_router
 from app.core.config import settings
 from fastapi import FastAPI
+from sentry_sdk.integrations.aiohttp import AioHttpIntegration
+from sentry_sdk.integrations.asgi import SentryAsgiMiddleware
+from sentry_sdk.integrations.sqlalchemy import SqlalchemyIntegration
 from starlette.middleware.cors import CORSMiddleware
 
 app = FastAPI(
@@ -18,3 +22,10 @@ if settings.BACKEND_CORS_ORIGINS:
     )
 
 app.include_router(api_router, prefix=settings.API_V1_STR)
+
+if settings.SENTRY_DSN:
+    sentry_sdk.init(
+        dsn=settings.SENTRY_DSN,
+        integrations=[AioHttpIntegration(), SqlalchemyIntegration()],
+    )
+    app.add_middleware(SentryAsgiMiddleware)

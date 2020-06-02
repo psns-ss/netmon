@@ -11,3 +11,4 @@ class Machine(Base):
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, index=True)
     host = Column(String, index=True)
+    last_online_timestamp = Column(Integer, index=True)

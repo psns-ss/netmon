@@ -5,10 +5,10 @@ import sys
 from enum import Enum
 
 import structlog
-from structlog.contextvars import merge_contextvars
-from tenacity import after_log, before_log, retry, stop_after_attempt, wait_fixed
-
 from app.db.session import SessionLocal
+from structlog.contextvars import merge_contextvars
+from tenacity import (after_log, before_log, retry, stop_after_attempt,
+                      wait_fixed)
 
 logger = structlog.getLogger(__name__)
 

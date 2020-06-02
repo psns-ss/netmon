@@ -24,6 +24,7 @@ class MachineInDBBase(MachineBase):
     id: int
     name: str
     host: str
+    last_online_timestamp: Optional[int]
 
     class Config:
         orm_mode = True
@@ -31,10 +32,10 @@ class MachineInDBBase(MachineBase):
 
 # Properties to return to client
 class Machine(MachineInDBBase):
-    pass
+    was_recently_online: bool
 
 
-# Properties properties stored in DB
+# Properties stored in DB
 class MachineInDB(MachineInDBBase):
     pass
 

@@ -53,7 +53,12 @@ class CRUDMachine(CRUDBase[Machine, MachineCreate, MachineUpdate]):
                             ping_url=ping_url,
                         )
         except Exception as e:
-            logger.debug(f"{e}: {db_obj.host} ping failed", machine=db_obj)
+            logger.debug(
+                f"{e}: ping failed",
+                machine_id=db_obj.id,
+                machine_host=db_obj.host,
+                ping_url=ping_url,
+            )
 
         return db_obj
 

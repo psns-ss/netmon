@@ -110,7 +110,7 @@
 
     public async mounted() {
       await this.getMachines();
-      this.timerId = setInterval(this.getMachines, 3000);
+      this.timerId = setInterval(this.getMachines, 10000);
     }
 
     public beforeDestroy() {

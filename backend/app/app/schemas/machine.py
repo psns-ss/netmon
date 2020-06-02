@@ -1,6 +1,6 @@
-from typing import Optional
+from typing import List, Optional
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 # Shared properties
@@ -44,10 +44,10 @@ class MachineInDB(MachineInDBBase):
     pass
 
 
-class ActiveProcess(BaseModel):
-    hash: str
-    name: str
+class MachineActiveProcess(BaseModel):
+    hash: str = Field(alias="Hash")
+    name: str = Field(alias="Name")
 
 
-class Interface(BaseModel):
-    name: str
+class MachineInterface(BaseModel):
+    name: str = Field(alias="Name")

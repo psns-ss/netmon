@@ -69,7 +69,7 @@
     public async mounted() {
       await dispatchGetMachine(this.$store, {id: +this.$router.currentRoute.params.id});
       await this.refreshActiveProcesses();
-      this.timerId = setInterval(this.refreshActiveProcesses, 3000);
+      this.timerId = setInterval(this.refreshActiveProcesses, 10000);
     }
 
 

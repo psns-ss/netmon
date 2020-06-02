@@ -45,9 +45,14 @@ class MachineInDB(MachineInDBBase):
 
 
 class MachineActiveProcess(BaseModel):
-    hash: str = Field(alias="Hash")
     name: str = Field(alias="Name")
+    id: int = Field(alias="Id")
+    path: str = Field(alias="Path")
+    hash: str = Field(alias="Hash")
 
 
 class MachineInterface(BaseModel):
-    name: str = Field(alias="Name")
+    interface_description: str = Field(alias="InterfaceDescription")
+    ipv4_address: str = Field(alias="IPv4Address")
+    ipv4_default_gateway: str = Field(alias="IPv4DefaultGateway")
+    dns_server: str = Field(alias="DNSServer")

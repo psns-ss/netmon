@@ -10,18 +10,35 @@ async def ping():
 
 @app.get("/client-api/interfaces")
 async def get_interfaces():
-    return [{"Name": "lo0"}]
+    return [
+        {
+            "InterfaceDescription": "Qualcomm Atheros",
+            "IPv4Address": "192.168.0.12",
+            "IPv4DefaultGateway": "192.168.0.1",
+            "DNSServer": "192.168.0.1",
+        },
+        {
+            "InterfaceDescription": "Qualcomm",
+            "IPv4Address": "192.168.0.17",
+            "IPv4DefaultGateway": "192.168.0.1",
+            "DNSServer": "192.168.0.1",
+        },
+    ]
 
 
 @app.get("/client-api/active-processes")
 async def get_active_processes():
     return [
         {
-            "Name": "skype",
+            "Name": "svhost",
+            "Id": 478678,
+            "Path": "C:\Windows\system32\svhost.exe",
             "Hash": "0959002856fdcbb9616b3bc2961a952b49965b2cd6cb167f9fbc689a5aa8fb64",
         },
         {
-            "Name": "word",
-            "Hash": "ad46fa2b41cba0f8a6cf0f1fb32a388c257f14e6a295109fa793daea96270ab8",
+            "Name": "svhost",
+            "Id": 478600,
+            "Path": "C:\Windows\system32\svhost.exe",
+            "Hash": "0959002856fdcbb9616b3bc2961a952b49965b2cd6cb167f9fbc689a5aa8fb64",
         },
     ]

@@ -41,9 +41,14 @@ export interface IMachineUpdate {
 
 export interface IMachineActiveProcess {
   name: string;
+  id: number;
+  path: string;
   hash: string;
 }
 
 export interface IMachineInterface {
-  name: string;
+  interface_description: string;
+  ipv4_address: string;
+  ipv4_default_gateway: string;
+  dns_server: string;
 }

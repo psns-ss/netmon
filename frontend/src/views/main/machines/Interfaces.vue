@@ -23,7 +23,10 @@
     <v-data-table :headers="headers" :items="interfaces">
       <template slot="item" slot-scope="props">
         <tr>
-          <td>{{ props.item.name }}</td>
+          <td>{{ props.item.interface_description }}</td>
+          <td>{{ props.item.ipv4_address }}</td>
+          <td>{{ props.item.ipv4_default_gateway }}</td>
+          <td>{{ props.item.dns_server }}</td>
         </tr>
       </template>
     </v-data-table>
@@ -39,12 +42,31 @@
   export default class MachinesInterfaces extends Vue {
     public headers = [
       {
-        text: 'Name',
+        text: 'InterfaceDescription',
         sortable: true,
-        value: 'name',
+        value: 'interface_description',
+        align: 'left',
+      },
+      {
+        text: 'IPv4Address',
+        sortable: true,
+        value: 'ipv4_address',
+        align: 'left',
+      },
+      {
+        text: 'IPv4DefaultGateway',
+        sortable: true,
+        value: 'ipv4_default_gateway',
+        align: 'left',
+      },
+      {
+        text: 'DNSServer',
+        sortable: true,
+        value: 'dns_server',
         align: 'left',
       },
     ];
+
     public timerId = 0;
 
     get machineName() {

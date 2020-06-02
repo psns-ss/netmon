@@ -175,14 +175,16 @@ async def get_machine_interfaces(*, id: int, db: Session = Depends(deps.get_db))
         try:
             async with session.get(url) as resp:
                 machine.last_online_timestamp = int(time.time())
+                machine_interfaces = await resp.json()
                 logger.debug(
-                    f"get machine interfaces success",
+                    f"get machine active processes success",
                     status=resp.status,
                     machine_id=machine.id,
                     machine_host=machine.host,
                     url=url,
+                    machine_interfaces=machine_interfaces,
                 )
-                return await resp.json()
+                return machine_interfaces
 
         except Exception as e:
             logger.debug(

@@ -94,7 +94,7 @@ export const actions = {
     },
     async actionGetMachineInterfaces(context: MainContext, payload: { id: number}) {
         try {
-            const response = await api.getMachinesActiveProcesses(context.rootState.main.token, payload.id);
+            const response = await api.getMachinesInterfaces(context.rootState.main.token, payload.id);
             if (response.data) {
                 commitSetMachineInterfaces(context, response.data);
             }

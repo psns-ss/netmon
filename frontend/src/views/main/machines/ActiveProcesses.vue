@@ -24,6 +24,8 @@
       <template slot="item" slot-scope="props">
         <tr>
           <td>{{ props.item.name }}</td>
+          <td>{{ props.item.id }}</td>
+          <td>{{ props.item.path }}</td>
           <td>{{ props.item.hash }}</td>
         </tr>
       </template>
@@ -46,11 +48,24 @@
         align: 'left',
       },
       {
+        text: 'Id',
+        sortable: true,
+        value: 'id',
+        align: 'left',
+      },
+      {
+        text: 'Path',
+        sortable: true,
+        value: 'path',
+        align: 'left',
+      },
+      {
         text: 'Hash',
         value: 'hash',
         align: 'left',
       },
     ];
+
     public timerId = 0;
 
     get machineName() {

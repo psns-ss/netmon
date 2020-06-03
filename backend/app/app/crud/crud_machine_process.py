@@ -7,6 +7,7 @@ from app import crud, schemas
 from app.crud.base import CRUDBase
 from app.models import MachineProcess
 from app.schemas import MachineProcessCreate, MachineProcessUpdate
+from fastapi.encoders import jsonable_encoder
 from sqlalchemy.orm import Session
 
 logger = structlog.get_logger()
@@ -15,6 +16,17 @@ logger = structlog.get_logger()
 class CRUDMachineProcess(
     CRUDBase[MachineProcess, MachineProcessCreate, MachineProcessUpdate]
 ):
+    def create_with_machine(
+        self, db: Session, *, obj_in: MachineProcessCreate, machine_id: int
+    ) -> MachineProcess:
+
+        obj_in_data = jsonable_encoder(obj_in)
+        db_obj = self.model(**obj_in_data, machine_id=machine_id)  # noqa type: ignore
+        db.add(db_obj)
+        db.commit()
+        db.refresh(db_obj)
+        return db_obj
+
     def get_by_machine(
         self, db: Session, *, id: int, machine_id: int
     ) -> Optional[MachineProcess]:
@@ -61,7 +73,7 @@ class CRUDMachineProcess(
                 )
             else:
                 logger.debug("creating machine process")
-                db_obj = self.create(
+                db_obj = self.create_with_machine(
                     db,
                     obj_in=MachineProcessCreate(
                         id=client_process.id,
@@ -69,6 +81,7 @@ class CRUDMachineProcess(
                         path=client_process.path,
                         hash=client_process.hash,
                     ),
+                    machine_id=machine_id,
                 )
             db_objs.append(db_obj)
 

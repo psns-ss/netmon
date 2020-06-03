@@ -163,7 +163,7 @@ async def update_machine_process(
 
 @router.get(
     "/{id}/interfaces",
-    response_model=List[app.schemas.machine_interface.MachineInterface],
+    response_model=List[schemas.MachineInterface],
     dependencies=[Depends(deps.get_current_active_user)],
 )
 async def get_machine_interfaces(*, id: int, db: Session = Depends(deps.get_db)):
@@ -190,7 +190,7 @@ async def get_machine_interfaces(*, id: int, db: Session = Depends(deps.get_db))
                     machine_interfaces=client_machine_interfaces,
                 )
                 return [
-                    schemas.MachineInterfaceFromClient(**mi)
+                    schemas.MachineInterfaceFromClient(**mi).dict()
                     for mi in client_machine_interfaces
                 ]
 

@@ -1,7 +1,10 @@
 from .item import Item, ItemCreate, ItemInDB, ItemUpdate
-from .machine import (Machine, MachineActiveProcess, MachineCreate,
-                      MachineInDB, MachineInterface, MachineUpdate,
+from .machine import (Machine, MachineCreate, MachineInDB, MachineUpdate,
                       MachineWithOnlineStatus, NewAdapter)
+from .machine_interface import MachineInterface, MachineInterfaceFromClient
+from .machine_process import (MachineProcess, MachineProcessCreate,
+                              MachineProcessFromClient, MachineProcessInDB,
+                              MachineProcessUpdate)
 from .msg import Msg
 from .token import Token, TokenPayload
 from .user import User, UserCreate, UserInDB, UserUpdate

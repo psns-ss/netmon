@@ -2,9 +2,10 @@ from typing import TYPE_CHECKING
 
 from app.db.base_class import Base
 from sqlalchemy import Column, Integer, String
+from sqlalchemy.orm import relationship
 
 if TYPE_CHECKING:
-    from .user import User  # noqa: F401
+    from .machine_process import MachineProcess  # noqa: F401
 
 
 class Machine(Base):
@@ -12,3 +13,5 @@ class Machine(Base):
     name = Column(String, index=True)
     host = Column(String, index=True)
     last_online_timestamp = Column(Integer, index=True)
+
+    processes = relationship("MachineProcess", back_populates="machine")

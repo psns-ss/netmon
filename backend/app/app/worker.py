@@ -1,8 +1,9 @@
 import asyncio
+from typing import List
 
 import sentry_sdk
 import structlog
-from app import crud
+from app import crud, models
 from app.core.celery_app import celery_app
 from app.core.config import settings
 from app.db.session import SessionLocal
@@ -19,14 +20,14 @@ def test_celery(word: str) -> str:
 
 
 @celery_app.task
-def check_machines_statuses() -> None:
+def check_all_machines() -> None:
     logger.debug("started check machine statuses")
     skip = 0
     limit = 100
     db = SessionLocal()
     try:
         while True:
-            checked_machines = asyncio.run(
+            checked_machines: List[models.Machine] = asyncio.run(
                 crud.machine.get_multi_with_check_online(db, skip=skip, limit=limit)
             )
 
@@ -34,6 +35,9 @@ def check_machines_statuses() -> None:
                 break
 
             logger.debug(f"checked {len(checked_machines)} machines")
+
+            for ma in checked_machines:
+                asyncio.run(crud.machine_process.get_multi_with_poll(db, ma.id))
 
             skip += limit
 

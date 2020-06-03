@@ -3,6 +3,8 @@ from pathlib import Path
 from typing import Any, List
 
 import aiohttp
+import app.schemas.machine_interface
+import app.schemas.machine_process
 import structlog
 from app import crud, models, schemas
 from app.api import deps
@@ -118,8 +120,7 @@ def delete_machine(
 
 @router.get(
     "/{id}/active-processes",
-    response_model=List[schemas.MachineActiveProcess],
-    response_model_by_alias=False,
+    response_model=List[app.schemas.machine_process.MachineProcess],
     dependencies=[Depends(deps.get_current_active_user)],
 )
 async def get_machine_active_processes(*, id: int, db: Session = Depends(deps.get_db)):
@@ -130,37 +131,39 @@ async def get_machine_active_processes(*, id: int, db: Session = Depends(deps.ge
     if not machine:
         raise HTTPException(status_code=404, detail="machine not found")
 
-    timeout = aiohttp.ClientTimeout(total=5)
-    async with aiohttp.ClientSession(timeout=timeout, raise_for_status=True) as session:
-        url = f"{machine.host}/active-processes"
-        try:
-            async with session.get(url) as resp:
-                machine.last_online_timestamp = int(time.time())
-                machine_active_processes = await resp.json()
-                logger.debug(
-                    f"get machine active processes success",
-                    status=resp.status,
-                    machine_id=machine.id,
-                    machine_host=machine.host,
-                    url=url,
-                    machine_active_processes=machine_active_processes,
-                )
-                return machine_active_processes
+    return await crud.machine_process.get_multi_with_poll(db, machine.id)
 
-        except Exception as e:
-            logger.debug(
-                f"{e}: get machine active processes failed",
-                machine_id=machine.id,
-                machine_host=machine.host,
-                url=url,
-            )
-            raise HTTPException(status_code=400, detail="host is not available")
+
+@router.put(
+    "/{machine_id}/active-processes/{id}",
+    response_model=List[app.schemas.machine_process.MachineProcess],
+    dependencies=[Depends(deps.get_current_active_user)],
+)
+async def update_machine_process(
+    *,
+    machine_id: int,
+    id: int,
+    machine_process_in: schemas.MachineProcessUpdate,
+    db: Session = Depends(deps.get_db),
+):
+    """
+    Update machine active process
+    """
+    machine_process = crud.machine_process.get_by_machine(
+        db=db, id=id, machine_id=machine_id
+    )
+    if not machine_process:
+        raise HTTPException(status_code=404, detail="machine process not found")
+
+    machine_process = crud.machine_process.update(
+        db=db, db_obj=machine_process, obj_in=machine_process_in
+    )
+    return machine_process
 
 
 @router.get(
     "/{id}/interfaces",
-    response_model=List[schemas.MachineInterface],
-    response_model_by_alias=False,
+    response_model=List[app.schemas.machine_interface.MachineInterface],
     dependencies=[Depends(deps.get_current_active_user)],
 )
 async def get_machine_interfaces(*, id: int, db: Session = Depends(deps.get_db)):
@@ -177,16 +180,19 @@ async def get_machine_interfaces(*, id: int, db: Session = Depends(deps.get_db))
         try:
             async with session.get(url) as resp:
                 machine.last_online_timestamp = int(time.time())
-                machine_interfaces = await resp.json()
+                client_machine_interfaces = await resp.json()
                 logger.debug(
                     f"get machine active processes success",
                     status=resp.status,
                     machine_id=machine.id,
                     machine_host=machine.host,
                     url=url,
-                    machine_interfaces=machine_interfaces,
+                    machine_interfaces=client_machine_interfaces,
                 )
-                return machine_interfaces
+                return [
+                    schemas.MachineInterfaceFromClient(**mi)
+                    for mi in client_machine_interfaces
+                ]
 
         except Exception as e:
             logger.debug(
@@ -198,9 +204,7 @@ async def get_machine_interfaces(*, id: int, db: Session = Depends(deps.get_db))
             raise HTTPException(status_code=400, detail="host is not available")
 
 
-@router.get(
-    "/{id}/ping", dependencies=[Depends(deps.get_current_active_user)],
-)
+@router.get("/{id}/ping", dependencies=[Depends(deps.get_current_active_user)])
 async def ping_machine(*, id: int, db: Session = Depends(deps.get_db)):
     machine = crud.machine.get(db=db, id=id)
     if not machine:

@@ -24,7 +24,7 @@ class MachineInDBBase(MachineBase):
     id: int
     name: str
     host: str
-    last_online_timestamp: Optional[int]
+    last_online_timestamp: Optional[int] = None
 
     class Config:
         orm_mode = True
@@ -42,20 +42,6 @@ class MachineWithOnlineStatus(MachineInDBBase):
 # Properties stored in DB
 class MachineInDB(MachineInDBBase):
     pass
-
-
-class MachineActiveProcess(BaseModel):
-    name: str = Field(alias="Name")
-    id: int = Field(alias="Id")
-    path: str = Field(alias="Path")
-    hash: str = Field(alias="Hash")
-
-
-class MachineInterface(BaseModel):
-    interface_description: str = Field(alias="InterfaceDescription")
-    ipv4_address: str = Field(alias="IPv4Address")
-    ipv4_default_gateway: str = Field(alias="IPv4DefaultGateway")
-    dns_server: str = Field(alias="DNSServer")
 
 
 class NewAdapter(BaseModel):

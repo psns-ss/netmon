@@ -3,4 +3,5 @@
 from app.db.base_class import Base  # noqa
 from app.models.item import Item  # noqa
 from app.models.machine import Machine  # noqa
+from app.models.machine_process import MachineProcess  # noqa
 from app.models.user import User  # noqa

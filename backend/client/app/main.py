@@ -31,14 +31,14 @@ async def get_active_processes():
     return [
         {
             "Name": "svhost",
-            "Id": 478678,
+            "Id": 4786777848,
             "Path": "C:\Windows\system32\svhost.exe",
-            "Hash": "0959002856fdcbb9616b3bc2961a952b49965b2cd6cb167f9fbc689a5aa8fb64",
+            "Hash": "0959002856fdcbb9fsf616b3bc2961a2b49962cdcb1fdsfs67f9fbc689a5aa8fb64",
         },
         {
-            "Name": "svhost",
+            "Name": "sfile",
             "Id": 478600,
-            "Path": "C:\Windows\system32\svhost.exe",
-            "Hash": "0959002856fdcbb9616b3bc2961a952b49965b2cd6cb167f9fbc689a5aa8fb64",
+            "Path": "C:\Windows\system32\sfile.exe",
+            "Hash": "0959002856fdcbb9616b3bc2961a952b4995b2d6cb167f9fdsffbc689a5aa8fb64f",
         },
     ]

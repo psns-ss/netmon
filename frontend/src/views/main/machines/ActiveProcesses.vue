@@ -85,7 +85,7 @@
       },
       {
         text: 'Hash Changed',
-        value: '!is_hash_same',
+        value: 'is_hash_same',
         align: 'left',
       },
 

@@ -27,6 +27,10 @@
           <td>{{ props.item.id }}</td>
           <td>{{ props.item.path }}</td>
           <td>{{ props.item.hash }}</td>
+          <td>
+            <v-icon color="red" v-if="!props.item.is_hash_same">mdi-alert</v-icon>
+            <v-icon v-else>mdi-check</v-icon>
+          </td>
         </tr>
       </template>
     </v-data-table>
@@ -64,6 +68,12 @@
         value: 'hash',
         align: 'left',
       },
+      {
+        text: 'Hash Changed',
+        value: '!is_hash_same',
+        align: 'left',
+      },
+
     ];
 
     public timerId = 0;

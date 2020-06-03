@@ -44,6 +44,7 @@ export interface IMachineActiveProcess {
   id: number;
   path: string;
   hash: string;
+  is_hash_same: boolean;
 }
 
 export interface IMachineInterface {

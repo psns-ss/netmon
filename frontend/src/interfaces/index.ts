@@ -47,6 +47,10 @@ export interface IMachineActiveProcess {
   is_hash_same: boolean;
 }
 
+export interface IMachineActiveProcessUpdate {
+  is_hash_same?: boolean;
+}
+
 export interface IMachineInterface {
   interface_description: string;
   ipv4_address: string;

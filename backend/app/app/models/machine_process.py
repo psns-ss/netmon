@@ -1,7 +1,7 @@
 from typing import TYPE_CHECKING
 
 from app.db.base_class import Base
-from sqlalchemy import Boolean, Column, ForeignKey, Integer, String
+from sqlalchemy import BigInteger, Boolean, Column, ForeignKey, Integer, String
 from sqlalchemy.orm import relationship
 
 if TYPE_CHECKING:
@@ -10,7 +10,7 @@ if TYPE_CHECKING:
 
 class MachineProcess(Base):
     machine_id = Column(Integer, ForeignKey("machine.id"), primary_key=True)
-    id = Column(Integer, primary_key=True, index=True)
+    id = Column(BigInteger, primary_key=True, index=True)
     name = Column(String, index=True)
     path = Column(String)
     hash = Column(String)

@@ -31,6 +31,17 @@
             <v-icon color="red" v-if="!props.item.is_hash_same">mdi-alert</v-icon>
             <v-icon v-else>mdi-check</v-icon>
           </td>
+          <td class=" layout px-0 " >
+            <v-tooltip top>
+              <span>Dismiss</span>
+              <template v-slot:activator="{ on }">
+                <v-btn :disabled="props.item.is_hash_same" large icon color="primary" v-on="on" top @click="dismissHashChange(props.item.id, machineName)">
+                  <v-icon>mdi-shield-check-outline</v-icon>
+                </v-btn>
+              </template>
+            </v-tooltip>
+          </td>
+
         </tr>
       </template>
     </v-data-table>
@@ -40,7 +51,11 @@
 <script lang="ts">
   import {Component, Vue} from 'vue-property-decorator';
   import {readMachineActiveProcesses, readOneMachine} from '@/store/machines/getters';
-  import {dispatchGetMachine, dispatchGetMachineActiveProcesses} from '@/store/machines/actions';
+  import {
+    dispatchDismissMachineProcessHashChange,
+    dispatchGetMachine,
+    dispatchGetMachineActiveProcesses,
+  } from '@/store/machines/actions';
 
   @Component
   export default class MachinesActiveProcesses extends Vue {
@@ -77,14 +92,24 @@
     ];
 
     public timerId = 0;
+    get machine() {
+      return  readOneMachine(this.$store)(+this.$router.currentRoute.params.id);
+    }
 
     get machineName() {
-      const machine = readOneMachine(this.$store)(+this.$router.currentRoute.params.id);
-      return machine?.name;
+      return this.machine?.name;
     }
 
     get activeProcesses() {
       return readMachineActiveProcesses(this.$store);
+    }
+
+    public async dismissHashChange(machineProcessId) {
+      const machineId = this.machine?.id;
+      if (machineId === undefined) {
+        return;
+      }
+      await dispatchDismissMachineProcessHashChange(this.$store, {machineId, machineProcessId});
     }
 
     public async refreshActiveProcesses() {

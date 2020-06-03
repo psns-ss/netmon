@@ -136,7 +136,7 @@ async def get_machine_active_processes(*, id: int, db: Session = Depends(deps.ge
 
 @router.put(
     "/{machine_id}/active-processes/{id}",
-    response_model=List[app.schemas.machine_process.MachineProcess],
+    response_model=app.schemas.machine_process.MachineProcess,
     dependencies=[Depends(deps.get_current_active_user)],
 )
 async def update_machine_process(

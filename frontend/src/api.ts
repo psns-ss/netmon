@@ -7,7 +7,7 @@ import {
   IMachineUpdate,
   IUserProfile,
   IUserProfileCreate,
-  IUserProfileUpdate,
+  IUserProfileUpdate, IMachineActiveProcessUpdate,
 } from './interfaces';
 
 function authHeaders(token: string) {
@@ -59,8 +59,8 @@ export const api = {
   async deleteMachine(token: string, machineId: number) {
     return axios.delete<IMachine>(`${apiUrl}/api/v1/machines/${machineId}/`, authHeaders(token));
   },
-  async updateMachine(token: string, userId: number, data: IMachineUpdate) {
-    return axios.put(`${apiUrl}/api/v1/machines/${userId}`, data, authHeaders(token));
+  async updateMachine(token: string, machineId: number, data: IMachineUpdate) {
+    return axios.put(`${apiUrl}/api/v1/machines/${machineId}`, data, authHeaders(token));
   },
   async createMachine(token: string, data: IMachineCreate) {
     return axios.post(`${apiUrl}/api/v1/machines/`, data, authHeaders(token));
@@ -68,6 +68,14 @@ export const api = {
   async getMachinesActiveProcesses(token: string, machineId: number) {
     return axios.get<IMachineActiveProcess[]>(`${apiUrl}/api/v1/machines/${machineId}/active-processes/`,
       authHeaders(token));
+  },
+  async updateMachinesActiveProcess(token: string, machineId: number, processId: number,
+                                    data: IMachineActiveProcessUpdate) {
+    return axios.put<IMachineActiveProcess>(
+      `${apiUrl}/api/v1/machines/${machineId}/active-processes/${processId}`,
+      data,
+      authHeaders(token),
+    );
   },
   async getMachinesInterfaces(token: string, machineId: number) {
     return axios.get<IMachineInterface[]>(`${apiUrl}/api/v1/machines/${machineId}/interfaces/`, authHeaders(token));

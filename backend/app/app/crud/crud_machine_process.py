@@ -32,7 +32,8 @@ class CRUDMachineProcess(
     ) -> Optional[MachineProcess]:
         return (
             db.query(self.model)
-            .filter(self.model.id == id, self.model.machine_id == machine_id)
+            .filter(self.model.id == id)
+            .filter(self.model.machine_id == machine_id)
             .first()
         )
 
@@ -53,14 +54,18 @@ class CRUDMachineProcess(
         db.add(machine)
         db.refresh(machine)
 
-        db_objs: List[MachineProcess] = []
         for client_process in client_processes:
             db_obj = self.get_by_machine(
                 db, id=client_process.id, machine_id=machine_id
             )
             if db_obj:
                 logger.debug("updating existing process")
-                db_obj = self.update(
+                if not db_obj.is_hash_same:
+                    is_hash_same = False
+                else:
+                    is_hash_same = client_process.hash == db_obj.hash
+
+                self.update(
                     db,
                     db_obj=db_obj,
                     obj_in=MachineProcessUpdate(
@@ -68,12 +73,12 @@ class CRUDMachineProcess(
                         name=client_process.name,
                         path=client_process.path,
                         hash=client_process.hash,
-                        is_hash_same=client_process.hash == db_obj.hash,
+                        is_hash_same=is_hash_same,
                     ),
                 )
             else:
                 logger.debug("creating machine process")
-                db_obj = self.create_with_machine(
+                self.create_with_machine(
                     db,
                     obj_in=MachineProcessCreate(
                         id=client_process.id,
@@ -83,11 +88,11 @@ class CRUDMachineProcess(
                     ),
                     machine_id=machine_id,
                 )
-            db_objs.append(db_obj)
 
         db.commit()
+        db.refresh(machine)
 
-        return db_objs
+        return machine.processes
 
 
 async def poll_machine_interfaces(host: str) -> List[schemas.MachineProcessFromClient]:

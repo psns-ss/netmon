@@ -47,7 +47,7 @@ class CRUDMachineProcess(
                 db, id=client_process.id, machine_id=machine_id
             )
             if db_obj:
-                logger.updating("updating existing process")
+                logger.debug("updating existing process")
                 db_obj = self.update(
                     db,
                     db_obj=db_obj,
@@ -60,7 +60,7 @@ class CRUDMachineProcess(
                     ),
                 )
             else:
-                logger.updating("creating machine process")
+                logger.debug("creating machine process")
                 db_obj = self.create(
                     db,
                     obj_in=MachineProcessCreate(

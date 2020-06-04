@@ -102,7 +102,8 @@ async def poll_machine_interfaces(host: str) -> List[schemas.MachineProcessFromC
         async with session.get(url) as resp:
             logger.debug(f"polled machine processes", host=host)
             return [
-                schemas.MachineProcessFromClient(**item) for item in await resp.json()
+                schemas.MachineProcessFromClient(**process)
+                for process in await resp.json()
             ]
 
 

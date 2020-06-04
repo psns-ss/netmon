@@ -1,4 +1,3 @@
-from .crud_item import item
 from .crud_machine import machine
 from .crud_machine_process import machine_process
 from .crud_user import user

@@ -1,4 +1,3 @@
-from .item import Item, ItemCreate, ItemInDB, ItemUpdate
 from .machine import (Machine, MachineCreate, MachineInDB, MachineUpdate,
                       MachineWithOnlineStatus, NewAdapter)
 from .machine_interface import MachineInterface, MachineInterfaceFromClient

@@ -1,0 +1,20 @@
+4.0.3 2023-05-24 12:53:05,849 INFO 140449894770496 - Starting to get apps
+4.0.3 2023-05-24 12:53:06,603 INFO 140449894770496 - Successfully got apps
+4.0.3 2023-05-24 12:53:07,126 INFO 140449894770496 - merged_file_path = /opt/splunk/etc/apps/python_upgrade_readiness_app/local/merged/merged_report.json
+4.0.3 2023-05-24 12:53:07,126 INFO 140449894770496 - Writing local report as merged report as merged report could not be generated.
+4.0.3 2023-05-24 12:53:07,127 INFO 140449894770496 - splunk-system-user file does not exists.
+4.0.3 2023-05-25 10:53:57,100 INFO 140616092809024 - Starting to get apps
+4.0.3 2023-05-25 10:54:00,405 INFO 140616092809024 - Successfully got apps
+4.0.3 2023-05-25 10:54:00,726 INFO 140616092809024 - merged_file_path = /opt/splunk/etc/apps/python_upgrade_readiness_app/local/merged/merged_report.json
+4.0.3 2023-05-25 10:54:00,726 INFO 140616092809024 - Writing local report as merged report as merged report could not be generated.
+4.0.3 2023-05-25 10:54:00,726 INFO 140616092809024 - splunk-system-user file does not exists.
+4.0.3 2023-06-05 16:00:04,630 INFO 140013855221568 - Starting to get apps
+4.0.3 2023-06-05 16:00:06,451 INFO 140013855221568 - Successfully got apps
+4.0.3 2023-06-05 16:00:06,790 INFO 140013855221568 - merged_file_path = /opt/splunk/etc/apps/python_upgrade_readiness_app/local/merged/merged_report.json
+4.0.3 2023-06-05 16:00:06,791 INFO 140013855221568 - Writing local report as merged report as merged report could not be generated.
+4.0.3 2023-06-05 16:00:06,791 INFO 140013855221568 - splunk-system-user file does not exists.
+4.0.3 2023-06-06 16:00:01,788 INFO 140640846124864 - Starting to get apps
+4.0.3 2023-06-06 16:00:03,338 INFO 140640846124864 - Successfully got apps
+4.0.3 2023-06-06 16:00:03,526 INFO 140640846124864 - merged_file_path = /opt/splunk/etc/apps/python_upgrade_readiness_app/local/merged/merged_report.json
+4.0.3 2023-06-06 16:00:03,527 INFO 140640846124864 - Writing local report as merged report as merged report could not be generated.
+4.0.3 2023-06-06 16:00:03,527 INFO 140640846124864 - splunk-system-user file does not exists.

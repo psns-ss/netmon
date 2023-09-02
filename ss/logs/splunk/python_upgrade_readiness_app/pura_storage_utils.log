@@ -1,0 +1,4 @@
+4.0.3 2023-05-04 14:00:07,122 INFO 139989087147840 - /opt/splunk/etc/apps/python_upgrade_readiness_app/local does not exist so creating it.
+4.0.3 2023-05-04 14:00:07,131 INFO 139989087147840 - /opt/splunk/etc/apps/python_upgrade_readiness_app/local/storage does not exist so creating it.
+4.0.3 2023-05-04 14:00:07,131 INFO 139989087147840 - /opt/splunk/etc/apps/python_upgrade_readiness_app/local/storage/pra_schedule_scan does not exist so creating it.
+4.0.3 2023-05-04 14:00:07,133 INFO 139989087147840 - /opt/splunk/etc/apps/python_upgrade_readiness_app/local/storage/pra_schedule_scan/pra_schedule_scan__83ab9769e42e.json does not exist so creating it.

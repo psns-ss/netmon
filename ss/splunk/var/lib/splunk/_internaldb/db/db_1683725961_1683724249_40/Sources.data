@@ -1,0 +1,17 @@
+0	16	  1660	1683724249	1683725961	1683725961	
+1	source::/opt/splunk/var/log/splunk/btool.log	 12	1683725612	1683725936	1683725955	
+2	source::/opt/splunk/var/log/splunk/splunkd-utility.log	 30	1683725615	1683725931	1683725955	
+3	source::/opt/splunk/var/log/splunk/splunkd.log	924	1683724250	1683725961	1683725961	
+4	source::/opt/splunk/var/log/splunk/splunkd_access.log	 25	1683725951	1683725959	1683725959	
+5	source::/opt/splunk/var/log/splunk/conf.log	  1	1683725945	1683725945	1683725955	
+6	source::/opt/splunk/var/log/splunk/mongod.log	223	1683724249	1683725951	1683725956	
+7	source::/opt/splunk/var/log/splunk/scheduler.log	  4	1683724252	1683725948	1683725956	
+8	source::/opt/splunk/var/log/splunk/splunkd_stderr.log	  1	1683725932	1683725932	1683725956	
+9	source::/opt/splunk/var/log/splunk/splunk_secure_gateway_modular_input.log	  6	1683725935	1683725953	1683725956	
+10	source::/opt/splunk/var/log/splunk/splunk_assist_supervisor_modular_input.log	  2	1683725953	1683725953	1683725956	
+11	source::/opt/splunk/var/log/watchdog/watchdog.log	  2	1683725945	1683725945	1683725957	
+12	source::/opt/splunk/var/log/splunk/python.log	209	1683725956	1683725959	1683725961	
+13	source::/opt/splunk/var/log/splunk/web_service.log	217	1683725956	1683725959	1683725960	
+14	source::/opt/splunk/var/log/splunk/splunk_assist_selfupdate_modular_input.log	  2	1683725958	1683725958	1683725958	
+15	source::/opt/splunk/var/log/splunk/web_access.log	  1	1683725959	1683725959	1683725959	
+16	source::/opt/splunk/var/log/splunk/splunkd_ui_access.log	    1	1683725959	1683725959	1683725959	

@@ -1,0 +1,16 @@
+4.0.3 2023-05-24 12:53:06,507 INFO 140238106310464 - Handling a request
+4.0.3 2023-05-24 12:53:06,508 INFO 140238106310464 - Executing function, name=get_app_list
+4.0.3 2023-05-24 12:53:06,555 INFO 140238106310464 - Could not find synced splunkbase apps so using the constant file
+4.0.3 2023-05-24 12:53:06,555 INFO 140238106310464 - splunkbase_path- /opt/splunk/etc/apps/python_upgrade_readiness_app/bin/libs_py3/pura_libs_utils/splunkbaseapps.csv
+4.0.3 2023-05-25 10:54:00,182 INFO 140460156376896 - Handling a request
+4.0.3 2023-05-25 10:54:00,183 INFO 140460156376896 - Executing function, name=get_app_list
+4.0.3 2023-05-25 10:54:00,310 INFO 140460156376896 - Could not find synced splunkbase apps so using the constant file
+4.0.3 2023-05-25 10:54:00,310 INFO 140460156376896 - splunkbase_path- /opt/splunk/etc/apps/python_upgrade_readiness_app/bin/libs_py3/pura_libs_utils/splunkbaseapps.csv
+4.0.3 2023-06-05 16:00:06,272 INFO 140338418812736 - Handling a request
+4.0.3 2023-06-05 16:00:06,275 INFO 140338418812736 - Executing function, name=get_app_list
+4.0.3 2023-06-05 16:00:06,402 INFO 140338418812736 - Could not find synced splunkbase apps so using the constant file
+4.0.3 2023-06-05 16:00:06,403 INFO 140338418812736 - splunkbase_path- /opt/splunk/etc/apps/python_upgrade_readiness_app/bin/libs_py3/pura_libs_utils/splunkbaseapps.csv
+4.0.3 2023-06-06 16:00:03,287 INFO 139861594908480 - Handling a request
+4.0.3 2023-06-06 16:00:03,287 INFO 139861594908480 - Executing function, name=get_app_list
+4.0.3 2023-06-06 16:00:03,318 INFO 139861594908480 - Could not find synced splunkbase apps so using the constant file
+4.0.3 2023-06-06 16:00:03,318 INFO 139861594908480 - splunkbase_path- /opt/splunk/etc/apps/python_upgrade_readiness_app/bin/libs_py3/pura_libs_utils/splunkbaseapps.csv

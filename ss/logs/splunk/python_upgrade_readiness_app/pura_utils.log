@@ -1,0 +1,368 @@
+4.0.3 2023-05-04 14:00:04,210 INFO 140220398729024 - Creating a new connection object for oneshot.
+4.0.3 2023-05-04 14:00:04,217 INFO 140220398729024 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-04 14:00:04,239 INFO 139946518280000 - Creating a new connection object for oneshot.
+4.0.3 2023-05-04 14:00:04,240 INFO 139946518280000 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-04 14:00:04,356 INFO 140600673154880 - Creating a new connection object for oneshot.
+4.0.3 2023-05-04 14:00:04,356 INFO 140600673154880 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-04 14:00:04,486 INFO 139989087147840 - Creating a new connection object for oneshot.
+4.0.3 2023-05-04 14:00:04,492 INFO 139989087147840 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-04 14:00:04,700 INFO 140134820734784 - Creating a new connection object for oneshot.
+4.0.3 2023-05-04 14:00:04,702 INFO 140134820734784 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-04 14:00:05,582 INFO 140220398729024 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-04 14:00:06,094 INFO 140134820734784 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-04 14:00:06,220 INFO 139946518280000 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-04 14:00:06,312 INFO 140220398729024 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-04 14:00:06,554 INFO 140600673154880 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-04 14:00:06,565 INFO 139989087147840 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-04 14:00:06,630 INFO 140134820734784 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-04 14:00:07,055 INFO 139946518280000 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-04 14:00:07,056 INFO 139989087147840 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-04 14:00:07,164 INFO 140600673154880 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-05 14:00:10,791 INFO 140366742058816 - Creating a new connection object for oneshot.
+4.0.3 2023-05-05 14:00:10,807 INFO 140366742058816 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-05 14:00:11,415 INFO 140399823836992 - Creating a new connection object for oneshot.
+4.0.3 2023-05-05 14:00:11,415 INFO 140399823836992 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-05 14:00:11,436 INFO 140638526048064 - Creating a new connection object for oneshot.
+4.0.3 2023-05-05 14:00:11,443 INFO 140638526048064 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-05 14:00:11,577 INFO 140239082547008 - Creating a new connection object for oneshot.
+4.0.3 2023-05-05 14:00:11,593 INFO 140239082547008 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-05 14:00:12,101 INFO 140328597833536 - Creating a new connection object for oneshot.
+4.0.3 2023-05-05 14:00:12,125 INFO 140328597833536 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-05 14:00:15,300 INFO 140366742058816 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-05 14:00:15,573 INFO 140399823836992 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-05 14:00:16,033 INFO 140239082547008 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-05 14:00:16,126 INFO 140328597833536 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-05 14:00:16,156 INFO 140638526048064 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-05 14:00:16,727 INFO 140366742058816 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-05 14:00:16,838 INFO 140399823836992 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-05 14:00:17,052 INFO 140638526048064 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-05 14:00:17,137 INFO 140239082547008 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-05 14:00:17,384 INFO 140328597833536 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-06 12:00:02,147 INFO 140422843848512 - Creating a new connection object for oneshot.
+4.0.3 2023-05-06 12:00:02,148 INFO 140422843848512 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-06 12:00:02,159 INFO 140111171647296 - Creating a new connection object for oneshot.
+4.0.3 2023-05-06 12:00:02,159 INFO 140111171647296 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-06 12:00:02,182 INFO 139964738676544 - Creating a new connection object for oneshot.
+4.0.3 2023-05-06 12:00:02,183 INFO 139964738676544 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-06 12:00:02,192 INFO 139785422579520 - Creating a new connection object for oneshot.
+4.0.3 2023-05-06 12:00:02,192 INFO 140135368894272 - Creating a new connection object for oneshot.
+4.0.3 2023-05-06 12:00:02,192 INFO 139785422579520 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-06 12:00:02,196 INFO 140135368894272 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-06 12:00:02,518 INFO 140422843848512 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-06 12:00:02,521 INFO 140111171647296 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-06 12:00:02,554 INFO 139964738676544 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-06 12:00:02,576 INFO 140135368894272 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-06 12:00:02,687 INFO 139785422579520 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-06 12:00:02,724 INFO 140422843848512 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-06 12:00:02,726 INFO 139964738676544 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-06 12:00:02,762 INFO 140111171647296 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-06 12:00:02,788 INFO 140135368894272 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-06 12:00:02,942 INFO 139785422579520 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-06 14:00:01,793 INFO 139897213617984 - Creating a new connection object for oneshot.
+4.0.3 2023-05-06 14:00:01,793 INFO 139897213617984 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-06 14:00:01,849 INFO 139658602153792 - Creating a new connection object for oneshot.
+4.0.3 2023-05-06 14:00:01,850 INFO 139658602153792 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-06 14:00:01,892 INFO 139832125749056 - Creating a new connection object for oneshot.
+4.0.3 2023-05-06 14:00:01,892 INFO 139832125749056 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-06 14:00:01,910 INFO 140465642993472 - Creating a new connection object for oneshot.
+4.0.3 2023-05-06 14:00:01,911 INFO 140465642993472 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-06 14:00:01,973 INFO 139958049081152 - Creating a new connection object for oneshot.
+4.0.3 2023-05-06 14:00:01,984 INFO 139958049081152 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-06 14:00:02,209 INFO 139658602153792 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-06 14:00:02,284 INFO 139897213617984 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-06 14:00:02,310 INFO 139958049081152 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-06 14:00:02,366 INFO 139832125749056 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-06 14:00:02,409 INFO 139658602153792 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-06 14:00:02,462 INFO 140465642993472 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-06 14:00:02,506 INFO 139897213617984 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-06 14:00:02,572 INFO 139958049081152 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-06 14:00:02,587 INFO 139832125749056 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-06 14:00:02,643 INFO 140465642993472 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-08 12:00:01,571 INFO 140512348481344 - Creating a new connection object for oneshot.
+4.0.3 2023-05-08 12:00:01,573 INFO 140512348481344 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-08 12:00:01,786 INFO 140016550229824 - Creating a new connection object for oneshot.
+4.0.3 2023-05-08 12:00:01,787 INFO 140016550229824 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-08 12:00:01,825 INFO 140298836477760 - Creating a new connection object for oneshot.
+4.0.3 2023-05-08 12:00:01,826 INFO 140298836477760 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-08 12:00:01,974 INFO 140565014230848 - Creating a new connection object for oneshot.
+4.0.3 2023-05-08 12:00:01,976 INFO 140565014230848 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-08 12:00:01,997 INFO 140245177784128 - Creating a new connection object for oneshot.
+4.0.3 2023-05-08 12:00:02,003 INFO 140245177784128 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-08 12:00:02,105 INFO 140512348481344 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-08 12:00:02,262 INFO 140245177784128 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-08 12:00:02,425 INFO 140298836477760 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-08 12:00:02,500 INFO 140016550229824 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-08 12:00:02,541 INFO 140245177784128 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-08 12:00:02,615 INFO 140512348481344 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-08 12:00:02,641 INFO 140565014230848 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-08 12:00:02,660 INFO 140298836477760 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-08 12:00:02,721 INFO 140016550229824 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-08 12:00:02,883 INFO 140565014230848 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-11 10:00:01,584 INFO 140624657033024 - Creating a new connection object for oneshot.
+4.0.3 2023-05-11 10:00:01,584 INFO 139929677604672 - Creating a new connection object for oneshot.
+4.0.3 2023-05-11 10:00:01,593 INFO 140624657033024 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-11 10:00:01,596 INFO 139929677604672 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-11 10:00:01,709 INFO 140653557606208 - Creating a new connection object for oneshot.
+4.0.3 2023-05-11 10:00:01,711 INFO 140653557606208 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-11 10:00:01,784 INFO 140455165130560 - Creating a new connection object for oneshot.
+4.0.3 2023-05-11 10:00:01,786 INFO 140455165130560 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-11 10:00:01,786 INFO 140250072233792 - Creating a new connection object for oneshot.
+4.0.3 2023-05-11 10:00:01,791 INFO 140250072233792 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-11 10:00:02,269 INFO 140624657033024 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-11 10:00:02,353 INFO 139929677604672 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-11 10:00:02,361 INFO 140455165130560 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-11 10:00:02,466 INFO 140653557606208 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-11 10:00:02,673 INFO 140624657033024 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-11 10:00:02,722 INFO 139929677604672 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-11 10:00:02,725 INFO 140455165130560 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-11 10:00:02,747 INFO 140250072233792 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-11 10:00:02,813 INFO 140653557606208 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-11 10:00:02,998 INFO 140250072233792 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-17 12:00:01,507 INFO 140596314728256 - Creating a new connection object for oneshot.
+4.0.3 2023-05-17 12:00:01,510 INFO 140596314728256 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-17 12:00:01,624 INFO 140505325307712 - Creating a new connection object for oneshot.
+4.0.3 2023-05-17 12:00:01,625 INFO 140505325307712 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-17 12:00:01,657 INFO 140002356668224 - Creating a new connection object for oneshot.
+4.0.3 2023-05-17 12:00:01,657 INFO 140002356668224 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-17 12:00:01,744 INFO 140399830071104 - Creating a new connection object for oneshot.
+4.0.3 2023-05-17 12:00:01,744 INFO 140399830071104 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-17 12:00:01,888 INFO 140514767791936 - Creating a new connection object for oneshot.
+4.0.3 2023-05-17 12:00:01,889 INFO 140514767791936 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-17 12:00:02,205 INFO 140505325307712 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-17 12:00:02,306 INFO 140002356668224 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-17 12:00:02,331 INFO 140596314728256 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-17 12:00:02,481 INFO 140505325307712 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-17 12:00:02,518 INFO 140399830071104 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-17 12:00:02,537 INFO 140514767791936 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-17 12:00:02,570 INFO 140002356668224 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-17 12:00:02,641 INFO 140596314728256 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-17 12:00:02,804 INFO 140514767791936 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-17 12:00:02,810 INFO 140399830071104 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-19 14:35:29,416 INFO 140058838050624 - Creating a new connection object for oneshot.
+4.0.3 2023-05-19 14:35:29,417 INFO 140058838050624 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-19 14:35:29,448 INFO 140454761834304 - Creating a new connection object for oneshot.
+4.0.3 2023-05-19 14:35:29,449 INFO 140454761834304 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-19 14:35:29,532 INFO 140706365744960 - Creating a new connection object for oneshot.
+4.0.3 2023-05-19 14:35:29,532 INFO 140706365744960 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-19 14:35:29,794 INFO 140230028977984 - Creating a new connection object for oneshot.
+4.0.3 2023-05-19 14:35:29,795 INFO 140230028977984 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-19 14:35:29,817 INFO 140533346158400 - Creating a new connection object for oneshot.
+4.0.3 2023-05-19 14:35:29,818 INFO 140533346158400 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-19 14:35:29,976 INFO 140058838050624 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-19 14:35:30,026 INFO 140706365744960 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-19 14:35:30,047 INFO 140454761834304 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-19 14:35:30,307 INFO 140058838050624 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-19 14:35:30,378 INFO 140706365744960 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-19 14:35:30,418 INFO 140454761834304 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-19 14:35:30,444 INFO 140230028977984 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-19 14:35:30,456 INFO 140533346158400 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-19 14:35:30,740 INFO 140533346158400 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-19 14:35:30,751 INFO 140230028977984 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-19 16:00:02,465 INFO 139778006624064 - Creating a new connection object for oneshot.
+4.0.3 2023-05-19 16:00:02,495 INFO 139778006624064 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-19 16:00:02,581 INFO 140336138622784 - Creating a new connection object for oneshot.
+4.0.3 2023-05-19 16:00:02,582 INFO 140336138622784 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-19 16:00:02,638 INFO 140475784275776 - Creating a new connection object for oneshot.
+4.0.3 2023-05-19 16:00:02,644 INFO 140475784275776 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-19 16:00:02,818 INFO 140504218109760 - Creating a new connection object for oneshot.
+4.0.3 2023-05-19 16:00:02,830 INFO 140504218109760 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-19 16:00:03,483 INFO 139778006624064 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-19 16:00:03,606 INFO 140475784275776 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-19 16:00:03,613 INFO 140299493128000 - Creating a new connection object for oneshot.
+4.0.3 2023-05-19 16:00:03,615 INFO 140299493128000 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-19 16:00:03,758 INFO 140504218109760 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-19 16:00:03,777 INFO 140336138622784 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-19 16:00:03,846 INFO 139778006624064 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-19 16:00:03,921 INFO 140475784275776 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-19 16:00:03,983 INFO 140299493128000 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-19 16:00:04,027 INFO 140336138622784 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-19 16:00:04,053 INFO 140504218109760 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-19 16:00:04,233 INFO 140299493128000 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-24 12:53:06,603 INFO 140449894770496 - Creating a new connection object for oneshot.
+4.0.3 2023-05-24 12:53:06,603 INFO 140449894770496 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-24 12:53:07,002 INFO 140449894770496 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-24 12:53:07,125 INFO 140449894770496 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-24 12:53:07,165 INFO 140449894770496 - Creating a new connection object for oneshot.
+4.0.3 2023-05-24 12:53:07,165 INFO 140449894770496 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-24 12:53:07,393 INFO 140449894770496 - Creating a new connection object for oneshot.
+4.0.3 2023-05-24 14:00:01,124 INFO 140330138883904 - Creating a new connection object for oneshot.
+4.0.3 2023-05-24 14:00:01,131 INFO 140330138883904 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-24 14:00:01,329 INFO 139764207585088 - Creating a new connection object for oneshot.
+4.0.3 2023-05-24 14:00:01,329 INFO 139764207585088 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-24 14:00:01,411 INFO 140612574189376 - Creating a new connection object for oneshot.
+4.0.3 2023-05-24 14:00:01,416 INFO 140612574189376 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-24 14:00:01,542 INFO 140627935926080 - Creating a new connection object for oneshot.
+4.0.3 2023-05-24 14:00:01,545 INFO 140627935926080 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-24 14:00:01,564 INFO 140330138883904 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-24 14:00:01,721 INFO 139819231876928 - Creating a new connection object for oneshot.
+4.0.3 2023-05-24 14:00:01,721 INFO 139819231876928 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-24 14:00:01,791 INFO 140627935926080 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-24 14:00:01,877 INFO 139764207585088 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-24 14:00:01,940 INFO 139819231876928 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-24 14:00:01,986 INFO 140330138883904 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-24 14:00:01,990 INFO 140612574189376 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-24 14:00:02,029 INFO 139764207585088 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-24 14:00:02,167 INFO 139819231876928 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-24 14:00:02,250 INFO 140612574189376 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-24 14:00:02,286 INFO 140627935926080 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-25 10:53:57,097 INFO 140152771290944 - Creating a new connection object for oneshot.
+4.0.3 2023-05-25 10:53:57,105 INFO 140152771290944 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-25 10:53:57,369 INFO 140629134956352 - Creating a new connection object for oneshot.
+4.0.3 2023-05-25 10:53:57,370 INFO 140629134956352 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-25 10:53:57,524 INFO 140566153320256 - Creating a new connection object for oneshot.
+4.0.3 2023-05-25 10:53:57,526 INFO 140566153320256 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-25 10:53:57,823 INFO 140442900854592 - Creating a new connection object for oneshot.
+4.0.3 2023-05-25 10:53:57,825 INFO 140442900854592 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-25 10:53:57,892 INFO 140162917443392 - Creating a new connection object for oneshot.
+4.0.3 2023-05-25 10:53:57,898 INFO 140162917443392 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-25 10:53:58,304 INFO 140152771290944 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-25 10:53:58,300 INFO 140629134956352 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-25 10:53:58,765 INFO 140152771290944 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-25 10:53:58,804 INFO 140566153320256 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-25 10:53:58,992 INFO 140442900854592 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-25 10:53:59,143 INFO 140162917443392 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-25 10:53:59,248 INFO 140629134956352 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-25 10:53:59,690 INFO 140566153320256 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-25 10:53:59,806 INFO 140162917443392 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-25 10:53:59,823 INFO 140442900854592 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-25 10:54:00,405 INFO 140616092809024 - Creating a new connection object for oneshot.
+4.0.3 2023-05-25 10:54:00,406 INFO 140616092809024 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-25 10:54:00,598 INFO 140616092809024 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-05-25 10:54:00,725 INFO 140616092809024 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-05-25 10:54:00,757 INFO 140616092809024 - Creating a new connection object for oneshot.
+4.0.3 2023-05-25 10:54:00,758 INFO 140616092809024 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-05-25 10:54:00,867 INFO 140616092809024 - Creating a new connection object for oneshot.
+4.0.3 2023-06-02 08:37:49,488 INFO 140274216179520 - Creating a new connection object for oneshot.
+4.0.3 2023-06-02 08:37:49,495 INFO 140321192494912 - Creating a new connection object for oneshot.
+4.0.3 2023-06-02 08:37:49,517 INFO 140274216179520 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-02 08:37:49,518 INFO 140321192494912 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-02 08:37:49,773 INFO 139918590277440 - Creating a new connection object for oneshot.
+4.0.3 2023-06-02 08:37:49,783 INFO 139918590277440 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-02 08:37:49,983 INFO 140132432037696 - Creating a new connection object for oneshot.
+4.0.3 2023-06-02 08:37:49,984 INFO 140132432037696 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-02 08:37:50,596 INFO 140253623097152 - Creating a new connection object for oneshot.
+4.0.3 2023-06-02 08:37:50,602 INFO 140253623097152 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-02 08:37:51,820 INFO 140274216179520 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-02 08:37:52,047 INFO 140321192494912 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-02 08:37:52,297 INFO 139918590277440 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-02 08:37:52,323 INFO 140132432037696 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-02 08:37:52,721 INFO 140253623097152 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-02 08:37:52,813 INFO 140274216179520 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-02 08:37:52,910 INFO 140321192494912 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-02 08:37:53,398 INFO 140132432037696 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-02 08:37:53,403 INFO 139918590277440 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-02 08:37:53,659 INFO 140253623097152 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-02 12:00:05,737 INFO 139655565326144 - Creating a new connection object for oneshot.
+4.0.3 2023-06-02 12:00:05,747 INFO 139655565326144 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-02 12:00:06,042 INFO 140595026200384 - Creating a new connection object for oneshot.
+4.0.3 2023-06-02 12:00:06,045 INFO 140595026200384 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-02 12:00:06,220 INFO 140507202197312 - Creating a new connection object for oneshot.
+4.0.3 2023-06-02 12:00:06,223 INFO 140507202197312 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-02 12:00:06,626 INFO 140210139850560 - Creating a new connection object for oneshot.
+4.0.3 2023-06-02 12:00:06,639 INFO 140210139850560 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-02 12:00:06,663 INFO 140257412630336 - Creating a new connection object for oneshot.
+4.0.3 2023-06-02 12:00:06,668 INFO 140257412630336 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-02 12:00:08,429 INFO 139655565326144 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-02 12:00:08,870 INFO 140595026200384 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-02 12:00:09,409 INFO 140507202197312 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-02 12:00:09,824 INFO 140257412630336 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-02 12:00:10,084 INFO 140595026200384 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-02 12:00:10,237 INFO 139655565326144 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-02 12:00:10,564 INFO 140210139850560 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-02 12:00:10,570 INFO 140507202197312 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-02 12:00:10,932 INFO 140257412630336 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-02 12:00:11,506 INFO 140210139850560 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-04 10:00:08,638 INFO 140418968446784 - Creating a new connection object for oneshot.
+4.0.3 2023-06-04 10:00:08,658 INFO 140418968446784 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-04 10:00:09,971 INFO 140286507616064 - Creating a new connection object for oneshot.
+4.0.3 2023-06-04 10:00:10,002 INFO 140286507616064 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-04 10:00:10,292 INFO 140295709202240 - Creating a new connection object for oneshot.
+4.0.3 2023-06-04 10:00:10,305 INFO 140295709202240 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-04 10:00:10,642 INFO 140489244505920 - Creating a new connection object for oneshot.
+4.0.3 2023-06-04 10:00:10,651 INFO 140489244505920 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-04 10:00:11,559 INFO 140103119337280 - Creating a new connection object for oneshot.
+4.0.3 2023-06-04 10:00:11,568 INFO 140103119337280 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-04 10:00:13,445 INFO 140418968446784 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-04 10:00:14,247 INFO 140286507616064 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-04 10:00:15,623 INFO 140489244505920 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-04 10:00:16,118 INFO 140418968446784 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-04 10:00:16,362 INFO 140295709202240 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-04 10:00:17,470 INFO 140286507616064 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-04 10:00:18,135 INFO 140295709202240 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-04 10:00:18,393 INFO 140489244505920 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-04 10:00:18,793 INFO 140103119337280 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-04 10:00:20,724 INFO 140103119337280 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-04 12:00:23,320 INFO 139725976663872 - Creating a new connection object for oneshot.
+4.0.3 2023-06-04 12:00:23,343 INFO 139725976663872 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-04 12:00:23,526 INFO 140479010535232 - Creating a new connection object for oneshot.
+4.0.3 2023-06-04 12:00:23,547 INFO 140479010535232 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-04 12:00:25,760 INFO 140379377321792 - Creating a new connection object for oneshot.
+4.0.3 2023-06-04 12:00:25,782 INFO 140379377321792 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-04 12:00:26,214 INFO 139694550595392 - Creating a new connection object for oneshot.
+4.0.3 2023-06-04 12:00:26,215 INFO 139694550595392 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-04 12:00:27,515 INFO 140268829083456 - Creating a new connection object for oneshot.
+4.0.3 2023-06-04 12:00:27,552 INFO 140268829083456 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-04 12:00:32,784 INFO 139725976663872 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-04 12:00:32,945 INFO 140479010535232 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-04 12:00:34,852 INFO 140379377321792 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-04 12:00:35,049 INFO 139694550595392 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-04 12:00:35,628 INFO 139725976663872 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-04 12:00:35,897 INFO 140479010535232 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-04 12:00:36,452 INFO 140268829083456 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-04 12:00:38,342 INFO 139694550595392 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-04 12:00:38,472 INFO 140379377321792 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-04 12:00:40,367 INFO 140268829083456 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-05 16:00:03,073 INFO 140415714826048 - Creating a new connection object for oneshot.
+4.0.3 2023-06-05 16:00:03,080 INFO 140415714826048 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-05 16:00:03,227 INFO 140536469755712 - Creating a new connection object for oneshot.
+4.0.3 2023-06-05 16:00:03,228 INFO 140536469755712 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-05 16:00:03,318 INFO 139841023162176 - Creating a new connection object for oneshot.
+4.0.3 2023-06-05 16:00:03,318 INFO 139841023162176 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-05 16:00:03,339 INFO 140642713073472 - Creating a new connection object for oneshot.
+4.0.3 2023-06-05 16:00:03,341 INFO 140642713073472 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-05 16:00:03,542 INFO 140415714826048 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-05 16:00:04,227 INFO 140415714826048 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-05 16:00:04,339 INFO 140423494604608 - Creating a new connection object for oneshot.
+4.0.3 2023-06-05 16:00:04,343 INFO 140423494604608 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-05 16:00:04,663 INFO 139841023162176 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-05 16:00:04,798 INFO 140642713073472 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-05 16:00:04,855 INFO 140536469755712 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-05 16:00:04,880 INFO 140423494604608 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-05 16:00:05,152 INFO 139841023162176 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-05 16:00:05,207 INFO 140642713073472 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-05 16:00:05,239 INFO 140536469755712 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-05 16:00:05,268 INFO 140423494604608 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-05 16:00:06,452 INFO 140013855221568 - Creating a new connection object for oneshot.
+4.0.3 2023-06-05 16:00:06,452 INFO 140013855221568 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-05 16:00:06,669 INFO 140013855221568 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-05 16:00:06,788 INFO 140013855221568 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-05 16:00:06,828 INFO 140013855221568 - Creating a new connection object for oneshot.
+4.0.3 2023-06-05 16:00:06,831 INFO 140013855221568 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-05 16:00:07,119 INFO 140013855221568 - Creating a new connection object for oneshot.
+4.0.3 2023-06-06 16:00:01,235 INFO 140634668996416 - Creating a new connection object for oneshot.
+4.0.3 2023-06-06 16:00:01,236 INFO 140634668996416 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-06 16:00:01,282 INFO 140361014339392 - Creating a new connection object for oneshot.
+4.0.3 2023-06-06 16:00:01,285 INFO 140361014339392 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-06 16:00:01,802 INFO 140083214473024 - Creating a new connection object for oneshot.
+4.0.3 2023-06-06 16:00:01,803 INFO 140083214473024 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-06 16:00:01,890 INFO 140634668996416 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-06 16:00:01,925 INFO 140361014339392 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-06 16:00:01,955 INFO 140488296888128 - Creating a new connection object for oneshot.
+4.0.3 2023-06-06 16:00:01,955 INFO 140488296888128 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-06 16:00:02,102 INFO 140634668996416 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-06 16:00:02,109 INFO 140083214473024 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-06 16:00:02,114 INFO 140438486595392 - Creating a new connection object for oneshot.
+4.0.3 2023-06-06 16:00:02,114 INFO 140438486595392 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-06 16:00:02,399 INFO 140438486595392 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-06 16:00:02,430 INFO 140083214473024 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-06 16:00:02,555 INFO 140361014339392 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-06 16:00:02,630 INFO 140488296888128 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-06 16:00:02,783 INFO 140438486595392 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-06 16:00:02,994 INFO 140488296888128 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-06 16:00:03,338 INFO 140640846124864 - Creating a new connection object for oneshot.
+4.0.3 2023-06-06 16:00:03,338 INFO 140640846124864 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-06 16:00:03,437 INFO 140640846124864 - Calling path: | rest services/server/info | sort splunk_server using oneshot 
+4.0.3 2023-06-06 16:00:03,526 INFO 140640846124864 - all_hosts [{'host': '83ab9769e42e', 'roles': ['indexer', 'license_master', 'license_manager', 'kv_store']}]
+4.0.3 2023-06-06 16:00:03,555 INFO 140640846124864 - Creating a new connection object for oneshot.
+4.0.3 2023-06-06 16:00:03,555 INFO 140640846124864 - Calling path: | rest splunk_server=local services/server/info using oneshot 
+4.0.3 2023-06-06 16:00:03,659 INFO 140640846124864 - Creating a new connection object for oneshot.

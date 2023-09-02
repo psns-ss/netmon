@@ -1,0 +1,349 @@
+06-07-2023 10:33:55.019 INFO  dispatchRunner [1078 MainThread] - Search process mode: preforked (first search in process) (build de405f4a7979).
+06-07-2023 10:33:55.019 INFO  dispatchRunner [1078 MainThread] - initing LicenseMgr in search process: nonPro=0
+06-07-2023 10:33:55.020 INFO  LMStackMgr [1078 MainThread] - Initializing CleMgr...
+06-07-2023 10:33:55.020 INFO  LicenseMgr [1078 MainThread] - Initing LicenseMgr
+06-07-2023 10:33:55.020 INFO  LMConfig [1078 MainThread] - serverName=83ab9769e42e guid=3A2CADE8-05FE-4F57-BBB1-71383F3FF5D3
+06-07-2023 10:33:55.024 INFO  LMConfig [1078 MainThread] - connection_timeout=30
+06-07-2023 10:33:55.024 INFO  LMConfig [1078 MainThread] - send_timeout=30
+06-07-2023 10:33:55.024 INFO  LMConfig [1078 MainThread] - receive_timeout=30
+06-07-2023 10:33:55.024 INFO  LMConfig [1078 MainThread] - key=license_warnings_update_interval not found in licenser stanza of server.conf, defaulting=0
+06-07-2023 10:33:55.024 INFO  LMConfig [1078 MainThread] - squash_threshold=2000
+06-07-2023 10:33:55.025 INFO  LMConfig [1078 MainThread] - strict_pool_quota=1
+06-07-2023 10:33:55.025 INFO  LMConfig [1078 MainThread] - key=pool_suggestion not found in licenser stanza of server.conf, defaulting=''
+06-07-2023 10:33:55.025 INFO  LMConfig [1078 MainThread] - key=test_aws_metering not found in licenser stanza of server.conf, defaulting=0
+06-07-2023 10:33:55.025 INFO  LMConfig [1078 MainThread] - key=test_aws_product_code not found in licenser stanza of server.conf, defaulting=0
+06-07-2023 10:33:55.025 INFO  LicenseMgr [1078 MainThread] - Initing LicenseMgr runContext_splunkd=false
+06-07-2023 10:33:55.026 INFO  LMStackMgr [1078 MainThread] - closing stack mgr
+06-07-2023 10:33:55.026 INFO  LMSlaveInfo [1078 MainThread] - all slaves cleared
+06-07-2023 10:33:55.026 INFO  LMStackMgr [1078 MainThread] - Initalized license_warnings_update_interval=auto
+06-07-2023 10:33:55.026 INFO  LMStackMgr [1078 MainThread] - License Manager supports Conditional Licensing Enforcement. For baked in CLE policies, window_period=60 days, max_violations=45, for stack size below 107374182400 bytes
+06-07-2023 10:33:55.026 INFO  LMLicense [1078 MainThread] - Applying default enforcement policy for free
+06-07-2023 10:33:55.027 INFO  LMStackMgr [1078 MainThread] - Added policy WinSz=30 Warnings=3 MaxSize=0 isDefault=1 features= for free
+06-07-2023 10:33:55.027 INFO  LMLicense [1078 MainThread] - Applying default enforcement policy for forwarder
+06-07-2023 10:33:55.027 INFO  LMStackMgr [1078 MainThread] - Added policy WinSz=30 Warnings=5 MaxSize=0 isDefault=1 features= for forwarder
+06-07-2023 10:33:55.029 INFO  LMStack [1078 MainThread] - Added type=download-trial license, from file=enttrial.lic, to stack=download-trial of group=Trial
+06-07-2023 10:33:55.029 INFO  LMLicense [1078 MainThread] - Applying default enforcement policy for download-trial
+06-07-2023 10:33:55.029 INFO  LMStackMgr [1078 MainThread] - created stack='download-trial'
+06-07-2023 10:33:55.029 INFO  LMStackMgr [1078 MainThread] - Added policy WinSz=30 Warnings=5 MaxSize=0 isDefault=1 features= for download-trial
+06-07-2023 10:33:55.030 INFO  LMStackMgr [1078 MainThread] - have to auto-set active stack group='Trial' reason='invalid/missing group id' gidStr='' oldGid=Invalid
+06-07-2023 10:33:55.030 INFO  LMStackMgr [1078 MainThread] - added pool auto_generated_pool_download-trial to stack download-trial
+06-07-2023 10:33:55.030 INFO  LMStackMgr [1078 MainThread] - added pool auto_generated_pool_forwarder to stack forwarder
+06-07-2023 10:33:55.030 INFO  LMStackMgr [1078 MainThread] - added pool auto_generated_pool_free to stack free
+06-07-2023 10:33:55.030 INFO  LMStackMgr [1078 MainThread] - Initialized hideQuotaWarning = "0"
+06-07-2023 10:33:55.030 INFO  LMStackMgr [1078 MainThread] - init completed [3A2CADE8-05FE-4F57-BBB1-71383F3FF5D3,Trial,runContext_splunkd=false]
+06-07-2023 10:33:55.030 INFO  LicenseMgr [1078 MainThread] - StackMgr init complete...
+06-07-2023 10:33:55.031 INFO  LMTracker [1078 MainThread] - Setting default product type='enterprise'
+06-07-2023 10:33:55.031 INFO  LMTracker [1078 MainThread] - this is not splunkd, will perform partial init
+06-07-2023 10:33:55.031 INFO  LicenseMgr [1078 MainThread] - Tracker init complete...
+06-07-2023 10:33:55.048 INFO  AdminManagerDispatch [1078 MainThread] - added factory for admin handler: 'licenses'
+06-07-2023 10:33:55.048 INFO  AdminManagerDispatch [1078 MainThread] - added factory for admin handler: 'pools'
+06-07-2023 10:33:55.049 INFO  AdminManagerDispatch [1078 MainThread] - added factory for admin handler: 'stacks'
+06-07-2023 10:33:55.049 INFO  AdminManagerDispatch [1078 MainThread] - added factory for admin handler: 'groups'
+06-07-2023 10:33:55.049 INFO  AdminManagerDispatch [1078 MainThread] - added factory for admin handler: 'slaves'
+06-07-2023 10:33:55.049 INFO  AdminManagerDispatch [1078 MainThread] - added factory for admin handler: 'peers'
+06-07-2023 10:33:55.049 INFO  AdminManagerDispatch [1078 MainThread] - added factory for admin handler: 'localslave'
+06-07-2023 10:33:55.049 INFO  AdminManagerDispatch [1078 MainThread] - added factory for admin handler: 'localpeer'
+06-07-2023 10:33:55.049 INFO  AdminManagerDispatch [1078 MainThread] - added factory for admin handler: 'licensermessages'
+06-07-2023 10:33:55.050 INFO  AdminManagerDispatch [1078 MainThread] - added factory for admin handler: 'scriptedwarning'
+06-07-2023 10:33:55.050 INFO  AdminManagerDispatch [1078 MainThread] - added factory for admin handler: 'licenseusage'
+06-07-2023 10:33:55.050 INFO  LicenseMgr [1078 MainThread] - Initing LicenseMgr
+06-07-2023 10:33:55.050 INFO  LMConfig [1078 MainThread] - serverName=83ab9769e42e guid=3A2CADE8-05FE-4F57-BBB1-71383F3FF5D3
+06-07-2023 10:33:55.050 INFO  LMConfig [1078 MainThread] - connection_timeout=30
+06-07-2023 10:33:55.051 INFO  LMConfig [1078 MainThread] - send_timeout=30
+06-07-2023 10:33:55.051 INFO  LMConfig [1078 MainThread] - receive_timeout=30
+06-07-2023 10:33:55.051 INFO  LMConfig [1078 MainThread] - key=license_warnings_update_interval not found in licenser stanza of server.conf, defaulting=0
+06-07-2023 10:33:55.051 INFO  LMConfig [1078 MainThread] - squash_threshold=2000
+06-07-2023 10:33:55.051 INFO  LMConfig [1078 MainThread] - strict_pool_quota=1
+06-07-2023 10:33:55.051 INFO  LMConfig [1078 MainThread] - key=pool_suggestion not found in licenser stanza of server.conf, defaulting=''
+06-07-2023 10:33:55.052 INFO  LMConfig [1078 MainThread] - key=test_aws_metering not found in licenser stanza of server.conf, defaulting=0
+06-07-2023 10:33:55.052 INFO  LMConfig [1078 MainThread] - key=test_aws_product_code not found in licenser stanza of server.conf, defaulting=0
+06-07-2023 10:33:55.055 INFO  dispatchRunner [1078 MainThread] - registering build time modules, count=1
+06-07-2023 10:33:55.055 INFO  dispatchRunner [1078 MainThread] - registering search time components of build time module name=vix
+06-07-2023 10:33:55.056 INFO  dispatchRunner [1078 MainThread] - Getting search configuration data from: /opt/splunk/etc/modules/parsing/config.xml
+06-07-2023 10:33:55.058 WARN  SSLOptions [1078 MainThread] - server.conf/[kvstore]/sslVerifyServerCert is false disabling certificate validation; must be set to "true" for increased security
+06-07-2023 10:33:55.061 INFO  BundlesSetup [1078 MainThread] - Setup stats for /opt/splunk/etc: wallclock_elapsed_msec=21, cpu_time_used=0.0148748, shared_services_generation=2, shared_services_population=1
+06-07-2023 10:33:55.088 INFO  UserManagerPro [1078 MainThread] - Load authentication: forcing roles="admin, power, splunk-system-role, user"
+06-07-2023 10:33:55.089 INFO  PipelineComponent [1078 MainThread] - Ingestion pipeline sets have been configured to use pipeline set policy=round_robin for multiple pipeline sets.
+06-07-2023 10:33:55.101 INFO  UserManager [1897 RunDispatch] - Setting user context: splunk-system-user
+06-07-2023 10:33:55.101 INFO  UserManager [1897 RunDispatch] - Done setting user context: NULL -> splunk-system-user
+06-07-2023 10:33:55.103 INFO  dispatchRunner [1897 RunDispatch] - search context: user="splunk-system-user", app="search", bs-pathname="/opt/splunk/etc"
+06-07-2023 10:33:55.113 INFO  SearchParser [1897 RunDispatch] - PARSING: search earliest_time=-7d splunk_server=local index=_audit sid trigger_time action=alert_* (expiration>1686134034 OR NOT expiration=*) | rex ",\s*ss_name=\"(?<ss_name>(?:[^\"]+|\"(?!,\s*sid=))*)\",\s*sid=\""| rex ",\s*sid=\"(?<sid>.*)\",\s+\w+_\w+=" | stats sum(deleted) AS deleted,    list(alert_actions) AS alert_actions, list(severity) AS severity,   list(expiration) AS expiration    list(ss_name) AS ss_name,   list(ss_app) AS ss_app,           list(ss_user) AS ss_user   list(digest_mode) AS digest_mode, list(triggered_alerts) AS triggered_alerts  BY sid, trigger_time | search NOT deleted=* OR deleted=0 | fields - deleted 
+06-07-2023 10:33:55.113 INFO  StatsContext [1897 RunDispatch] -  Setting chunk size min=65536 max=1048576 double_every=100
+06-07-2023 10:33:55.113 INFO  StatsContext [1897 RunDispatch] -  Setting max memory usage to 209715200
+06-07-2023 10:33:55.113 INFO  dispatchRunner [1897 RunDispatch] - Search running in non-clustered mode
+06-07-2023 10:33:55.114 INFO  dispatchRunner [1897 RunDispatch] - SearchHeadInitSearchMs=13
+06-07-2023 10:33:55.114 INFO  dispatchRunner [1897 RunDispatch] - Executing the Search orchestrator and iterator model (dfs=false).
+06-07-2023 10:33:55.114 INFO  SearchOrchestrator [1897 RunDispatch] - SearchOrchestrator getting constructed
+06-07-2023 10:33:55.114 INFO  SearchOrchestrator [1897 RunDispatch] -  Initialized the SRI
+06-07-2023 10:33:55.115 INFO  SearchFeatureFlags [1897 RunDispatch] - Initializing feature flags from config. feature_seed=1975072738
+06-07-2023 10:33:55.115 INFO  SearchFeatureFlags [1897 RunDispatch] - Setting feature_flag=parallelreduce:enablePreview:true
+06-07-2023 10:33:55.115 INFO  SearchFeatureFlags [1897 RunDispatch] - Setting feature_flag=search:search_retry:false
+06-07-2023 10:33:55.115 INFO  SearchFeatureFlags [1897 RunDispatch] - Setting feature_flag=search:search_retry_realtime:false
+06-07-2023 10:33:55.115 INFO  SearchFeatureFlags [1897 RunDispatch] - Setting feature_flag=parallelreduce:autoAppliedPercentage:false
+06-07-2023 10:33:55.115 INFO  SearchFeatureFlags [1897 RunDispatch] - Setting feature_flag=subsearch:enableConcurrentPipelineProcessing:false
+06-07-2023 10:33:55.115 INFO  SearchFeatureFlags [1897 RunDispatch] - Setting feature_flag=stats:allow_stats_v2:true
+06-07-2023 10:33:55.115 INFO  SearchFeatureFlags [1897 RunDispatch] - Setting feature_flag=search_optimization::set_required_fields:stats:false
+06-07-2023 10:33:55.115 INFO  SearchFeatureFlags [1897 RunDispatch] - Setting feature_flag=searchresults:srs2:false
+06-07-2023 10:33:55.115 INFO  SearchFeatureFlags [1897 RunDispatch] - Setting feature_flag=search:read_final_results_from_timeliner:true
+06-07-2023 10:33:55.115 INFO  SearchOrchestrator [1897 RunDispatch] - Search feature_flags={"v":1,"enabledFeatures":["parallelreduce:enablePreview","stats:allow_stats_v2","search:read_final_results_from_timeliner"],"disabledFeatures":["search:search_retry","search:search_retry_realtime","parallelreduce:autoAppliedPercentage","subsearch:enableConcurrentPipelineProcessing","search_optimization::set_required_fields:stats","searchresults:srs2"]}
+06-07-2023 10:33:55.115 INFO  ISplunkDispatch [1897 RunDispatch] - Not running in splunkd. Bundle replication not triggered.
+06-07-2023 10:33:55.115 INFO  SearchOrchestrator [1904 searchOrchestrator] - Initialzing the run time settings for the orchestrator.
+06-07-2023 10:33:55.115 INFO  UserManager [1904 searchOrchestrator] - Setting user context: splunk-system-user
+06-07-2023 10:33:55.115 INFO  UserManager [1904 searchOrchestrator] - Done setting user context: NULL -> splunk-system-user
+06-07-2023 10:33:55.116 INFO  AdaptiveSearchEngineSelector [1904 searchOrchestrator] - Search execution_plan=classic
+06-07-2023 10:33:55.116 INFO  SearchOrchestrator [1904 searchOrchestrator] - Creating the search DAG.
+06-07-2023 10:33:55.116 INFO  SearchParser [1904 searchOrchestrator] - PARSING: search earliest_time=-7d splunk_server=local index=_audit sid trigger_time action=alert_* (expiration>1686134034 OR NOT expiration=*) | rex ",\s*ss_name=\"(?<ss_name>(?:[^\"]+|\"(?!,\s*sid=))*)\",\s*sid=\""| rex ",\s*sid=\"(?<sid>.*)\",\s+\w+_\w+=" | stats sum(deleted) AS deleted,    list(alert_actions) AS alert_actions, list(severity) AS severity,   list(expiration) AS expiration    list(ss_name) AS ss_name,   list(ss_app) AS ss_app,           list(ss_user) AS ss_user   list(digest_mode) AS digest_mode, list(triggered_alerts) AS triggered_alerts  BY sid, trigger_time | search NOT deleted=* OR deleted=0 | fields - deleted 
+06-07-2023 10:33:55.116 INFO  StatsContext [1904 searchOrchestrator] -  Setting chunk size min=65536 max=1048576 double_every=100
+06-07-2023 10:33:55.116 INFO  StatsContext [1904 searchOrchestrator] -  Setting max memory usage to 209715200
+06-07-2023 10:33:55.116 INFO  DispatchStorageManagerInfo [1904 searchOrchestrator] - Successfully created new dispatch directory for search job. sid=480161e74cc67915_tmp dispatch_dir=/opt/splunk/var/run/splunk/dispatch/480161e74cc67915_tmp
+06-07-2023 10:33:55.180 INFO  SearchProcessor [1904 searchOrchestrator] - Building search filter
+06-07-2023 10:33:55.216 INFO  SearchEvaluatorBasedExpander [1904 searchOrchestrator] -  Performing lookup expansions
+06-07-2023 10:33:55.216 INFO  SearchEvaluatorBasedExpander [1904 searchOrchestrator] -  Lookup expansion took 0 ms
+06-07-2023 10:33:55.216 INFO  SearchEvaluatorBasedExpander [1904 searchOrchestrator] -  Performing calculated field expansions
+06-07-2023 10:33:55.216 INFO  SearchEvaluatorBasedExpander [1904 searchOrchestrator] -  Calculated field expansion took 0 ms
+06-07-2023 10:33:55.216 INFO  SearchEvaluatorBasedExpander [1904 searchOrchestrator] -  Performing field alias expansions
+06-07-2023 10:33:55.216 INFO  SearchEvaluatorBasedExpander [1904 searchOrchestrator] -  field alias expansions took 0 ms
+06-07-2023 10:33:55.216 INFO  SearchEvaluatorBasedExpander [1904 searchOrchestrator] -  Performing kvfield expansions
+06-07-2023 10:33:55.216 INFO  SearchEvaluatorBasedExpander [1904 searchOrchestrator] -  kvfield expansions took 0 ms
+06-07-2023 10:33:55.216 INFO  SearchEvaluatorBasedExpander [1904 searchOrchestrator] -  Performing indexed fields expansions
+06-07-2023 10:33:55.216 INFO  SearchEvaluatorBasedExpander [1904 searchOrchestrator] -  indexed fields expansions took 0 ms
+06-07-2023 10:33:55.216 INFO  SearchEvaluatorBasedExpander [1904 searchOrchestrator] -  Performing reverse sourcetype expansions
+06-07-2023 10:33:55.216 INFO  SearchEvaluatorBasedExpander [1904 searchOrchestrator] -  sourcetype expansions took 0 ms
+06-07-2023 10:33:55.216 INFO  UnifiedSearch [1904 searchOrchestrator] - Expanded index search = (earliest_time=-7d splunk_server=83ab9769e42e index=_audit sid trigger_time action=alert_* (expiration>1686134034 OR NOT expiration=*))
+06-07-2023 10:33:55.217 INFO  UnifiedSearch [1904 searchOrchestrator] - base lispy: [ AND index::_audit sid splunk_server::83ab9769e42e time trigger [ OR 7d earliest_time::-7d ] [ OR action::alert_* alert ] ]
+06-07-2023 10:33:55.218 INFO  UnifiedSearch [1904 searchOrchestrator] - Processed search targeting arguments
+06-07-2023 10:33:55.219 INFO  StatsProcessorV2 [1904 searchOrchestrator] - StatsV2 (stats) args: sum(deleted), AS, deleted, list(alert_actions), AS, alert_actions, list(severity), AS, severity, list(expiration), AS, expiration, list(ss_name), AS, ss_name, list(ss_app), AS, ss_app, list(ss_user), AS, ss_user, list(digest_mode), AS, digest_mode, list(triggered_alerts), AS, triggered_alerts, BY, sid, trigger_time
+06-07-2023 10:33:55.219 INFO  StatsProcessorV2 [1904 searchOrchestrator] - StatsProcessorV2::processArguments: Unaligned accesses are free
+06-07-2023 10:33:55.219 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function sum for key=deleted, alias=deleted
+06-07-2023 10:33:55.220 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=alert_actions, alias=alert_actions
+06-07-2023 10:33:55.221 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=severity, alias=severity
+06-07-2023 10:33:55.221 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=expiration, alias=expiration
+06-07-2023 10:33:55.221 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=ss_name, alias=ss_name
+06-07-2023 10:33:55.221 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=ss_app, alias=ss_app
+06-07-2023 10:33:55.221 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=ss_user, alias=ss_user
+06-07-2023 10:33:55.221 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=digest_mode, alias=digest_mode
+06-07-2023 10:33:55.221 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=triggered_alerts, alias=triggered_alerts
+06-07-2023 10:33:55.221 INFO  StatsContext [1904 searchOrchestrator] - shouldFallbackToOldStats: _use_v2_level=USE_V2_ALL, fallback=false
+06-07-2023 10:33:55.223 INFO  SearchParser [1904 searchOrchestrator] - PARSING: prestats list(alert_actions) list(digest_mode) list(expiration) list(severity) list(ss_app) list(ss_name) list(ss_user) list(triggered_alerts) sum(deleted) by sid trigger_time
+06-07-2023 10:33:55.223 INFO  StatsContext [1904 searchOrchestrator] -  Setting chunk size min=65536 max=1048576 double_every=100
+06-07-2023 10:33:55.223 INFO  StatsContext [1904 searchOrchestrator] -  Setting max memory usage to 209715200
+06-07-2023 10:33:55.223 INFO  SearchParser [1904 searchOrchestrator] - PARSING: addinfo type=count label=prereport_events
+06-07-2023 10:33:55.225 INFO  StatsProcessorV2 [1904 searchOrchestrator] - StatsV2 (stats) args: list(alert_actions), list(digest_mode), list(expiration), list(severity), list(ss_app), list(ss_name), list(ss_user), list(triggered_alerts), sum(deleted), by, sid, trigger_time
+06-07-2023 10:33:55.225 INFO  StatsProcessorV2 [1904 searchOrchestrator] - StatsProcessorV2::processArguments: Unaligned accesses are free
+06-07-2023 10:33:55.225 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=alert_actions, alias=list(alert_actions)
+06-07-2023 10:33:55.225 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=digest_mode, alias=list(digest_mode)
+06-07-2023 10:33:55.225 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=expiration, alias=list(expiration)
+06-07-2023 10:33:55.225 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=severity, alias=list(severity)
+06-07-2023 10:33:55.225 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=ss_app, alias=list(ss_app)
+06-07-2023 10:33:55.225 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=ss_name, alias=list(ss_name)
+06-07-2023 10:33:55.225 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=ss_user, alias=list(ss_user)
+06-07-2023 10:33:55.225 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=triggered_alerts, alias=list(triggered_alerts)
+06-07-2023 10:33:55.225 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function sum for key=deleted, alias=sum(deleted)
+06-07-2023 10:33:55.225 INFO  StatsContext [1904 searchOrchestrator] - shouldFallbackToOldStats: _use_v2_level=USE_V2_ALL, fallback=false
+06-07-2023 10:33:55.226 INFO  UnifiedSearch [1904 searchOrchestrator] - Processed search targeting arguments
+06-07-2023 10:33:55.226 INFO  DispatchThread [1904 searchOrchestrator] - BatchMode: allowBatchMode: 1, conf(1): 1, timeline/Status buckets(0):0, realtime(0):0, report pipe empty(0):0, reqTimeOrder(0):0, summarize(0):0, statefulStreaming(0):0
+06-07-2023 10:33:55.226 INFO  DispatchThread [1904 searchOrchestrator] - required fields list to add to remote search = alert_actions,deleted,digest_mode,expiration,prestats_reserved_*,psrsvd_*,severity,sid,ss_app,ss_name,ss_user,trigger_time,triggered_alerts
+06-07-2023 10:33:55.226 INFO  SearchParser [1904 searchOrchestrator] - PARSING: fields keepcolorder=t "alert_actions" "deleted" "digest_mode" "expiration" "prestats_reserved_*" "psrsvd_*" "severity" "sid" "ss_app" "ss_name" "ss_user" "trigger_time" "triggered_alerts"
+06-07-2023 10:33:55.227 INFO  DispatchCommandProcessor [1904 searchOrchestrator] - summaryHash=08f1551c61450d92 summaryId=3A2CADE8-05FE-4F57-BBB1-71383F3FF5D3_search_nobody_08f1551c61450d92 remoteSearch=litsearch (earliest_time=-7d splunk_server=83ab9769e42e index=_audit sid trigger_time action=alert_* (expiration>1686134034 OR NOT expiration=*)) | rex  ",\s*ss_name=\"(?<ss_name>(?:[^\"]+|\"(?!,\s*sid=))*)\",\s*sid=\"" | rex  ",\s*sid=\"(?<sid>.*)\",\s+\w+_\w+="  | addinfo  type=count label=prereport_events | fields  keepcolorder=t "alert_actions" "deleted" "digest_mode" "expiration" "prestats_reserved_*" "psrsvd_*" "severity" "sid" "ss_app" "ss_name" "ss_user" "trigger_time" "triggered_alerts" | prestats  list(alert_actions) list(digest_mode) list(expiration) list(severity) list(ss_app) list(ss_name) list(ss_user) list(triggered_alerts) sum(deleted) by sid trigger_time
+06-07-2023 10:33:55.227 INFO  DispatchCommandProcessor [1904 searchOrchestrator] - summaryHash=NS027afd6893908905 summaryId=3A2CADE8-05FE-4F57-BBB1-71383F3FF5D3_search_nobody_NS027afd6893908905 remoteSearch=litsearch (earliest_time=-7d splunk_server=83ab9769e42e index=_audit sid trigger_time action=alert_* (expiration>1686134034 OR NOT expiration=*)) | rex ",\s*ss_name=\"(?<ss_name>(?:[^\"]+|\"(?!,\s*sid=))*)\",\s*sid=\"" | rex ",\s*sid=\"(?<sid>.*)\",\s+\w+_\w+=" | addinfo type=count label=prereport_events | fields keepcolorder=t "alert_actions" "deleted" "digest_mode" "expiration" "prestats_reserved_*" "psrsvd_*" "severity" "sid" "ss_app" "ss_name" "ss_user" "trigger_time" "triggered_alerts" | prestats list(alert_actions) list(digest_mode) list(expiration) list(severity) list(ss_app) list(ss_name) list(ss_user) list(triggered_alerts) sum(deleted) by sid trigger_time
+06-07-2023 10:33:55.227 INFO  DispatchThread [1904 searchOrchestrator] - Getting summary ID for summaryHash=NS027afd6893908905
+06-07-2023 10:33:55.228 INFO  SearchParser [1904 searchOrchestrator] - PARSING: search earliest_time=-7d splunk_server=local index=_audit sid trigger_time action=alert_* (expiration>1686134034 OR NOT expiration=*) | rex ",\s*ss_name=\"(?<ss_name>(?:[^\"]+|\"(?!,\s*sid=))*)\",\s*sid=\""| rex ",\s*sid=\"(?<sid>.*)\",\s+\w+_\w+=" | stats sum(deleted) AS deleted,    list(alert_actions) AS alert_actions, list(severity) AS severity,   list(expiration) AS expiration    list(ss_name) AS ss_name,   list(ss_app) AS ss_app,           list(ss_user) AS ss_user   list(digest_mode) AS digest_mode, list(triggered_alerts) AS triggered_alerts  BY sid, trigger_time | search NOT deleted=* OR deleted=0 | fields - deleted 
+06-07-2023 10:33:55.228 INFO  StatsContext [1904 searchOrchestrator] -  Setting chunk size min=65536 max=1048576 double_every=100
+06-07-2023 10:33:55.228 INFO  StatsContext [1904 searchOrchestrator] -  Setting max memory usage to 209715200
+06-07-2023 10:33:55.229 INFO  UnifiedSearch [1904 searchOrchestrator] - Processed search targeting arguments
+06-07-2023 10:33:55.229 INFO  StatsProcessorV2 [1904 searchOrchestrator] - StatsV2 (stats) args: sum(deleted), AS, deleted, list(alert_actions), AS, alert_actions, list(severity), AS, severity, list(expiration), AS, expiration, list(ss_name), AS, ss_name, list(ss_app), AS, ss_app, list(ss_user), AS, ss_user, list(digest_mode), AS, digest_mode, list(triggered_alerts), AS, triggered_alerts, BY, sid, trigger_time
+06-07-2023 10:33:55.229 INFO  StatsProcessorV2 [1904 searchOrchestrator] - StatsProcessorV2::processArguments: Unaligned accesses are free
+06-07-2023 10:33:55.229 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function sum for key=deleted, alias=deleted
+06-07-2023 10:33:55.229 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=alert_actions, alias=alert_actions
+06-07-2023 10:33:55.229 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=severity, alias=severity
+06-07-2023 10:33:55.229 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=expiration, alias=expiration
+06-07-2023 10:33:55.229 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=ss_name, alias=ss_name
+06-07-2023 10:33:55.229 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=ss_app, alias=ss_app
+06-07-2023 10:33:55.229 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=ss_user, alias=ss_user
+06-07-2023 10:33:55.229 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=digest_mode, alias=digest_mode
+06-07-2023 10:33:55.229 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=triggered_alerts, alias=triggered_alerts
+06-07-2023 10:33:55.229 INFO  StatsContext [1904 searchOrchestrator] - shouldFallbackToOldStats: _use_v2_level=USE_V2_ALL, fallback=false
+06-07-2023 10:33:55.230 INFO  UnifiedSearch [1904 searchOrchestrator] - Processed search targeting arguments
+06-07-2023 10:33:55.231 INFO  AstOptimizer [1904 searchOrchestrator] - SrchOptMetrics optimize_toJson=0.003068694
+06-07-2023 10:33:55.232 INFO  SearchParser [1904 searchOrchestrator] - PARSING:  | fields - deleted
+06-07-2023 10:33:55.233 INFO  SearchParser [1904 searchOrchestrator] - PARSING: | search (NOT deleted=* OR deleted=0)
+06-07-2023 10:33:55.233 INFO  StatsContext [1904 searchOrchestrator] -  Setting chunk size min=65536 max=1048576 double_every=100
+06-07-2023 10:33:55.233 INFO  StatsContext [1904 searchOrchestrator] -  Setting max memory usage to 209715200
+06-07-2023 10:33:55.233 INFO  SearchParser [1904 searchOrchestrator] - PARSING: | stats sum(deleted) AS deleted,    list(alert_actions) AS alert_actions, list(severity) AS severity,   list(expiration) AS expiration    list(ss_name) AS ss_name,   list(ss_app) AS ss_app,           list(ss_user) AS ss_user   list(digest_mode) AS digest_mode, list(triggered_alerts) AS triggered_alerts  BY sid, trigger_time
+06-07-2023 10:33:55.233 INFO  StatsContext [1904 searchOrchestrator] -  Setting chunk size min=65536 max=1048576 double_every=100
+06-07-2023 10:33:55.233 INFO  StatsContext [1904 searchOrchestrator] -  Setting max memory usage to 209715200
+06-07-2023 10:33:55.233 INFO  SearchParser [1904 searchOrchestrator] - PARSING:  | rex field=_raw ",\\s*sid=\"(?<sid>.*)\",\\s+\\w+_\\w+="
+06-07-2023 10:33:55.233 INFO  SearchParser [1904 searchOrchestrator] - PARSING:  | rex field=_raw ",\\s*ss_name=\"(?<ss_name>(?:[^\"]+|\"(?!,\\s*sid=))*)\",\\s*sid=\""
+06-07-2023 10:33:55.234 INFO  SearchParser [1904 searchOrchestrator] - PARSING: | search (earliest_time=-7d splunk_server=local index=_audit sid trigger_time action=alert_* (expiration>1686134034 OR NOT expiration=*))
+06-07-2023 10:33:55.234 INFO  FederatedProviderVisitor [1904 searchOrchestrator] - Federated Whole Search Remote Execution Enabled: false
+06-07-2023 10:33:55.235 INFO  AstOptimizer [1904 searchOrchestrator] - Data federation feature enabled: 0
+06-07-2023 10:33:55.235 INFO  ProjElim [1904 searchOrchestrator] - Black listed processors=[addinfo]
+06-07-2023 10:33:55.246 INFO  AstOptimizer [1904 searchOrchestrator] - SrchOptMetrics optimization=0.013710947
+06-07-2023 10:33:55.247 INFO  StatsContext [1904 searchOrchestrator] -  Setting chunk size min=65536 max=1048576 double_every=100
+06-07-2023 10:33:55.247 INFO  StatsContext [1904 searchOrchestrator] -  Setting max memory usage to 209715200
+06-07-2023 10:33:55.247 INFO  SearchPhaseGenerator [1904 searchOrchestrator] - Optimized Search =| search (action=alert_* earliest_time=-7d index=_audit splunk_server=local (NOT expiration=* OR expiration>1686134034) sid trigger_time) | rex field=_raw ",\\s*ss_name=\"(?<ss_name>(?:[^\"]+|\"(?!,\\s*sid=))*)\",\\s*sid=\"" | rex field=_raw ",\\s*sid=\"(?<sid>.*)\",\\s+\\w+_\\w+=" | stats sum(deleted) AS deleted,    list(alert_actions) AS alert_actions, list(severity) AS severity,   list(expiration) AS expiration    list(ss_name) AS ss_name,   list(ss_app) AS ss_app,           list(ss_user) AS ss_user   list(digest_mode) AS digest_mode, list(triggered_alerts) AS triggered_alerts  BY sid, trigger_time| search (NOT deleted=* OR deleted=0) | fields - deleted
+06-07-2023 10:33:55.247 INFO  ScopedTimer [1904 searchOrchestrator] - search.optimize 0.019127219
+06-07-2023 10:33:55.247 INFO  FederatedProviderVisitor [1904 searchOrchestrator] - Federated Whole Search Remote Execution Enabled: false
+06-07-2023 10:33:55.248 INFO  SearchPhaseGenerator [1904 searchOrchestrator] - Number of involved federated deployments is 0.
+06-07-2023 10:33:55.249 INFO  ParallelReducePolicy [1904 searchOrchestrator] - Current Search Head doesn't have any usable peers to use.
+06-07-2023 10:33:55.249 INFO  PhaseToPipelineVisitor [1904 searchOrchestrator] - Phase Search = | search (action=alert_* earliest_time=-7d index=_audit splunk_server=local (NOT expiration=* OR expiration>1686134034) sid trigger_time) | rex field=_raw ",\\s*ss_name=\"(?<ss_name>(?:[^\"]+|\"(?!,\\s*sid=))*)\",\\s*sid=\"" | rex field=_raw ",\\s*sid=\"(?<sid>.*)\",\\s+\\w+_\\w+="
+06-07-2023 10:33:55.249 INFO  SearchParser [1904 searchOrchestrator] - PARSING: | search (action=alert_* earliest_time=-7d index=_audit splunk_server=local (NOT expiration=* OR expiration>1686134034) sid trigger_time) | rex field=_raw ",\\s*ss_name=\"(?<ss_name>(?:[^\"]+|\"(?!,\\s*sid=))*)\",\\s*sid=\"" | rex field=_raw ",\\s*sid=\"(?<sid>.*)\",\\s+\\w+_\\w+="
+06-07-2023 10:33:55.259 INFO  SearchProcessor [1904 searchOrchestrator] - Building search filter
+06-07-2023 10:33:55.273 INFO  SearchEvaluatorBasedExpander [1904 searchOrchestrator] -  Performing lookup expansions
+06-07-2023 10:33:55.273 INFO  SearchEvaluatorBasedExpander [1904 searchOrchestrator] -  Lookup expansion took 0 ms
+06-07-2023 10:33:55.273 INFO  SearchEvaluatorBasedExpander [1904 searchOrchestrator] -  Performing calculated field expansions
+06-07-2023 10:33:55.273 INFO  SearchEvaluatorBasedExpander [1904 searchOrchestrator] -  Calculated field expansion took 0 ms
+06-07-2023 10:33:55.273 INFO  SearchEvaluatorBasedExpander [1904 searchOrchestrator] -  Performing field alias expansions
+06-07-2023 10:33:55.273 INFO  SearchEvaluatorBasedExpander [1904 searchOrchestrator] -  field alias expansions took 0 ms
+06-07-2023 10:33:55.273 INFO  SearchEvaluatorBasedExpander [1904 searchOrchestrator] -  Performing kvfield expansions
+06-07-2023 10:33:55.273 INFO  SearchEvaluatorBasedExpander [1904 searchOrchestrator] -  kvfield expansions took 0 ms
+06-07-2023 10:33:55.273 INFO  SearchEvaluatorBasedExpander [1904 searchOrchestrator] -  Performing indexed fields expansions
+06-07-2023 10:33:55.273 INFO  SearchEvaluatorBasedExpander [1904 searchOrchestrator] -  indexed fields expansions took 0 ms
+06-07-2023 10:33:55.273 INFO  SearchEvaluatorBasedExpander [1904 searchOrchestrator] -  Performing reverse sourcetype expansions
+06-07-2023 10:33:55.273 INFO  SearchEvaluatorBasedExpander [1904 searchOrchestrator] -  sourcetype expansions took 0 ms
+06-07-2023 10:33:55.273 INFO  UnifiedSearch [1904 searchOrchestrator] - Expanded index search = (action=alert_* index=_audit splunk_server=83ab9769e42e (NOT expiration=* OR expiration>1686134034) sid trigger_time _time>=1685529234.000)
+06-07-2023 10:33:55.274 INFO  UnifiedSearch [1904 searchOrchestrator] - base lispy: [ AND index::_audit sid splunk_server::83ab9769e42e time trigger [ OR action::alert_* alert ] ]
+06-07-2023 10:33:55.274 INFO  UnifiedSearch [1904 searchOrchestrator] - Processed search targeting arguments
+06-07-2023 10:33:55.275 INFO  StatsContext [1904 searchOrchestrator] -  Setting chunk size min=65536 max=1048576 double_every=100
+06-07-2023 10:33:55.275 INFO  StatsContext [1904 searchOrchestrator] -  Setting max memory usage to 209715200
+06-07-2023 10:33:55.275 INFO  PhaseToPipelineVisitor [1904 searchOrchestrator] - Phase Search = | stats sum(deleted) AS deleted,    list(alert_actions) AS alert_actions, list(severity) AS severity,   list(expiration) AS expiration    list(ss_name) AS ss_name,   list(ss_app) AS ss_app,           list(ss_user) AS ss_user   list(digest_mode) AS digest_mode, list(triggered_alerts) AS triggered_alerts  BY sid, trigger_time| search (NOT deleted=* OR deleted=0) | fields - deleted
+06-07-2023 10:33:55.275 INFO  SearchParser [1904 searchOrchestrator] - PARSING: | stats sum(deleted) AS deleted,    list(alert_actions) AS alert_actions, list(severity) AS severity,   list(expiration) AS expiration    list(ss_name) AS ss_name,   list(ss_app) AS ss_app,           list(ss_user) AS ss_user   list(digest_mode) AS digest_mode, list(triggered_alerts) AS triggered_alerts  BY sid, trigger_time| search (NOT deleted=* OR deleted=0) | fields - deleted
+06-07-2023 10:33:55.275 INFO  StatsContext [1904 searchOrchestrator] -  Setting chunk size min=65536 max=1048576 double_every=100
+06-07-2023 10:33:55.275 INFO  StatsContext [1904 searchOrchestrator] -  Setting max memory usage to 209715200
+06-07-2023 10:33:55.275 INFO  StatsProcessorV2 [1904 searchOrchestrator] - StatsV2 (stats) args: sum(deleted), AS, deleted, list(alert_actions), AS, alert_actions, list(severity), AS, severity, list(expiration), AS, expiration, list(ss_name), AS, ss_name, list(ss_app), AS, ss_app, list(ss_user), AS, ss_user, list(digest_mode), AS, digest_mode, list(triggered_alerts), AS, triggered_alerts, BY, sid, trigger_time
+06-07-2023 10:33:55.275 INFO  StatsProcessorV2 [1904 searchOrchestrator] - StatsProcessorV2::processArguments: Unaligned accesses are free
+06-07-2023 10:33:55.275 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function sum for key=deleted, alias=deleted
+06-07-2023 10:33:55.275 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=alert_actions, alias=alert_actions
+06-07-2023 10:33:55.275 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=severity, alias=severity
+06-07-2023 10:33:55.275 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=expiration, alias=expiration
+06-07-2023 10:33:55.275 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=ss_name, alias=ss_name
+06-07-2023 10:33:55.275 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=ss_app, alias=ss_app
+06-07-2023 10:33:55.275 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=ss_user, alias=ss_user
+06-07-2023 10:33:55.275 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=digest_mode, alias=digest_mode
+06-07-2023 10:33:55.275 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=triggered_alerts, alias=triggered_alerts
+06-07-2023 10:33:55.275 INFO  StatsContext [1904 searchOrchestrator] - shouldFallbackToOldStats: _use_v2_level=USE_V2_ALL, fallback=false
+06-07-2023 10:33:55.276 INFO  UnifiedSearch [1904 searchOrchestrator] - Processed search targeting arguments
+06-07-2023 10:33:55.276 INFO  SearchPipeline [1904 searchOrchestrator] - ReportSearch=1 AllowBatchMode=1
+06-07-2023 10:33:55.276 INFO  SearchParser [1904 searchOrchestrator] - PARSING: addinfo type=count label=prereport_events track_fieldmeta_events=true
+06-07-2023 10:33:55.276 INFO  SearchParser [1904 searchOrchestrator] - PARSING: prestats list(alert_actions) list(digest_mode) list(expiration) list(severity) list(ss_app) list(ss_name) list(ss_user) list(triggered_alerts) sum(deleted) by sid trigger_time
+06-07-2023 10:33:55.276 INFO  StatsContext [1904 searchOrchestrator] -  Setting chunk size min=65536 max=1048576 double_every=100
+06-07-2023 10:33:55.276 INFO  StatsContext [1904 searchOrchestrator] -  Setting max memory usage to 209715200
+06-07-2023 10:33:55.276 INFO  StatsProcessorV2 [1904 searchOrchestrator] - StatsV2 (stats) args: list(alert_actions), list(digest_mode), list(expiration), list(severity), list(ss_app), list(ss_name), list(ss_user), list(triggered_alerts), sum(deleted), by, sid, trigger_time
+06-07-2023 10:33:55.276 INFO  StatsProcessorV2 [1904 searchOrchestrator] - StatsProcessorV2::processArguments: Unaligned accesses are free
+06-07-2023 10:33:55.276 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=alert_actions, alias=list(alert_actions)
+06-07-2023 10:33:55.276 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=digest_mode, alias=list(digest_mode)
+06-07-2023 10:33:55.276 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=expiration, alias=list(expiration)
+06-07-2023 10:33:55.276 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=severity, alias=list(severity)
+06-07-2023 10:33:55.276 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=ss_app, alias=list(ss_app)
+06-07-2023 10:33:55.276 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=ss_name, alias=list(ss_name)
+06-07-2023 10:33:55.276 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=ss_user, alias=list(ss_user)
+06-07-2023 10:33:55.276 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function list for key=triggered_alerts, alias=list(triggered_alerts)
+06-07-2023 10:33:55.276 INFO  StatsAggregations [1904 searchOrchestrator] - Instantiating Stats function sum for key=deleted, alias=sum(deleted)
+06-07-2023 10:33:55.276 INFO  StatsContext [1904 searchOrchestrator] - shouldFallbackToOldStats: _use_v2_level=USE_V2_ALL, fallback=false
+06-07-2023 10:33:55.276 INFO  SearchPhaseGenerator [1904 searchOrchestrator] - No need for RTWindowProcessor
+06-07-2023 10:33:55.276 INFO  SearchPhaseGenerator [1904 searchOrchestrator] - Timeliner will not be executed
+06-07-2023 10:33:55.276 INFO  SearchPhaseGenerator [1904 searchOrchestrator] - required fields list to add to different pipelines = alert_actions,deleted,digest_mode,expiration,prestats_reserved_*,psrsvd_*,severity,sid,ss_app,ss_name,ss_user,trigger_time,triggered_alerts
+06-07-2023 10:33:55.276 INFO  SearchPhaseGenerator [1904 searchOrchestrator] - Remote Timeliner=
+06-07-2023 10:33:55.276 INFO  SearchPhaseGenerator [1904 searchOrchestrator] - Fileds=fields keepcolorder=t "alert_actions" "deleted" "digest_mode" "expiration" "prestats_reserved_*" "psrsvd_*" "severity" "sid" "ss_app" "ss_name" "ss_user" "trigger_time" "triggered_alerts"
+06-07-2023 10:33:55.276 INFO  SearchPhaseGenerator [1904 searchOrchestrator] - REMOTE TIMELINER ADDED
+06-07-2023 10:33:55.276 INFO  SearchParser [1904 searchOrchestrator] - PARSING: fields keepcolorder=t "alert_actions" "deleted" "digest_mode" "expiration" "prestats_reserved_*" "psrsvd_*" "severity" "sid" "ss_app" "ss_name" "ss_user" "trigger_time" "triggered_alerts"
+06-07-2023 10:33:55.276 INFO  SearchPhaseGenerator [1904 searchOrchestrator] - Adding noop to provide result collation at search head
+06-07-2023 10:33:55.276 INFO  SearchParser [1904 searchOrchestrator] - PARSING: noop
+06-07-2023 10:33:55.277 INFO  SearchPhaseGenerator [1904 searchOrchestrator] - Search Phases created.
+06-07-2023 10:33:55.278 INFO  SearchOrchestrator [1904 searchOrchestrator] - Preview is not enabled. (preview_algorithm=NONE)
+06-07-2023 10:33:55.279 INFO  UserManager [1904 searchOrchestrator] - Setting user context: splunk-system-user
+06-07-2023 10:33:55.279 INFO  UserManager [1904 searchOrchestrator] - Done setting user context: splunk-system-user -> splunk-system-user
+06-07-2023 10:33:55.280 INFO  UserManager [1904 searchOrchestrator] - Unwound user context: splunk-system-user -> splunk-system-user
+06-07-2023 10:33:55.280 INFO  DistributedSearchResultCollectionManager [1904 searchOrchestrator] - Stream search: litsearch (action=alert_* index=_audit splunk_server=83ab9769e42e (NOT expiration=* OR expiration>1686134034) sid trigger_time _time>=1685529234.000) | rex  field=_raw ",\\s*ss_name=\"(?<ss_name>(?:[^\"]+|\"(?!,\\s*sid=))*)\",\\s*sid=\""  | rex  field=_raw ",\\s*sid=\"(?<sid>.*)\",\\s+\\w+_\\w+=" | addinfo  type=count label=prereport_events track_fieldmeta_events=true | fields  keepcolorder=t "alert_actions" "deleted" "digest_mode" "expiration" "prestats_reserved_*" "psrsvd_*" "severity" "sid" "ss_app" "ss_name" "ss_user" "trigger_time" "triggered_alerts" | prestats  list(alert_actions) list(digest_mode) list(expiration) list(severity) list(ss_app) list(ss_name) list(ss_user) list(triggered_alerts) sum(deleted) by sid trigger_time
+06-07-2023 10:33:55.280 INFO  ExternalResultProvider [1904 searchOrchestrator] - No external result providers are configured
+06-07-2023 10:33:55.280 INFO  DistributedSearchResultCollectionManager [1904 searchOrchestrator] - ERP_FACTORY initialized, but zero external result provider, hence disabling _isERPCollectionEnabled
+06-07-2023 10:33:55.280 INFO  DistributedSearchResultCollectionManager [1904 searchOrchestrator] - results_queue_read_timeout_sec=900.000 send_timeout=30.000 connect_timeout=10.000 receive_timeout=600.000
+06-07-2023 10:33:55.280 INFO  DistributedSearchResultCollectionManager [1904 searchOrchestrator] - Default search group:*
+06-07-2023 10:33:55.280 INFO  SearchTargeter [1904 searchOrchestrator] - Index list is not available for 83ab9769e42e targeting based on splunk_server and splunk_server_group only
+06-07-2023 10:33:55.280 INFO  DistributedSearchResultCollectionManager [1904 searchOrchestrator] - Connecting to peer 83ab9769e42e connectAll 0 connectToSpecificPeer 1
+06-07-2023 10:33:55.281 INFO  UserManager [1917 SearchResultExecutorThread] - Setting user context: splunk-system-user
+06-07-2023 10:33:55.281 INFO  UserManager [1917 SearchResultExecutorThread] - Done setting user context: NULL -> splunk-system-user
+06-07-2023 10:33:55.281 INFO  UserManager [1916 SearchResultExecutorThread] - Setting user context: splunk-system-user
+06-07-2023 10:33:55.281 INFO  UserManager [1916 SearchResultExecutorThread] - Done setting user context: NULL -> splunk-system-user
+06-07-2023 10:33:55.281 INFO  UserManager [1915 SearchResultExecutorThread] - Setting user context: splunk-system-user
+06-07-2023 10:33:55.281 INFO  UserManager [1915 SearchResultExecutorThread] - Done setting user context: NULL -> splunk-system-user
+06-07-2023 10:33:55.281 INFO  SearchPhaseGenerator [1904 searchOrchestrator] - Time spends on creating distributed search results infrastructure; dispatchcreatedSearchResultInfrastructure=0.003244676 seconds.
+06-07-2023 10:33:55.282 INFO  SearchOrchestrator [1904 searchOrchestrator] - Starting the status control thread.
+06-07-2023 10:33:55.282 INFO  SearchOrchestrator [1904 searchOrchestrator] - Starting phase=1
+06-07-2023 10:33:55.282 INFO  UserManager [1910 StatusEnforcerThread] - Setting user context: splunk-system-user
+06-07-2023 10:33:55.282 INFO  UserManager [1910 StatusEnforcerThread] - Done setting user context: NULL -> splunk-system-user
+06-07-2023 10:33:55.282 INFO  SearchStatusEnforcer [1910 StatusEnforcerThread] - Enforcing disk quota = 10485760000
+06-07-2023 10:33:55.282 INFO  UserManager [1914 SearchResultExecutorThread] - Setting user context: splunk-system-user
+06-07-2023 10:33:55.282 INFO  UserManager [1914 SearchResultExecutorThread] - Done setting user context: NULL -> splunk-system-user
+06-07-2023 10:33:55.282 INFO  UserManager [1918 phase_1] - Setting user context: splunk-system-user
+06-07-2023 10:33:55.282 INFO  UserManager [1918 phase_1] - Done setting user context: NULL -> splunk-system-user
+06-07-2023 10:33:55.282 INFO  ReducePhaseExecutor [1918 phase_1] - Starting phase_1
+06-07-2023 10:33:55.284 INFO  UserManager [1913 SearchResultExecutorThread] - Setting user context: splunk-system-user
+06-07-2023 10:33:55.284 INFO  UserManager [1913 SearchResultExecutorThread] - Done setting user context: NULL -> splunk-system-user
+06-07-2023 10:33:55.284 INFO  UserManager [1919 localCollectorThread] - Setting user context: splunk-system-user
+06-07-2023 10:33:55.284 INFO  UserManager [1919 localCollectorThread] - Done setting user context: NULL -> splunk-system-user
+06-07-2023 10:33:55.284 INFO  SearchParser [1919 localCollectorThread] - PARSING: litsearch (action=alert_* index=_audit splunk_server=83ab9769e42e (NOT expiration=* OR expiration>1686134034) sid trigger_time _time>=1685529234.000) | rex  field=_raw ",\\s*ss_name=\"(?<ss_name>(?:[^\"]+|\"(?!,\\s*sid=))*)\",\\s*sid=\""  | rex  field=_raw ",\\s*sid=\"(?<sid>.*)\",\\s+\\w+_\\w+=" | addinfo  type=count label=prereport_events track_fieldmeta_events=true | fields  keepcolorder=t "alert_actions" "deleted" "digest_mode" "expiration" "prestats_reserved_*" "psrsvd_*" "severity" "sid" "ss_app" "ss_name" "ss_user" "trigger_time" "triggered_alerts" | prestats  list(alert_actions) list(digest_mode) list(expiration) list(severity) list(ss_app) list(ss_name) list(ss_user) list(triggered_alerts) sum(deleted) by sid trigger_time
+06-07-2023 10:33:55.284 INFO  StatsContext [1919 localCollectorThread] -  Setting chunk size min=65536 max=1048576 double_every=100
+06-07-2023 10:33:55.284 INFO  StatsContext [1919 localCollectorThread] -  Setting max memory usage to 209715200
+06-07-2023 10:33:55.314 INFO  SearchParser [1919 localCollectorThread] - PARSING: typer | tags
+06-07-2023 10:33:55.323 INFO  FastTyper [1919 localCollectorThread] - found nodes count: comparisons=6, unique_comparisons=5, terms=4, unique_terms=4, phrases=12, unique_phrases=12, total leaves=22
+06-07-2023 10:33:55.326 INFO  BatchSearch [1919 localCollectorThread] - Using Batch Search
+06-07-2023 10:33:55.327 INFO  UserManager [1919 localCollectorThread] - Setting user context: splunk-system-user
+06-07-2023 10:33:55.327 INFO  UserManager [1919 localCollectorThread] - Done setting user context: splunk-system-user -> splunk-system-user
+06-07-2023 10:33:55.329 INFO  FastSearchFilter [1919 localCollectorThread] - Finished initializing IndexScopedFilter - trivial=0, nTerms=3, oTerms=0, host=0, source=0, sourcetype=0, linecount=0 exactCustomCmp=0
+06-07-2023 10:33:55.329 INFO  UserManager [1919 localCollectorThread] - Unwound user context: splunk-system-user -> splunk-system-user
+06-07-2023 10:33:55.330 INFO  BatchSearch [1919 localCollectorThread] -  BatchSearch is initialized for indexes = {_audit}, et = 1685529234.000000000, lt = 1686134035.313836000, index_et = -9223372036854775808.000000000, index_lt = 9223372036854775807.999999000, noRead = FALSE
+06-07-2023 10:33:55.330 INFO  BatchSearch [1919 localCollectorThread] - Clearing any DDM references
+06-07-2023 10:33:55.330 INFO  CMBucketId [1919 localCollectorThread] - CMIndexId: New indexName=_audit inserted, mapping to id=1
+06-07-2023 10:33:55.332 INFO  BatchSearch [1919 localCollectorThread] - index: _audit dbsize=13
+06-07-2023 10:33:55.333 INFO  UnifiedSearch [1919 localCollectorThread] - Initialization of search data structures took 20 ms
+06-07-2023 10:33:55.334 INFO  UnifiedSearch [1919 localCollectorThread] - Processed search targeting arguments
+06-07-2023 10:33:55.334 INFO  StatsProcessorV2 [1919 localCollectorThread] - StatsV2 (stats) args: list(alert_actions), list(digest_mode), list(expiration), list(severity), list(ss_app), list(ss_name), list(ss_user), list(triggered_alerts), sum(deleted), by, sid, trigger_time
+06-07-2023 10:33:55.334 INFO  StatsProcessorV2 [1919 localCollectorThread] - StatsProcessorV2::processArguments: Unaligned accesses are free
+06-07-2023 10:33:55.334 INFO  StatsAggregations [1919 localCollectorThread] - Instantiating Stats function list for key=alert_actions, alias=list(alert_actions)
+06-07-2023 10:33:55.334 INFO  StatsAggregations [1919 localCollectorThread] - Instantiating Stats function list for key=digest_mode, alias=list(digest_mode)
+06-07-2023 10:33:55.334 INFO  StatsAggregations [1919 localCollectorThread] - Instantiating Stats function list for key=expiration, alias=list(expiration)
+06-07-2023 10:33:55.334 INFO  StatsAggregations [1919 localCollectorThread] - Instantiating Stats function list for key=severity, alias=list(severity)
+06-07-2023 10:33:55.334 INFO  StatsAggregations [1919 localCollectorThread] - Instantiating Stats function list for key=ss_app, alias=list(ss_app)
+06-07-2023 10:33:55.334 INFO  StatsAggregations [1919 localCollectorThread] - Instantiating Stats function list for key=ss_name, alias=list(ss_name)
+06-07-2023 10:33:55.334 INFO  StatsAggregations [1919 localCollectorThread] - Instantiating Stats function list for key=ss_user, alias=list(ss_user)
+06-07-2023 10:33:55.334 INFO  StatsAggregations [1919 localCollectorThread] - Instantiating Stats function list for key=triggered_alerts, alias=list(triggered_alerts)
+06-07-2023 10:33:55.334 INFO  StatsAggregations [1919 localCollectorThread] - Instantiating Stats function sum for key=deleted, alias=sum(deleted)
+06-07-2023 10:33:55.334 INFO  StatsContext [1919 localCollectorThread] - shouldFallbackToOldStats: _use_v2_level=USE_V2_ALL, fallback=false
+06-07-2023 10:33:55.374 INFO  LocalCollector [1919 localCollectorThread] - Final required fields list = Message,_raw,_subsecond,_time,action,alert_actions,deleted,digest_mode,expiration,index,prestats_reserved_*,psrsvd_*,severity,sid,splunk_server,ss_app,ss_name,ss_user,trigger_time,triggered_alerts
+06-07-2023 10:33:55.374 INFO  UserManager [1919 localCollectorThread] - Unwound user context: splunk-system-user -> NULL
+06-07-2023 10:33:55.374 INFO  UserManager [1919 localCollectorThread] - Setting user context: splunk-system-user
+06-07-2023 10:33:55.374 INFO  UserManager [1919 localCollectorThread] - Done setting user context: NULL -> splunk-system-user
+06-07-2023 10:33:55.374 INFO  BatchSearch [1919 localCollectorThread] - Searching index:_audit with LISPY:'[ AND sid time trigger [ OR action::alert_* alert ] ]'
+06-07-2023 10:33:55.376 INFO  BatchSearch [1919 localCollectorThread] - Recategorizing _audit~72~3A2CADE8-05FE-4F57-BBB1-71383F3FF5D3 as non-restartable for responsiveness.
+06-07-2023 10:33:55.409 INFO  BatchSearch [1919 localCollectorThread] - Setting up cache file for bkt=_audit~71~3A2CADE8-05FE-4F57-BBB1-71383F3FF5D3
+06-07-2023 10:33:55.416 INFO  BatchSearch [1919 localCollectorThread] - Setting up cache file for bkt=_audit~70~3A2CADE8-05FE-4F57-BBB1-71383F3FF5D3
+06-07-2023 10:33:55.424 INFO  BatchSearch [1919 localCollectorThread] - Setting up cache file for bkt=_audit~69~3A2CADE8-05FE-4F57-BBB1-71383F3FF5D3
+06-07-2023 10:33:55.434 INFO  BatchSearch [1919 localCollectorThread] - Setting up cache file for bkt=_audit~68~3A2CADE8-05FE-4F57-BBB1-71383F3FF5D3
+06-07-2023 10:33:55.451 INFO  BatchSearch [1919 localCollectorThread] - Setting up cache file for bkt=_audit~67~3A2CADE8-05FE-4F57-BBB1-71383F3FF5D3
+06-07-2023 10:33:55.460 INFO  BatchSearch [1919 localCollectorThread] - Setting up cache file for bkt=_audit~66~3A2CADE8-05FE-4F57-BBB1-71383F3FF5D3
+06-07-2023 10:33:55.476 INFO  BatchSearch [1919 localCollectorThread] - Setting up cache file for bkt=_audit~65~3A2CADE8-05FE-4F57-BBB1-71383F3FF5D3
+06-07-2023 10:33:55.486 INFO  BatchSearch [1919 localCollectorThread] - Setting up cache file for bkt=_audit~64~3A2CADE8-05FE-4F57-BBB1-71383F3FF5D3
+06-07-2023 10:33:55.491 INFO  BatchSearch [1919 localCollectorThread] - Setting up cache file for bkt=_audit~63~3A2CADE8-05FE-4F57-BBB1-71383F3FF5D3
+06-07-2023 10:33:55.499 INFO  BatchSearch [1919 localCollectorThread] - Setting up cache file for bkt=_audit~62~3A2CADE8-05FE-4F57-BBB1-71383F3FF5D3
+06-07-2023 10:33:55.515 INFO  BatchSearch [1919 localCollectorThread] - Setting up cache file for bkt=_audit~61~3A2CADE8-05FE-4F57-BBB1-71383F3FF5D3
+06-07-2023 10:33:55.525 INFO  UserManager [1919 localCollectorThread] - Unwound user context: splunk-system-user -> NULL
+06-07-2023 10:33:55.525 INFO  UserManager [1917 SearchResultExecutorThread] - Unwound user context: splunk-system-user -> NULL
+06-07-2023 10:33:55.525 INFO  UserManager [1916 SearchResultExecutorThread] - Unwound user context: splunk-system-user -> NULL
+06-07-2023 10:33:55.525 INFO  UserManager [1915 SearchResultExecutorThread] - Unwound user context: splunk-system-user -> NULL
+06-07-2023 10:33:55.525 INFO  UserManager [1914 SearchResultExecutorThread] - Unwound user context: splunk-system-user -> NULL
+06-07-2023 10:33:55.525 INFO  UserManager [1913 SearchResultExecutorThread] - Unwound user context: splunk-system-user -> NULL
+06-07-2023 10:33:55.525 INFO  ResultsCollationProcessor [1918 phase_1] - Writing remote_event_providers.csv to disk
+06-07-2023 10:33:55.541 INFO  ReducePhaseExecutor [1918 phase_1] - Not downloading remote search.log files. Reason: No remote event providers.
+06-07-2023 10:33:55.541 INFO  ReducePhaseExecutor [1918 phase_1] - Not downloading remote search_telemetry.json files. Reason: No remote event providers.
+06-07-2023 10:33:55.541 INFO  ReducePhaseExecutor [1918 phase_1] - Ending phase_1
+06-07-2023 10:33:55.541 INFO  UserManager [1918 phase_1] - Unwound user context: splunk-system-user -> NULL
+06-07-2023 10:33:55.555 INFO  UserManager [1910 StatusEnforcerThread] - Unwound user context: splunk-system-user -> NULL
+06-07-2023 10:33:55.557 INFO  DispatchStorageManager [1904 searchOrchestrator] - Remote storage disabled for search artifacts.
+06-07-2023 10:33:55.557 INFO  DispatchManager [1904 searchOrchestrator] - DispatchManager::dispatchHasFinished(id='alertsmanager_1686134034.1', username='splunk-system-user')
+06-07-2023 10:33:55.557 INFO  UserManager [1904 searchOrchestrator] - Unwound user context: splunk-system-user -> NULL
+06-07-2023 10:33:55.559 INFO  ISearchOperator [1897 RunDispatch] - 0x7fc2af77e400 PREAD_HISTOGRAM: usec_1_8=661 usec_8_64=14 usec_64_512=4 usec_512_4096=10 usec_4096_32768=0 usec_32768_262144=0 usec_262144_INF=0 
+06-07-2023 10:33:55.560 INFO  SearchStatusEnforcer [1897 RunDispatch] - SearchStatusEnforcer is already terminated
+06-07-2023 10:33:55.560 INFO  UserManager [1897 RunDispatch] - Unwound user context: splunk-system-user -> NULL
+06-07-2023 10:33:55.560 INFO  LookupDataProvider [1897 RunDispatch] - Clearing out lookup shared provider map
+06-07-2023 10:33:55.564 INFO  dispatchRunner [1078 MainThread] - RunDispatch is done: sid=alertsmanager_1686134034.1, exit=0

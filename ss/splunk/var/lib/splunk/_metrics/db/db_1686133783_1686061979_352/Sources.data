@@ -1,0 +1,3 @@
+0	2	 11750	1686061979	1686133783	1686133783	
+1	source::/opt/splunk/var/log/splunk/metrics.log	 10911	1686061979	1686133766	1686133771	
+2	source::/opt/splunk/var/log/introspection/resource_usage.log	839	1686062078	1686133783	1686133783	

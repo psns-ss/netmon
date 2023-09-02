@@ -1,0 +1,39 @@
+[inputs/monitor%3A%2F%2F%2Fvar%2Flog]
+owner = admin
+version = 9.0.4
+modtime = 1683202800.082159000
+
+[inputs/monitor%3A%2F%2F%2Fhome%2Fsplunk]
+owner = admin
+version = 9.0.4
+modtime = 1683203321.478742000
+
+[inputs/monitor%3A%2F%2F%2Fhome]
+owner = admin
+version = 9.0.4
+modtime = 1683293613.017975000
+
+[inputs/monitor%3A%2F%2F%2Fvar%2Flog%2Fsuricata]
+owner = admin
+version = 9.0.4
+modtime = 1683299383.149299000
+
+[inputs/monitor%3A%2F%2F%2Fvar%2Flog%2Fsuricata%2Feve.json]
+owner = admin
+version = 9.0.4
+modtime = 1683299579.316774000
+
+[props/pcap]
+owner = admin
+version = 9.0.4
+modtime = 1683369155.824996000
+
+[inputs/monitor%3A%2F%2F%2Fvar%2Flog%2Fsuricata%2Ftest.pcap]
+owner = admin
+version = 9.0.4
+modtime = 1683369161.316019000
+
+[inputs/monitor%3A%2F%2F%2Fvar%2Flog%2Fsuricata%2Foutput.json]
+owner = admin
+version = 9.0.4
+modtime = 1683370065.275100000

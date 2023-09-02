@@ -1,0 +1,1 @@
+[{"timestamp": 1686067203, "type": "event", "component": "app.pythonupgradereadiness.scan", "data": {"URAAppVersion": "4.0.3", "scanType": "All", "scanTypeModified": true}, "summary": {"appListDate": "NA", "scanFrequency": {}, "frequencyUpdateTime": "", "stackDefaultPython": "force_python3"}, "is_summary": true}]

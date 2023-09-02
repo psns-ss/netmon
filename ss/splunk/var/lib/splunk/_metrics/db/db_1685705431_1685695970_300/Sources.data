@@ -1,0 +1,4 @@
+0	3	  2106	1685695970	1685705431	1685705432	
+1	source::/opt/splunk/var/log/introspection/disk_objects.log	  8	1685696433	1685705252	1685705255	
+2	source::/opt/splunk/var/log/introspection/resource_usage.log	 78	1685695970	1685705426	1685705429	
+3	source::/opt/splunk/var/log/splunk/metrics.log	  2020	1685695970	1685705431	1685705432	

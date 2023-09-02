@@ -1,0 +1,3 @@
+0	2	 30	1685706205	1685706364	1685706367	
+1	source::/opt/splunk/var/log/introspection/disk_objects.log	  8	1685706205	1685706205	1685706211	
+2	source::/opt/splunk/var/log/splunk/metrics.log	 22	1685706240	1685706364	1685706367	

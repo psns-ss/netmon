@@ -1,0 +1,46 @@
+version: '3'
+
+services:
+  suricata:
+    image: jasonish/suricata:latest
+    volumes:
+      - ./suricata.yaml:/etc/suricata/suricata.yaml
+      - ./rules:/etc/suricata/rules
+      - ./logs/suricata:/var/log/suricata
+    network_mode: "host"
+    privileged: True
+    command: suricata -c /etc/suricata/suricata.yaml -i ens160
+
+  splunk:
+    image: splunk/splunk:latest
+    environment:
+      SPLUNK_START_ARGS: --accept-license
+      SPLUNK_PASSWORD: password
+    volumes:
+      - ./splunk/etc:/opt/splunk/etc
+      - ./splunk/var:/opt/splunk/var
+      - ./logs/splunk:/opt/splunk/var/log
+      - ./logs/suricata:/var/log/suricata
+    ports:
+      - "8000:8000"
+      - "8089:8089"
+    privileged: True
+    depends_on:
+      - suricata
+
+  suricata-logs:
+    image: busybox
+    volumes:
+      - ./logs/suricata:/var/log/suricata
+    privileged: True
+    depends_on:
+      - suricata
+
+  splunk-logs:
+    image: busybox
+    volumes:
+      - ./logs:/opt/splunk/var/log
+    privileged: True
+    depends_on:
+      - splunk
+      - suricata

@@ -1,0 +1,11 @@
+{
+  "apiVersion": "v1",
+  "capabilities": [],
+  "entrypoint": "assistsup",
+  "healthDelaySeconds": 15,
+  "name": "assistsup",
+  "version": {
+    "id": "689fac1f-20221119t005809",
+    "semver": "v0.0.198"
+  }
+}

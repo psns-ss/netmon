@@ -1,0 +1,137 @@
+4.0.3 2023-05-25 11:00:55,232 INFO 139663441987392 - Could not find synced splunkbase apps so using the constant file
+4.0.3 2023-05-25 11:00:55,232 INFO 139663441987392 - splunkbase_path- /opt/splunk/etc/apps/python_upgrade_readiness_app/bin/libs_py3/pura_libs_utils/splunkbaseapps.csv
+4.0.3 2023-05-25 11:00:55,429 INFO 139663441987392 - Fetching apps limit- 100 and offset- 0
+4.0.3 2023-05-25 11:01:03,437 ERROR 139663441987392 - Error getting apps: HTTPSConnectionPool(host='splunkbase.splunk.com', port=443): Max retries exceeded with url: /api/v1/app/?include=releases%2Creleases.splunk_compatibility&limit=100&offset=0&order=latest (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f05e95e0cd0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+Traceback (most recent call last):
+  File "/opt/splunk/lib/python3.7/site-packages/urllib3/connection.py", line 170, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/opt/splunk/lib/python3.7/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/opt/splunk/lib/python3.7/socket.py", line 752, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/splunk/lib/python3.7/site-packages/urllib3/connectionpool.py", line 706, in urlopen
+    chunked=chunked,
+  File "/opt/splunk/lib/python3.7/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/opt/splunk/lib/python3.7/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/opt/splunk/lib/python3.7/site-packages/urllib3/connection.py", line 353, in connect
+    conn = self._new_conn()
+  File "/opt/splunk/lib/python3.7/site-packages/urllib3/connection.py", line 182, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f05e95e0cd0>: Failed to establish a new connection: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/splunk/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/opt/splunk/lib/python3.7/site-packages/urllib3/connectionpool.py", line 756, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/opt/splunk/lib/python3.7/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='splunkbase.splunk.com', port=443): Max retries exceeded with url: /api/v1/app/?include=releases%2Creleases.splunk_compatibility&limit=100&offset=0&order=latest (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f05e95e0cd0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/splunk/etc/apps/python_upgrade_readiness_app/bin/pura_get_all_apps.py", line 147, in get_apps
+    response = requests.get(url=BASE_URL, params=PARAMS)
+  File "/opt/splunk/lib/python3.7/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/opt/splunk/lib/python3.7/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/opt/splunk/lib/python3.7/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/splunk/lib/python3.7/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/splunk/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='splunkbase.splunk.com', port=443): Max retries exceeded with url: /api/v1/app/?include=releases%2Creleases.splunk_compatibility&limit=100&offset=0&order=latest (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f05e95e0cd0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+4.0.3 2023-06-05 16:07:00,758 INFO 139973312882496 - Could not find synced splunkbase apps so using the constant file
+4.0.3 2023-06-05 16:07:00,758 INFO 139973312882496 - splunkbase_path- /opt/splunk/etc/apps/python_upgrade_readiness_app/bin/libs_py3/pura_libs_utils/splunkbaseapps.csv
+4.0.3 2023-06-05 16:07:00,982 INFO 139973312882496 - Fetching apps limit- 100 and offset- 0
+4.0.3 2023-06-05 16:07:06,735 INFO 139973312882496 - Fetching apps limit- 100 and offset- 100
+4.0.3 2023-06-05 16:07:13,064 ERROR 139973312882496 - Error getting apps: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+Traceback (most recent call last):
+  File "/opt/splunk/lib/python3.7/site-packages/urllib3/connectionpool.py", line 706, in urlopen
+    chunked=chunked,
+  File "/opt/splunk/lib/python3.7/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/opt/splunk/lib/python3.7/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/opt/splunk/lib/python3.7/site-packages/urllib3/connection.py", line 421, in connect
+    tls_in_tls=tls_in_tls,
+  File "/opt/splunk/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 450, in ssl_wrap_socket
+    sock, context, tls_in_tls, server_hostname=server_hostname
+  File "/opt/splunk/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/opt/splunk/lib/python3.7/ssl.py", line 428, in wrap_socket
+    session=session
+  File "/opt/splunk/lib/python3.7/ssl.py", line 878, in _create
+    self.do_handshake()
+  File "/opt/splunk/lib/python3.7/ssl.py", line 1147, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/splunk/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/opt/splunk/lib/python3.7/site-packages/urllib3/connectionpool.py", line 756, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/opt/splunk/lib/python3.7/site-packages/urllib3/util/retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/opt/splunk/lib/python3.7/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/opt/splunk/lib/python3.7/site-packages/urllib3/connectionpool.py", line 706, in urlopen
+    chunked=chunked,
+  File "/opt/splunk/lib/python3.7/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/opt/splunk/lib/python3.7/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/opt/splunk/lib/python3.7/site-packages/urllib3/connection.py", line 421, in connect
+    tls_in_tls=tls_in_tls,
+  File "/opt/splunk/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 450, in ssl_wrap_socket
+    sock, context, tls_in_tls, server_hostname=server_hostname
+  File "/opt/splunk/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/opt/splunk/lib/python3.7/ssl.py", line 428, in wrap_socket
+    session=session
+  File "/opt/splunk/lib/python3.7/ssl.py", line 878, in _create
+    self.do_handshake()
+  File "/opt/splunk/lib/python3.7/ssl.py", line 1147, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/splunk/etc/apps/python_upgrade_readiness_app/bin/pura_get_all_apps.py", line 159, in get_apps
+    response = requests.get(url=BASE_URL, params=PARAMS)
+  File "/opt/splunk/lib/python3.7/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/opt/splunk/lib/python3.7/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/opt/splunk/lib/python3.7/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/splunk/lib/python3.7/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/splunk/lib/python3.7/site-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+4.0.3 2023-06-06 16:07:01,035 INFO 139840093136704 - Could not find synced splunkbase apps so using the constant file
+4.0.3 2023-06-06 16:07:01,036 INFO 139840093136704 - splunkbase_path- /opt/splunk/etc/apps/python_upgrade_readiness_app/bin/libs_py3/pura_libs_utils/splunkbaseapps.csv
+4.0.3 2023-06-06 16:07:01,262 INFO 139840093136704 - Fetching apps limit- 100 and offset- 0
+4.0.3 2023-06-06 16:07:06,853 INFO 139840093136704 - Fetching apps limit- 100 and offset- 100
+4.0.3 2023-06-06 16:07:13,348 INFO 139840093136704 - Fetching apps limit- 100 and offset- 200
+4.0.3 2023-06-06 16:07:33,403 INFO 139840093136704 - Fetching apps limit- 100 and offset- 300
+4.0.3 2023-06-06 16:07:41,886 INFO 139840093136704 - Fetching apps limit- 100 and offset- 400
+4.0.3 2023-06-06 16:07:50,553 INFO 139840093136704 - Fetching apps limit- 100 and offset- 500
+4.0.3 2023-06-06 16:08:45,260 ERROR 139840093136704 - Could not get the apps status code: 504 content: upstream request timeout

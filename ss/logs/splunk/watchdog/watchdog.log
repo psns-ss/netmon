@@ -1,0 +1,220 @@
+05-04-2023 11:12:30.408 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-04-2023 11:12:30.410 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1255. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-04-2023 11:23:21.290 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-04-2023 11:23:21.293 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1092. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-04-2023 11:29:46.081 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-04-2023 11:29:46.085 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1093. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-04-2023 11:31:53.198 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-04-2023 11:31:53.201 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1092. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-04-2023 11:36:08.715 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-04-2023 11:36:08.718 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1214. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-04-2023 11:43:08.385 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-04-2023 11:43:08.388 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1187. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-04-2023 11:55:29.877 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-04-2023 11:55:29.879 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1092. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-04-2023 12:03:45.304 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-04-2023 12:03:45.308 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1084. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-04-2023 12:06:19.177 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-04-2023 12:06:19.186 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1092. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-05-2023 12:38:17.026 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f6e559ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1483 is busy !? Starting to trace with timeout=8000 ms interval.
+05-05-2023 12:38:27.054 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f6e559ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1483 is busy !? Starting to trace with timeout=8000 ms interval.
+05-05-2023 12:38:37.067 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f6e559ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1483 is busy !? Starting to trace with timeout=8000 ms interval.
+05-05-2023 12:38:47.082 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f6e559ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1483 is busy !? Starting to trace with timeout=8000 ms interval.
+05-05-2023 12:38:57.096 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f6e559ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1483 is busy !? Starting to trace with timeout=8000 ms interval.
+05-05-2023 12:56:37.448 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-05-2023 12:56:37.450 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1092. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-05-2023 13:02:01.507 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-05-2023 13:02:01.520 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1093. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-05-2023 13:09:16.543 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-05-2023 13:09:16.546 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1094. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-05-2023 13:29:08.890 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-05-2023 13:29:08.894 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1092. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-05-2023 13:58:43.843 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-05-2023 13:58:43.845 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1189. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-05-2023 14:15:14.254 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-05-2023 14:15:14.259 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1119. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-05-2023 14:26:56.799 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-05-2023 14:26:56.802 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1104. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-05-2023 14:41:29.916 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-05-2023 14:41:29.918 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1107. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-05-2023 14:48:31.419 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-05-2023 14:48:31.422 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1092. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-05-2023 14:52:50.491 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-05-2023 14:52:50.497 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1188. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-05-2023 15:03:27.625 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-05-2023 15:03:27.629 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1179. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-05-2023 15:08:28.066 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-05-2023 15:08:28.070 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1189. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-06-2023 10:30:41.685 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-06-2023 10:30:41.686 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1056. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-08-2023 10:52:13.299 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-08-2023 10:52:13.300 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1055. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-08-2023 11:03:53.736 +0000 INFO  Watchdog - Stopping WatchdogThread.
+05-08-2023 11:04:38.482 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-08-2023 11:04:38.483 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1049. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-08-2023 11:20:05.941 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-08-2023 11:20:05.942 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1065. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-09-2023 14:18:58.648 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f082efee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1385 is busy !? Starting to trace with timeout=8000 ms interval.
+05-09-2023 14:19:08.660 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f082efee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1385 is busy !? Starting to trace with timeout=8000 ms interval.
+05-09-2023 14:19:18.672 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f082efee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1385 is busy !? Starting to trace with timeout=8000 ms interval.
+05-09-2023 14:19:28.687 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f082efee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1385 is busy !? Starting to trace with timeout=8000 ms interval.
+05-09-2023 14:19:38.699 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f082efee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1385 is busy !? Starting to trace with timeout=8000 ms interval.
+05-09-2023 14:39:07.033 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-09-2023 14:39:07.034 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1065. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-10-2023 10:40:36.248 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-10-2023 10:40:36.249 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1065. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-10-2023 10:58:48.300 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-10-2023 10:58:48.302 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1055. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-10-2023 11:01:38.555 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-10-2023 11:01:38.556 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1078. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-10-2023 11:16:28.958 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-10-2023 11:16:28.958 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1058. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-10-2023 11:19:55.265 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-10-2023 11:19:55.266 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1065. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-10-2023 11:21:07.708 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-10-2023 11:21:07.709 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1065. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-10-2023 11:23:31.277 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-10-2023 11:23:31.278 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1066. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-10-2023 11:33:21.169 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-10-2023 11:33:21.170 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1064. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-10-2023 11:36:35.254 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-10-2023 11:36:35.256 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1065. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-10-2023 11:41:06.678 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-10-2023 11:41:06.679 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1064. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-10-2023 11:54:59.394 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-10-2023 11:54:59.396 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1065. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-10-2023 12:00:22.619 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-10-2023 12:00:22.620 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1064. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-10-2023 12:02:41.678 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-10-2023 12:02:41.680 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1065. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-10-2023 12:09:06.625 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-10-2023 12:09:06.627 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1174. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-10-2023 12:14:27.253 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-10-2023 12:14:27.254 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1065. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-10-2023 13:39:05.046 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-10-2023 13:39:05.047 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1056. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-10-2023 13:40:11.087 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-10-2023 13:40:11.088 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1058. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-10-2023 13:44:14.374 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-10-2023 13:44:14.375 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1065. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-10-2023 13:48:04.493 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-10-2023 13:48:04.495 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1065. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-10-2023 13:49:42.653 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-10-2023 13:49:42.654 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1178. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-10-2023 14:11:19.009 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-10-2023 14:11:19.010 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1056. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-10-2023 14:12:58.923 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-10-2023 14:12:58.924 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1058. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-10-2023 14:19:03.997 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-10-2023 14:19:03.999 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1065. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-10-2023 14:47:30.987 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-10-2023 14:47:30.989 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1064. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-11-2023 08:45:57.534 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-11-2023 08:45:57.536 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1065. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-11-2023 08:52:24.919 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-11-2023 08:52:24.921 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1078. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-11-2023 08:57:04.597 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-11-2023 08:57:04.598 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1065. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-11-2023 09:07:16.036 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7efc8c1ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1392 is busy !? Starting to trace with timeout=8000 ms interval.
+05-11-2023 09:07:25.949 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7efc8c1ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1392 is busy !? Starting to trace with timeout=8000 ms interval.
+05-11-2023 09:07:36.063 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7efc8c1ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1392 is busy !? Starting to trace with timeout=8000 ms interval.
+05-11-2023 09:07:46.073 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7efc8c1ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1392 is busy !? Starting to trace with timeout=8000 ms interval.
+05-11-2023 09:07:56.037 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7efc8c1ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1392 is busy !? Starting to trace with timeout=8000 ms interval.
+05-11-2023 10:53:44.975 +0000 INFO  Watchdog - Stopping WatchdogThread.
+05-16-2023 14:08:51.641 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-16-2023 14:08:51.645 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1063. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-16-2023 14:13:07.200 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-16-2023 14:13:07.220 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1078. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-17-2023 10:52:49.335 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-17-2023 10:52:49.336 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1065. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-17-2023 10:59:52.831 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-17-2023 10:59:52.832 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1065. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-17-2023 11:05:46.277 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-17-2023 11:05:46.279 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1078. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-17-2023 12:28:08.659 +0000 INFO  Watchdog - Stopping WatchdogThread.
+05-19-2023 11:15:30.224 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-19-2023 11:15:30.225 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1062. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-19-2023 11:25:42.648 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f968edee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1312 is busy !? Starting to trace with timeout=8000 ms interval.
+05-19-2023 11:25:50.649 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f968edee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1312 is busy !? Starting to trace with timeout=8000 ms interval.
+05-19-2023 11:25:58.650 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f968edee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1312 is busy !? Starting to trace with timeout=8000 ms interval.
+05-19-2023 11:26:06.652 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f968edee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1312 is busy !? Starting to trace with timeout=8000 ms interval.
+05-19-2023 11:26:14.654 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f968edee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1312 is busy !? Starting to trace with timeout=8000 ms interval.
+05-19-2023 12:00:02.822 +0000 INFO  Watchdog - Stopping WatchdogThread.
+05-19-2023 12:00:42.454 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-19-2023 12:00:42.454 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1049. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-19-2023 12:11:40.283 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-19-2023 12:11:40.284 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1066. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-19-2023 13:12:14.751 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-19-2023 13:12:14.753 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1064. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-24-2023 12:35:56.546 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f41843ed830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1404 is busy !? Starting to trace with timeout=8000 ms interval.
+05-24-2023 12:36:04.554 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f41843ed830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1404 is busy !? Starting to trace with timeout=8000 ms interval.
+05-24-2023 12:36:12.559 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f41843ed830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1404 is busy !? Starting to trace with timeout=8000 ms interval.
+05-24-2023 12:36:20.566 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f41843ed830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1404 is busy !? Starting to trace with timeout=8000 ms interval.
+05-24-2023 12:36:28.572 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f41843ed830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1404 is busy !? Starting to trace with timeout=8000 ms interval.
+05-24-2023 12:53:14.547 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f4164ffcce0 within elapsed=8000 ms. Looks like thread_name="ApplicationUpdateThread" thread_id=32013 is busy !? Starting to trace with timeout=8000 ms interval.
+05-24-2023 12:57:23.201 +0000 INFO  Watchdog - Stopping WatchdogThread.
+05-24-2023 12:58:04.674 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+05-24-2023 12:58:04.675 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1049. Threads monitoring is enabled with response timeout set to 8000 ms.
+05-24-2023 13:08:15.459 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7faf531ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1357 is busy !? Starting to trace with timeout=8000 ms interval.
+05-24-2023 13:08:23.460 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7faf531ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1357 is busy !? Starting to trace with timeout=8000 ms interval.
+05-24-2023 13:08:31.462 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7faf531ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1357 is busy !? Starting to trace with timeout=8000 ms interval.
+05-24-2023 13:08:39.464 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7faf531ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1357 is busy !? Starting to trace with timeout=8000 ms interval.
+05-24-2023 13:08:47.466 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7faf531ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1357 is busy !? Starting to trace with timeout=8000 ms interval.
+05-25-2023 10:54:08.271 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7faf337face0 within elapsed=8000 ms. Looks like thread_name="ApplicationUpdateThread" thread_id=34387 is busy !? Starting to trace with timeout=8000 ms interval.
+05-25-2023 11:02:50.048 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7faf531ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1357 is busy !? Starting to trace with timeout=8000 ms interval.
+05-25-2023 11:02:58.051 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7faf531ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1357 is busy !? Starting to trace with timeout=8000 ms interval.
+05-25-2023 11:03:06.053 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7faf531ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1357 is busy !? Starting to trace with timeout=8000 ms interval.
+05-25-2023 11:03:14.057 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7faf531ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1357 is busy !? Starting to trace with timeout=8000 ms interval.
+05-25-2023 11:03:22.060 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7faf531ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1357 is busy !? Starting to trace with timeout=8000 ms interval.
+06-02-2023 08:31:10.472 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7faf511fe510 within elapsed=8000 ms. Looks like thread_name="SchedulerThread" thread_id=1373 is busy !? Starting to trace with timeout=8000 ms interval.
+06-02-2023 08:31:26.500 +0000 INFO  Watchdog - Stopping trace. Response for IMonitoredThread ptr=0x7faf511fe510 - thread_name="SchedulerThread" thread_id=1373 - finally received after 24013 ms (estimation only).
+06-02-2023 08:41:15.898 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7faf531ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1357 is busy !? Starting to trace with timeout=8000 ms interval.
+06-02-2023 08:41:23.911 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7faf531ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1357 is busy !? Starting to trace with timeout=8000 ms interval.
+06-02-2023 08:41:31.922 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7faf531ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1357 is busy !? Starting to trace with timeout=8000 ms interval.
+06-02-2023 08:41:39.931 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7faf531ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1357 is busy !? Starting to trace with timeout=8000 ms interval.
+06-02-2023 08:41:47.943 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7faf531ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1357 is busy !? Starting to trace with timeout=8000 ms interval.
+06-02-2023 09:00:31.590 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+06-02-2023 09:00:31.594 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1092. Threads monitoring is enabled with response timeout set to 8000 ms.
+06-02-2023 11:27:44.970 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f0718fee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1467 is busy !? Starting to trace with timeout=8000 ms interval.
+06-02-2023 11:27:52.972 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f0718fee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1467 is busy !? Starting to trace with timeout=8000 ms interval.
+06-02-2023 11:28:00.974 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f0718fee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1467 is busy !? Starting to trace with timeout=8000 ms interval.
+06-02-2023 11:28:08.975 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f0718fee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1467 is busy !? Starting to trace with timeout=8000 ms interval.
+06-02-2023 11:28:16.977 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f0718fee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1467 is busy !? Starting to trace with timeout=8000 ms interval.
+06-02-2023 11:35:25.390 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+06-02-2023 11:35:25.393 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1094. Threads monitoring is enabled with response timeout set to 8000 ms.
+06-02-2023 11:43:24.316 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+06-02-2023 11:43:24.320 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1093. Threads monitoring is enabled with response timeout set to 8000 ms.
+06-02-2023 11:48:17.232 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+06-02-2023 11:48:17.237 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1092. Threads monitoring is enabled with response timeout set to 8000 ms.
+06-02-2023 11:58:30.117 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7fbef5bee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1501 is busy !? Starting to trace with timeout=8000 ms interval.
+06-02-2023 11:58:38.121 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7fbef5bee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1501 is busy !? Starting to trace with timeout=8000 ms interval.
+06-02-2023 11:58:46.126 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7fbef5bee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1501 is busy !? Starting to trace with timeout=8000 ms interval.
+06-02-2023 11:58:54.127 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7fbef5bee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1501 is busy !? Starting to trace with timeout=8000 ms interval.
+06-02-2023 11:59:02.129 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7fbef5bee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1501 is busy !? Starting to trace with timeout=8000 ms interval.
+06-02-2023 12:15:52.118 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+06-02-2023 12:15:52.121 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1091. Threads monitoring is enabled with response timeout set to 8000 ms.
+06-04-2023 09:43:07.774 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+06-04-2023 09:43:07.777 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1093. Threads monitoring is enabled with response timeout set to 8000 ms.
+06-04-2023 09:56:33.783 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+06-04-2023 09:56:33.785 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1092. Threads monitoring is enabled with response timeout set to 8000 ms.
+06-04-2023 10:06:47.269 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f9177fee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1556 is busy !? Starting to trace with timeout=8000 ms interval.
+06-04-2023 10:06:55.271 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f9177fee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1556 is busy !? Starting to trace with timeout=8000 ms interval.
+06-04-2023 10:07:03.274 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f9177fee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1556 is busy !? Starting to trace with timeout=8000 ms interval.
+06-04-2023 10:07:11.275 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f9177fee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1556 is busy !? Starting to trace with timeout=8000 ms interval.
+06-04-2023 10:07:19.275 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7f9177fee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1556 is busy !? Starting to trace with timeout=8000 ms interval.
+06-04-2023 14:19:37.410 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+06-04-2023 14:19:37.414 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1078. Threads monitoring is enabled with response timeout set to 8000 ms.
+06-04-2023 15:20:20.049 +0000 INFO  Watchdog - Stopping WatchdogThread.
+06-05-2023 15:58:57.470 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+06-05-2023 15:58:57.473 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1062. Threads monitoring is enabled with response timeout set to 8000 ms.
+06-06-2023 13:15:17.934 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7fe4147ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1350 is busy !? Starting to trace with timeout=8000 ms interval.
+06-06-2023 13:15:25.936 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7fe4147ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1350 is busy !? Starting to trace with timeout=8000 ms interval.
+06-06-2023 13:15:33.937 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7fe4147ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1350 is busy !? Starting to trace with timeout=8000 ms interval.
+06-06-2023 13:15:41.938 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7fe4147ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1350 is busy !? Starting to trace with timeout=8000 ms interval.
+06-06-2023 13:15:49.939 +0000 INFO  Watchdog - No response received from IMonitoredThread=0x7fe4147ee830 within elapsed=8000 ms. Looks like thread_name="TelemetryMetricBuffer" thread_id=1350 is busy !? Starting to trace with timeout=8000 ms interval.
+06-06-2023 14:27:02.456 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+06-06-2023 14:27:02.456 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1078. Threads monitoring is enabled with response timeout set to 8000 ms.
+06-06-2023 14:32:25.358 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+06-06-2023 14:32:25.360 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1079. Threads monitoring is enabled with response timeout set to 8000 ms.
+06-07-2023 10:33:39.459 +0000 INFO  WatchdogActions - WatchdogActionsManager reload started.
+06-07-2023 10:33:39.460 +0000 INFO  Watchdog - Starting WatchdogThread for process pid=1078. Threads monitoring is enabled with response timeout set to 8000 ms.

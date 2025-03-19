@@ -1,0 +1,7 @@
+0	6	941	1683728329	1683728353	1683728354	
+1	source::/opt/splunk/var/log/splunk/btool.log	  6	1683728335	1683728335	1683728353	
+2	source::/opt/splunk/var/log/splunk/splunkd-utility.log	 15	1683728329	1683728331	1683728353	
+3	source::/opt/splunk/var/log/splunk/splunkd.log	716	1683728332	1683728353	1683728353	
+4	source::/opt/splunk/var/log/splunk/splunkd_access.log	 18	1683728351	1683728353	1683728353	
+5	source::/opt/splunk/var/log/splunk/conf.log	  1	1683728343	1683728343	1683728353	
+6	source::/opt/splunk/var/log/splunk/mongod.log	185	1683728344	1683728351	1683728354	

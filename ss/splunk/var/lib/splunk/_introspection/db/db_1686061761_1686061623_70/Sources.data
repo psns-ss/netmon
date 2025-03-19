@@ -1,0 +1,8 @@
+0	7	196	1686061623	1686061761	1686061761	
+1	source::/opt/splunk/var/log/introspection/disk_objects.log	 16	1686061623	1686061623	1686061627	
+2	source::/opt/splunk/var/log/introspection/kvstore.log	 51	1686061626	1686061761	1686061761	
+3	source::/opt/splunk/var/log/introspection/resource_usage.log	125	1686061635	1686061755	1686061758	
+4	source::/opt/splunk/var/run/splunk/search_telemetry/0c4e799996f33bcc_alertsmanager_1686061636.1_search_telemetry.json	  1	1686061637	1686061637	1686061637	
+5	source::/opt/splunk/var/run/splunk/search_telemetry/fa67d39dd5733ac4_scheduler__nobody_c3BsdW5rX21vbml0b3JpbmdfY29uc29sZQ__RMD54740dfff07b17ef1_at_1686061625_0_search_telemetry.json	  1	1686061657	1686061657	1686061657	
+6	source::/opt/splunk/var/log/introspection/http_event_collector_metrics.log	  1	1686061703	1686061703	1686061703	
+7	source::telemetry_api	  1	1686061761	1686061761	1686061761	

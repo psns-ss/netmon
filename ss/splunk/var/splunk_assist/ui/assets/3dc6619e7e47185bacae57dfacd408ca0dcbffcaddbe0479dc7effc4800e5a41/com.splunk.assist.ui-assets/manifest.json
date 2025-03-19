@@ -1,0 +1,18 @@
+{
+  "id": "splunk-assist-main",
+  "version": "1.8.0-20230511-1729Z-22e28b03",
+  "main": "index.js",
+  "apiVersion": "0.0.1",
+  "peerDependencies": {
+    "react": "^16.14.0",
+    "react-dom": "~16.10.0",
+    "react-router-dom": "^5.3.0",
+    "styled-components": "^5.3.5"
+  },
+  "envVars": {
+    "default": {
+      "clientId": "0oa2wbg9nxxV9Nt0q0x7",
+      "authEndpoint": "https://auth.playground.scs.splunk.com"
+    }
+  }
+}

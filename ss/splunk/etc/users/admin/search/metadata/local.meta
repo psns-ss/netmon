@@ -1,0 +1,23 @@
+[history/.dummy_history]
+version = 9.0.4
+modtime = 1683198936.486442000
+
+[ui-tour/search-tour]
+version = 9.0.4
+modtime = 1683198941.368758000
+
+[ui-tour/dashboards-tour%3Aenterprise]
+version = 9.0.4
+modtime = 1683198962.751673000
+
+[ui-prefs/alerts]
+version = 9.0.4
+modtime = 1683202279.002414000
+
+[ui-prefs/search]
+version = 9.0.4
+modtime = 1685696539.238328000
+
+[ui-tour/adddata-tour%3Aenterprise]
+version = 9.0.4
+modtime = 1683202743.272239000

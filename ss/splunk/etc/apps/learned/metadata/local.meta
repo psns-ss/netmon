@@ -1,0 +1,184 @@
+[props/first_install-too_small]
+owner = nobody
+version = 9.0.4
+modtime = 1683198756.265232000
+
+[props/dfm_stderr-too_small]
+owner = nobody
+version = 9.0.4
+modtime = 1683198757.626043000
+
+[props/dfm_stdout-too_small]
+owner = nobody
+version = 9.0.4
+modtime = 1683198757.942757000
+
+[props/cloudgateway_untracked-too_small]
+owner = nobody
+version = 9.0.4
+modtime = 1683198759.171354000
+
+[props/splunk_secure_gateway_version_request_processor-too_small]
+owner = nobody
+version = 9.0.4
+modtime = 1683198759.942143000
+
+[props/ssg_config_modular_input-too_small]
+owner = nobody
+version = 9.0.4
+modtime = 1683198760.767717000
+
+[props/export_metrics-too_small]
+owner = nobody
+version = 9.0.4
+modtime = 1683198766.577141000
+
+[props/splunk_instrumentation-too_small]
+owner = nobody
+version = 9.0.4
+modtime = 1683198924.172961000
+
+[props/splunk_archiver-too_small]
+owner = nobody
+version = 9.0.4
+modtime = 1683199021.863946000
+
+[props/bash_logout-too_small]
+owner = nobody
+version = 9.0.4
+modtime = 1683203321.592071000
+
+[props/bash_profile-too_small]
+owner = nobody
+version = 9.0.4
+modtime = 1683203321.705862000
+
+[props/bashrc-too_small]
+owner = nobody
+version = 9.0.4
+modtime = 1683203321.789117000
+
+[props/suricata]
+owner = nobody
+version = 9.0.4
+modtime = 1683299327.575217000
+
+[sourcetypes/%2Fvar%2Flog%2Fsuricata%2Fsuricata.log_Fri_May__5_15%3A08%3A47_2023_267473437]
+owner = nobody
+version = 9.0.4
+modtime = 1683299328.413720000
+
+[props/json-2]
+owner = nobody
+version = 9.0.4
+modtime = 1683299329.689787000
+
+[sourcetypes/%2Fvar%2Flog%2Fsuricata%2Feve.json_Fri_May__5_15%3A08%3A49_2023_1292674616]
+owner = nobody
+version = 9.0.4
+modtime = 1683299330.504625000
+
+[props/stats-too_small]
+owner = nobody
+version = 9.0.4
+modtime = 1683299330.722149000
+
+[props/json-3]
+owner = nobody
+version = 9.0.4
+modtime = 1683370016.468974000
+
+[sourcetypes/%2Fvar%2Flog%2Fsuricata%2Foutput.json_Sat_May__6_10%3A46%3A56_2023_780897808]
+owner = nobody
+version = 9.0.4
+modtime = 1683370016.571115000
+
+[props/stats-3]
+owner = nobody
+version = 9.0.4
+modtime = 1683715248.052416000
+
+[sourcetypes/%2Fvar%2Flog%2Fsuricata%2Fstats.log_Wed_May_10_10%3A40%3A48_2023_61967558]
+owner = nobody
+version = 9.0.4
+modtime = 1683715248.297705000
+
+[props/fast-too_small]
+owner = nobody
+version = 9.0.4
+modtime = 1683715248.450506000
+
+[props/suricata-2]
+owner = nobody
+version = 9.0.4
+modtime = 1683717397.976390000
+
+[sourcetypes/%2Fvar%2Flog%2Fsuricata%2Fsuricata.log_Wed_May_10_11%3A16%3A38_2023_907480102]
+owner = nobody
+version = 9.0.4
+modtime = 1683717398.205909000
+
+[props/suricata-3]
+owner = nobody
+version = 9.0.4
+modtime = 1683717603.026405000
+
+[sourcetypes/%2Fvar%2Flog%2Fsuricata%2Fsuricata.log_Wed_May_10_11%3A20%3A03_2023_67700381]
+owner = nobody
+version = 9.0.4
+modtime = 1683717603.123416000
+
+[props/http-too_small]
+owner = nobody
+version = 9.0.4
+modtime = 1683725957.389660000
+
+[props/fast-2]
+owner = nobody
+version = 9.0.4
+modtime = 1683794771.350380000
+
+[sourcetypes/%2Fvar%2Flog%2Fsuricata%2Ffast.log_Thu_May_11_08%3A46%3A11_2023_1486626445]
+owner = nobody
+version = 9.0.4
+modtime = 1683794771.648145000
+
+[props/http-3]
+owner = nobody
+version = 9.0.4
+modtime = 1684246146.221109000
+
+[sourcetypes/%2Fvar%2Flog%2Fsuricata%2Fhttp.log_Tue_May_16_14%3A09%3A06_2023_1468427931]
+owner = nobody
+version = 9.0.4
+modtime = 1684246146.333396000
+
+[props/xml]
+owner = nobody
+version = 9.0.4
+modtime = 1684246146.441486000
+
+[sourcetypes/%2Fvar%2Flog%2Fsuricata%2Flogs.xml_Tue_May_16_14%3A09%3A06_2023_1854259930]
+owner = nobody
+version = 9.0.4
+modtime = 1684246146.558297000
+
+[props/xml-too_small]
+owner = nobody
+version = 9.0.4
+modtime = 1684321203.605106000
+
+[props/splunk_assist_supervisor_modular_input.log]
+owner = nobody
+version = 9.0.4
+modtime = 1685012897.813392000
+
+[sourcetypes/%2Fopt%2Fsplunk%2Fvar%2Flog%2Fsplunk%2Fsplunk_assist_supervisor_modular_input.log.1_Thu_May_25_11%3A08%3A17_2023_359405200]
+owner = nobody
+version = 9.0.4
+modtime = 1685012897.994089000
+
+[sourcetypes/%2Fopt%2Fsplunk%2Fvar%2Flog%2Fsplunk%2Fsplunk_assist_supervisor_modular_input.log.1_Thu_May_25_11%3A08%3A18_2023_2097210265]
+owner = nobody
+version = 9.0.4
+modtime = 1685012898.122429000

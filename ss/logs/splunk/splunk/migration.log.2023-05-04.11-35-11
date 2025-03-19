@@ -1,0 +1,365 @@
+
+Migrating to:
+VERSION=9.0.4
+BUILD=de405f4a7979
+PRODUCT=splunk
+PLATFORM=Linux-x86_64
+
+Copying '/opt/splunk/etc/myinstall/splunkd.xml' to '/opt/splunk/etc/myinstall/splunkd.xml-migrate.bak'.
+
+Checking saved search compatibility...
+
+Checking for possible timezone configuration errors...
+
+Handling deprecated files...
+Copying '/opt/splunk/etc/myinstall/splunkd.xml.cfg-default' to '/opt/splunk/etc/myinstall/splunkd.xml'.
+Deleting '/opt/splunk/etc/system/local/field_actions.conf'.
+
+The following apps might contain lookup table files that are not exported to other apps:
+
+	splunk_monitoring_console
+
+Such lookup table files could only be used within their source app.  To export them globally and allow other apps to access them, add the following stanza to each /opt/splunk/etc/apps/<app_name>/metadata/local.meta file:
+
+	[lookups]
+	export = system
+
+For more information, see http://docs.splunk.com/Documentation/Splunk/latest/AdvancedDev/SetPermissions#Make_objects_globally_available.
+
+Checking for possible UI view conflicts...
+ App "splunk_monitoring_console" has an overriding copy of the "alerts.xml" view, thus the new version may not be in effect. location=/opt/splunk/etc/apps/splunk_monitoring_console/default/data/ui/views
+ App "splunk_monitoring_console" has an overriding copy of the "dashboards.xml" view, thus the new version may not be in effect. location=/opt/splunk/etc/apps/splunk_monitoring_console/default/data/ui/views
+ App "splunk_monitoring_console" has an overriding copy of the "reports.xml" view, thus the new version may not be in effect. location=/opt/splunk/etc/apps/splunk_monitoring_console/default/data/ui/views
+Removing legacy manager XML files...
+Removing legacy nav XML files...
+DMC is not set up, no need to migrate nav bar.
+Removing System Activity dashboards...
+Removing splunkclouduf XML file...
+Removing splunkclouduf view XML files...
+Distributed Search is not configured on this instance
+Removing legacy search.xml file from splunk_instrumentation...
+Moving '/opt/splunk/share/splunk/search_mrsparkle/modules.new' to '/opt/splunk/share/splunk/search_mrsparkle/modules'.
+
+Checking for the modules related files and folders that should not be present after upgrade.
+
+Checking for the Advanced XML dashboard templates that should not be present after upgrade.
+
+Checking for the 'Getting Started' app that should not be present after upgrade.
+
+Running migration for [cacheTiming] of scripted authentication....
+
+Running webhook alert_action URL migration to webhook allowlist...
+No webhooks found in /opt/splunk, nothing to migrate
+Created /opt/splunk/etc/apps/alert_webhook/local
+Created /opt/splunk/etc/apps/alert_webhook/local/alert_actions.conf
+Done writing webhook URLs to allowlist in /opt/splunk/etc/apps/alert_webhook/local/alert_actions.conf...
+
+Running XML migration to add v=1.1 to dashboards that don't specify a version
+Checking 270 dashboards for "v=1.1" attribute
+$SPLUNK_HOME/etc/apps/python_upgrade_readiness_app/default/data/ui/views/jquery_scan.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/python_upgrade_readiness_app/default/data/ui/views/python_scan.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/python_upgrade_readiness_app/default/data/ui/views/setting.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/python_upgrade_readiness_app/default/data/ui/views/setting_scan.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/python_upgrade_readiness_app/default/data/ui/views/splunk9x_scan.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/alert.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/alerts.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/charting.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/dashboard_live.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/dashboards.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/data_model_editor.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/data_model_explorer.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/data_model_manager.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/data_models.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/dataset.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/datasets.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/field_extractor.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/flashtimeline.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/integrity_check_of_installed_files.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/job_details_dashboard.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/job_manager.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/jquery_upgrade.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/licenseusage.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/live_tail.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/mod_setup.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/orphaned_scheduled_searches.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/pivot.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/report.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/report_builder_define_data.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/report_builder_display.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/report_builder_format_report.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/report_builder_print.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/reports.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/search.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/show_source.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/show_source.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/search/default/data/ui/views/table.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/dashboard.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-ad-hoc-data.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-airport-kpis-dashboard.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-area-chart-visualization.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-assembly-line-dashboard.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-bar-chart-visualization.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-base-chain-data.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-bubble-chart-visualization.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-buttercup-games-dashboard.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-cascading-inputs.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-chart-coloring.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-chart-display.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-chart-overlays.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-chart-scaling.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-choropleth-svg-visualization.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-column-chart-visualization.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-custom-url-drilldown.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-customer-satisfaction-dashboard.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-data-command-dashboard.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-data-governance-dashboard.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-data-streaming-dashboard.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-datacenter-dashboard.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-dropdown-input.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-ecommerce-monitoring-dashboard.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-emergency-department-care-dashboard.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-europe-telecom-network-hub-dashboard.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-event-annotations.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-filler-gauge-coloring.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-filler-gauge-visualization.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-healthcare-dashboard.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-icon-coloring.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-icon-visualization.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-image-visualization.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-line-chart-visualization.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-link-graph-visualization.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-map-visualization.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-markdown-visualization.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-marker-gauge-coloring.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-marker-gauge-visualization.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-moving-svg-visualization.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-multiselect-input.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-nav-visualizations.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-number-input.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-parallel-coordinates-visualization.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-pie-chart-visualization.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-progress-bar-defaults.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-punchcard-chart-coloring.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-punchcard-chart-sizing.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-punchcard-chart-visualization.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-refresh-defaults.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-sankey-diagram-visualization.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-saved-data.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-scatter-chart-visualization.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-set-token-drilldown-default.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-set-token-drilldown.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-shape-visualization.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-single-value-coloring.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-single-value-emojis.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-single-value-icon-visualization.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-single-value-radial-coloring.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-single-value-radial-visualization.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-single-value-visualization.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-table-chart-coloring.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-table-chart-formatting.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-table-chart-visualization.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-test-data.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-text-input.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-text-visualization.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-timerange-input.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-us-map-visualization.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-vpn-health-by-region-dashboard.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-workplace-readiness-detail.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-workplace-readiness.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk-dashboard-studio/default/data/ui/views/example-hub-world-map-visualization.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_assist/default/data/ui/views/start.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_essentials_9_0/default/data/ui/views/Biased_Language_Removal.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_essentials_9_0/default/data/ui/views/Cluster_Manager_Redundancy.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_essentials_9_0/default/data/ui/views/Configuration_Change_Tracker_Index.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_essentials_9_0/default/data/ui/views/Dashboard_Studio_Improvements.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_essentials_9_0/default/data/ui/views/Federated_Search_Enhancements.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_essentials_9_0/default/data/ui/views/Health_Manager_UI_Improvements.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_essentials_9_0/default/data/ui/views/Ingest_Actions.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_essentials_9_0/default/data/ui/views/RapidDiag_Performance_Improvements.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_essentials_9_0/default/data/ui/views/Smartstore_Support_On_Azure.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_essentials_9_0/default/data/ui/views/Splunk_Assist.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_essentials_9_0/default/data/ui/views/Workload_Management_Enhancements.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_essentials_9_0/default/data/ui/views/contents.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_metrics_workspace/default/data/ui/views/analysis_workspace.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_metrics_workspace/default/data/ui/views/analytics_workspace.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_metrics_workspace/default/data/ui/views/home.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_rapid_diag/default/data/ui/views/data_collection.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_rapid_diag/default/data/ui/views/reference_guide.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_rapid_diag/default/data/ui/views/task_manager.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_rapid_diag/default/data/ui/views/task_template_wizard.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_secure_gateway/default/data/ui/views/administration.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_secure_gateway/default/data/ui/views/home.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_secure_gateway/default/data/ui/views/kvstore_dashboard_client.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_secure_gateway/default/data/ui/views/mdm_saml.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_secure_gateway/default/data/ui/views/opt_in.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_secure_gateway/default/data/ui/views/recent_ssg_dashboard_activity.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_secure_gateway/default/data/ui/views/request_tracing_dashboard.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_secure_gateway/default/data/ui/views/secure_gateway_status_dashboard.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_secure_gateway/default/data/ui/views/self_register.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_secure_gateway/default/data/ui/views/ssg_e2e_wss_test.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_secure_gateway/default/data/ui/views/subscription_tracing_dashboard.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_secure_gateway/default/data/ui/views/test_dashboard_single_value.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/launcher/default/data/ui/views/home.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_archiver/default/data/ui/views/splunk_archiver_dashboard.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/admission_control_monitoring_distributed.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/admission_control_monitoring_instance.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/alerts.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/alerts.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/assist.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/bundle_replication.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/cascading_replication.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/dashboards.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/dashboards.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/data_quality.env_cloud.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/data_quality.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/disk_usage_instance.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/distributed_search_deployment.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/distributed_search_deployment.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/distributed_search_instance.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/distributed_search_instance.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/forwarder_deployment.env_cloud.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/forwarder_deployment.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/forwarder_deployment.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/forwarder_instance.env_cloud.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/forwarder_instance.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/forwarder_instance.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/forwarder_overview.prod_lite.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/forwarder_overview.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/http_event_collector_deployment.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/http_event_collector_instance.env_cloud.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/http_event_collector_instance.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/http_event_collector_instance.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/index_detail_deployment.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/index_detail_deployment.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/index_detail_instance.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/index_detail_instance.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/indexer_clustering_service_activity.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/indexer_clustering_service_activity.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/indexer_clustering_status.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/indexer_clustering_status.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/indexes_and_volumes_deployment.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/indexes_and_volumes_deployment.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/indexes_and_volumes_instance.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/indexes_and_volumes_instance.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/indexing_performance_advanced.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/indexing_performance_advanced.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/indexing_performance_deployment.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/indexing_performance_deployment.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/indexing_performance_instance.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/indexing_performance_instance.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/kv_store_deployment.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/kv_store_deployment.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/kv_store_instance.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/kv_store_instance.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/license_usage_30days.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/license_usage_historic.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/license_usage_today.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/license_usage_today.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/monitoringconsole_alerts_setup.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/monitoringconsole_alerts_setup.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/monitoringconsole_check.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/monitoringconsole_check.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/monitoringconsole_check_list.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/monitoringconsole_check_list.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/monitoringconsole_configure.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/monitoringconsole_configure.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/monitoringconsole_forwarder_setup.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/monitoringconsole_instances.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/monitoringconsole_instances.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/monitoringconsole_landing.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/monitoringconsole_landing.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/monitoringconsole_overview.env_cloud.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/monitoringconsole_overview.prod_lite.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/monitoringconsole_overview.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/monitoringconsole_overview_preferences.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/monitoringconsole_overview_preferences.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/reports.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/reports.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/resource_usage_cpu_deployment.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/resource_usage_cpu_instance.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/resource_usage_deployment.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/resource_usage_deployment.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/resource_usage_instance.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/resource_usage_instance.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/resource_usage_machine.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/resource_usage_machine.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/scheduler_activity_deployment.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/scheduler_activity_deployment.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/scheduler_activity_instance.env_cloud.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/scheduler_activity_instance.prod_lite.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/scheduler_activity_instance.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/scheduler_assistant.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/search_activity_deployment.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/search_activity_deployment.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/search_activity_instance.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/search_activity_instance.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/search_usage_statistics_deployment.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/search_usage_statistics_instance.env_cloud.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/search_usage_statistics_instance.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/search_usage_statistics_instance.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/shc_app_deployment.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/shc_app_deployment.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/shc_artifact_replication.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/shc_artifact_replication.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/shc_conf_rep.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/shc_conf_rep.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/shc_scheduler_delegation_statistics.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/shc_scheduler_delegation_statistics.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/shc_status_and_conf.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/shc_status_and_conf.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/smartstore_activity_deployment.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/smartstore_activity_instance.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/smartstore_cache_performance_deployment.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/smartstore_cache_performance_instance.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/splunk_tcpin_performance_deployment.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/splunk_tcpin_performance_deployment.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/splunk_tcpin_performance_instance.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/splunk_tcpin_performance_instance.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/standalone.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/standalone.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/volume_detail_deployment.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/volume_detail_deployment.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/volume_detail_instance.prod_lite.xml is <view ...> skipping
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/volume_detail_instance.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/workload_management.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/workload_management_monitoring_distributed.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/workload_management_monitoring_instance.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/workload_management_per_pool_deployment.xml has version=1.1 - ok
+$SPLUNK_HOME/etc/apps/splunk_monitoring_console/default/data/ui/views/workload_management_per_pool_instance.xml has version=1.1 - ok
+
+splunkd 1092 was not running.
+Stopping splunk helpers...
+
+Done.
+Stopped helpers.
+Removing stale pid file... done.
+
+It seems that the Splunk default certificates are being used. If certificate validation is turned on using the default certificates (not-recommended), this may result in loss of communication in mixed-version Splunk environments after upgrade.
+
+"/opt/splunk/etc/auth/ca.pem": already a renewed Splunk certificate: skipping renewal
+"/opt/splunk/etc/auth/cacert.pem": already a renewed Splunk certificate: skipping renewal
+Clustering migration already complete, no further changes required.
+
+Generating checksums for datamodel and report acceleration bucket summaries for all indexes.
+If you have defined many indexes and summaries, summary checksum generation may take a long time.
+Processed 1 out of 11 configured indexes.
+Processed 2 out of 11 configured indexes.
+Processed 3 out of 11 configured indexes.
+Processed 4 out of 11 configured indexes.
+Processed 5 out of 11 configured indexes.
+Processed 6 out of 11 configured indexes.
+Processed 7 out of 11 configured indexes.
+Processed 8 out of 11 configured indexes.
+Processed 9 out of 11 configured indexes.
+Processed 10 out of 11 configured indexes.
+Processed 11 out of 11 configured indexes.
+Finished generating checksums for datamodel and report acceleration bucket summaries for all indexes.
+[App Key Value Store migration] Starting migrate-kvstore.
+[App Key Value Store migration] Latest version can run. Migration is not required.
+KV Store already on specified storage engine, migration not required
+[App Key Value Store migration] Starting migrate-kvstore.
+[App Key Value Store migration] Migration is not required.
+[DFS] Performing migration.
+[DFS] Finished migration.
+[Peer-apps] Performing migration.
+[Peer-apps] Finished migration.

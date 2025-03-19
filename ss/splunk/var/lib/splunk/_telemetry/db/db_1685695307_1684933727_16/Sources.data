@@ -1,0 +1,3 @@
+0	2	  5	1684933727	1685695307	1685695307	
+1	source::telemetry_api	  3	1684933727	1685695307	1685695307	
+2	source::/opt/splunk/var/log/splunk/license_usage_summary.log	  2	1685012007	1685694614	1685694617	

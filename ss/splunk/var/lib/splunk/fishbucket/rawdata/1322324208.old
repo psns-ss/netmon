@@ -1,0 +1,5 @@
+slaveId,slaveLabel,serializedTime,pool_suggestion,UsageKey,Bytes
+3A2CADE8-05FE-4F57-BBB1-71383F3FF5D3,dontcare,0CD91RNQDOP0B8,"",,
+,,,,"sourcetype::_json",430506
+,,,,"sourcetype::http-3",10487
+,,,,"sourcetype::stats-3",138849
